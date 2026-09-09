@@ -1,17 +1,26 @@
+import {
+  donationPaymentLink,
+  deploymentPolicy,
+} from '@/lib/deployment-policy.mjs';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { siteConfig } from '@/lib/site-config';
 export function DonationForm() {
   // Amount selection belongs to Stripe's customer-chooses-amount checkout.
   // Keep the historical Wix form as an inactive visual reference until connected.
-  const link = siteConfig.stripePaymentLink;
+  const link = donationPaymentLink(process.env, siteConfig.stripePaymentLink);
+  const preview = !deploymentPolicy(process.env).isProduction;
   return (
     <section id="donation" className="donation-form-wrap">
       <div className="site-form">
         <h2>Donate</h2>
         {link ? (
           <>
-            <p>Choose your donation amount on our secure Stripe checkout.</p>
+            <p>
+              {preview
+                ? 'Preview: Stripe test checkout only. No real donation will be processed.'
+                : 'Choose your donation amount on our secure Stripe checkout.'}
+            </p>
             <a className="pill" href={link} target="_blank" rel="noreferrer">
               Donate with Stripe
             </a>

@@ -1,3 +1,4 @@
+import { siteMetadata } from '@/lib/seo';
 import type { Metadata } from 'next';
 import { Header, Footer } from '@/components/site-shell';
 import './globals.css';
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   description:
     'Project Starburst provides food, personal hygiene, and essential items to neighbors in Mecosta and Osceola counties with dignity, respect, and compassion.',
   icons: { icon: '/assets/logo.svg' },
-  robots: { index: false, follow: false },
+  ...siteMetadata,
 };
 export default function RootLayout({
   children,

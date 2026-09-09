@@ -1,7 +1,8 @@
+import { routeMetadata } from '@/lib/seo';
 import Link from 'next/link';
 import { PageHero, TextSection } from '@/components/page-parts';
 import { FacebookBand } from '@/components/site-shell';
-export const metadata = { title: 'About Us' };
+export const metadata = { ...routeMetadata('/about-us'), title: 'About Us' };
 export default function Page() {
   return (
     <main id="main">

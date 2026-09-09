@@ -1,0 +1,352 @@
+{
+  "captured": "2026-09-09",
+  "note": "Checksums describe the repository assets; some photos were optimized during the baseline rebuild. Empty sources mean no source mapping was recorded, not a new license grant.",
+  "assets": [
+    {
+      "path": "public/assets/11062b_5cd7c9c0244b499b99410156d56c7d4f~mv2.jpg",
+      "bytes": 168426,
+      "sha256": "420b146d0b5196c3cf7349c3460ceaea7c98874cbd4046855c3e2e0ff418d325",
+      "sources": [
+        "https://static.wixstatic.com/media/11062b_5cd7c9c0244b499b99410156d56c7d4f~mv2.jpg"
+      ]
+    },
+    {
+      "path": "public/assets/11062b_841a038a35fe4e4da9c2871f63caed93~mv2.jpg",
+      "bytes": 215098,
+      "sha256": "8b9c1873d23f8e5050a8ea709515e04239b3267a0d0a1ed0eec18880a0f6123b",
+      "sources": [
+        "https://static.wixstatic.com/media/11062b_841a038a35fe4e4da9c2871f63caed93~mv2.jpg"
+      ]
+    },
+    {
+      "path": "public/assets/11062b_e2da2b9b2d074ff8ab9a452d009d5c7f~mv2.jpg",
+      "bytes": 236734,
+      "sha256": "4fb09a6d7d50a9d13dfeeee48da6ff5225569487e7f80f8d0c743aee1c235f4a",
+      "sources": [
+        "https://static.wixstatic.com/media/11062b_e2da2b9b2d074ff8ab9a452d009d5c7f~mv2.jpg"
+      ]
+    },
+    {
+      "path": "public/assets/11062b_f1a4368086de462db72b31ae85053474~mv2_d_5760_3840_s_4_2.jpg",
+      "bytes": 341517,
+      "sha256": "42eb26c7f0b28cf5bfeff18ab7d298d95547ffd8e6b1e12252bdf9c7d62ba4dc",
+      "sources": [
+        "https://static.wixstatic.com/media/11062b_f1a4368086de462db72b31ae85053474~mv2_d_5760_3840_s_4_2.jpg"
+      ]
+    },
+    {
+      "path": "public/assets/1691a921dfec4d4f8637b1c7ffa2528a.jpg",
+      "bytes": 205429,
+      "sha256": "72956c32b3d8846b01ac436f9e13cdada7052fa76864f94f8efe24b8f34c9796",
+      "sources": [
+        "https://static.wixstatic.com/media/1691a921dfec4d4f8637b1c7ffa2528a.jpg"
+      ]
+    },
+    {
+      "path": "public/assets/42722a_15da40a7f21b4284ab53f72b7d936c37~mv2.png",
+      "bytes": 4151,
+      "sha256": "2f6eea9528bd60f966d2a5ea7ee04a01837ffcc29e67dda0b1ea38bd62ce64a6",
+      "sources": [
+        "https://static.wixstatic.com/media/42722a_15da40a7f21b4284ab53f72b7d936c37~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/42722a_510c3acf0314411dadd641663a97b23b~mv2.png",
+      "bytes": 37161,
+      "sha256": "d4714ff536da67e4f47f33672b78fbdfc796a72bd3fc7005b0e0a4724b3f9bc2",
+      "sources": [
+        "https://static.wixstatic.com/media/42722a_510c3acf0314411dadd641663a97b23b~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/42722a_56439e3db5d54f83b24b61fe65c9a18f~mv2.png",
+      "bytes": 3724,
+      "sha256": "bf4e636aa4a1b19f9b3df83c67945656ec0780baab0f00cb955f39e79a7fe314",
+      "sources": [
+        "https://static.wixstatic.com/media/42722a_56439e3db5d54f83b24b61fe65c9a18f~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/42722a_99eb4a6354b249edb287c9414dd9d2b6~mv2.png",
+      "bytes": 3831,
+      "sha256": "5572cf8fd1665f1f3ffbe56091d50c6dc7f79168dc3fc3e912a2f985028fdf06",
+      "sources": [
+        "https://static.wixstatic.com/media/42722a_99eb4a6354b249edb287c9414dd9d2b6~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/42722a_9b674ddc71f3418ab6fb4bb434e0ba2a~mv2.jpg",
+      "bytes": 9306,
+      "sha256": "7657879458835c428dbfc107edfd03c73ad2609bb0aaace9c587cd7bb7c00afe",
+      "sources": [
+        "https://static.wixstatic.com/media/42722a_9b674ddc71f3418ab6fb4bb434e0ba2a~mv2.jpg"
+      ]
+    },
+    {
+      "path": "public/assets/42722a_9b76e022f745479c98afda72f7e1f8fe~mv2.png",
+      "bytes": 2770,
+      "sha256": "d26b7a8feaff3dbf91c1e225f99742a88943ea969fc733d1adae3cec34fda8be",
+      "sources": [
+        "https://static.wixstatic.com/media/42722a_9b76e022f745479c98afda72f7e1f8fe~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/42722a_a2df996f3a474c55acb928ea89b6a1ec~mv2.jpg",
+      "bytes": 7112,
+      "sha256": "20f5ebec49c2f9001db3646b87ec963181f32c28fdcb03a8b2066edbd714ae52",
+      "sources": [
+        "https://static.wixstatic.com/media/42722a_a2df996f3a474c55acb928ea89b6a1ec~mv2.jpg"
+      ]
+    },
+    {
+      "path": "public/assets/42722a_a8caec3a52594def82ff2812ef65ebee~mv2.png",
+      "bytes": 10123,
+      "sha256": "bf6dfd4ec0ceb405287841fb503d3de8123967cd268521b0ed07fc7b901b2c88",
+      "sources": [
+        "https://static.wixstatic.com/media/42722a_a8caec3a52594def82ff2812ef65ebee~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/42722a_b2dccf4d23d94a9baf9afb72e6fe9a9f~mv2.avif",
+      "bytes": 5701,
+      "sha256": "0daed8aa55b45e8fff81627aac3aeac73aa9da708b62e19dc908925b2a4c4b10",
+      "sources": [
+        "https://static.wixstatic.com/media/42722a_b2dccf4d23d94a9baf9afb72e6fe9a9f~mv2.avif"
+      ]
+    },
+    {
+      "path": "public/assets/42722a_d5109e24a9b3421a991b74343140f174~mv2.png",
+      "bytes": 45059,
+      "sha256": "551152a567ebcb24e9d03a9303fcb9a28e18c267a67e011d5e24f643f0ded5ae",
+      "sources": [
+        "https://static.wixstatic.com/media/42722a_d5109e24a9b3421a991b74343140f174~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/facebook-banner.png",
+      "bytes": 1314538,
+      "sha256": "3b389bb6cd0b0fc51723ac392aaefb950e1858cc9c1b13de604cc1027a613539",
+      "sources": []
+    },
+    {
+      "path": "public/assets/facebook.svg",
+      "bytes": 946,
+      "sha256": "34ccd3eb1ed361609715d02437015562792e164516217f7fb23b9dc14c5c55c2",
+      "sources": []
+    },
+    {
+      "path": "public/assets/family.jpg",
+      "bytes": 224242,
+      "sha256": "15d951240762f7e642fdcdceba070bab5bca7c4d9ac03ab85d7dfc419dc085a3",
+      "sources": []
+    },
+    {
+      "path": "public/assets/ffdbc4_0317984b8ec94afd8abc5c0074e1c21d~mv2.png",
+      "bytes": 17899,
+      "sha256": "db46923b17ed2307c23e60edc01fd8e544c1e80636af77fbfa98e61b6daa068e",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_0317984b8ec94afd8abc5c0074e1c21d~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/ffdbc4_0d10ec1fcadd4c29927bd1aa8ffe672f~mv2.jpg",
+      "bytes": 170186,
+      "sha256": "86a7d7b3f1d64362c1cc108a423fdd11a75e395f14a9c93b7e288f35dd64bf52",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_0d10ec1fcadd4c29927bd1aa8ffe672f~mv2.jpg"
+      ]
+    },
+    {
+      "path": "public/assets/ffdbc4_15793b5eb23a4a0799be97b9791eefa0~mv2.png",
+      "bytes": 1314538,
+      "sha256": "3b389bb6cd0b0fc51723ac392aaefb950e1858cc9c1b13de604cc1027a613539",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_15793b5eb23a4a0799be97b9791eefa0~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/ffdbc4_158fc9a10bff474b8f906f01fea7a584~mv2.png",
+      "bytes": 30433,
+      "sha256": "05b77a34dc14e6fed97e09b2f3ca11b6b881963e9217e2944942f5c807871287",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_158fc9a10bff474b8f906f01fea7a584~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/ffdbc4_30897e992b9143e980ef60aa20922121~mv2.jpg",
+      "bytes": 15439,
+      "sha256": "de815be9c951ef0b2fefab824b98ada876f48cc588fc627953720cdd89dcf0c5",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_30897e992b9143e980ef60aa20922121~mv2.jpg"
+      ]
+    },
+    {
+      "path": "public/assets/ffdbc4_369ddade2e6f41b6bb0533fb87b35adb~mv2.jpg",
+      "bytes": 13973,
+      "sha256": "32fddd501a026a0fe227677417de622ade80c79402cff1963e001fa7e708b233",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_369ddade2e6f41b6bb0533fb87b35adb~mv2.jpg"
+      ]
+    },
+    {
+      "path": "public/assets/ffdbc4_374b030872ba421d9ebe3f822d70aaf0~mv2.png",
+      "bytes": 135999,
+      "sha256": "fbd650d2ea74b3c1a9e0f652a764221c9c81bae5acc1ed2e30a38920d577dc8d",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_374b030872ba421d9ebe3f822d70aaf0~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/ffdbc4_3c732a7d5b5e4766aeeeb55eb8adab77~mv2.avif",
+      "bytes": 9758,
+      "sha256": "0feeda82e8f0102caa974a8b5e02576695dcfd9db7b4b2472582ca0ceb474c5e",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_3c732a7d5b5e4766aeeeb55eb8adab77~mv2.avif"
+      ]
+    },
+    {
+      "path": "public/assets/ffdbc4_8ae35597893b416c8dd1e74db2f2b23e~mv2.png",
+      "bytes": 37218,
+      "sha256": "0e5536381ece7948fd870c343778359348cdd70faccc53a6d176230925fc4224",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_8ae35597893b416c8dd1e74db2f2b23e~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/ffdbc4_9acf43e51a8848688bd936004bf9d812~mv2.png",
+      "bytes": 124408,
+      "sha256": "ddf7a1ffe6a561a68b59d047b52f018cbb7a1543e7d16a4f24ffcd33b305a219",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_9acf43e51a8848688bd936004bf9d812~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/ffdbc4_ca8960ef9fb6400ebc9ac020c9216faf~mv2.png",
+      "bytes": 108577,
+      "sha256": "55cba835d069008069720a244cfb59e6de1b5f6685672e2334029b6124f905ba",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_ca8960ef9fb6400ebc9ac020c9216faf~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/ffdbc4_d20917cd002641e5ae0a0920ff19f39d~mv2.png",
+      "bytes": 67862,
+      "sha256": "e72cfc828413173621089f6c39c5a6644481cb679833a09a9fffa71cb09eddda",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_d20917cd002641e5ae0a0920ff19f39d~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/ffdbc4_ecd07b50e44943c69d9fa27d8bc71966~mv2.png",
+      "bytes": 11140,
+      "sha256": "b2cbbee8e7c092bc69217afdba78dfd8387bb7439e426cf603e7ea0ec5435dad",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_ecd07b50e44943c69d9fa27d8bc71966~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/ffdbc4_f004ba0a544b4eb281308e182dfb9c7f~mv2.jpg",
+      "bytes": 463740,
+      "sha256": "63f236c73cb4f84e6c2ffc959e64304d0ba69896193bf73b72b4941688d9383d",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_f004ba0a544b4eb281308e182dfb9c7f~mv2.jpg"
+      ]
+    },
+    {
+      "path": "public/assets/ffdbc4_f746890e3a9541538489a32d51837200~mv2.png",
+      "bytes": 30801,
+      "sha256": "504bf0f40a9becf56553b4cbf3a91ea49435bd35d904be0842bde08d9378013d",
+      "sources": [
+        "https://static.wixstatic.com/media/ffdbc4_f746890e3a9541538489a32d51837200~mv2.png"
+      ]
+    },
+    {
+      "path": "public/assets/fremont-area.jpg",
+      "bytes": 13973,
+      "sha256": "32fddd501a026a0fe227677417de622ade80c79402cff1963e001fa7e708b233",
+      "sources": []
+    },
+    {
+      "path": "public/assets/icon-10.svg",
+      "bytes": 3420,
+      "sha256": "ce64a8462052d741ecb68c303b82b9ff710ad7a54f1a23fcc777ccc6091c29e1",
+      "sources": []
+    },
+    {
+      "path": "public/assets/icon-11.svg",
+      "bytes": 4521,
+      "sha256": "04edf0722d2c00f46f68e19c5ae989b390a4fe2474d05542849fe458ae3b4fb8",
+      "sources": []
+    },
+    {
+      "path": "public/assets/icon-12.svg",
+      "bytes": 760,
+      "sha256": "1425bda296ef06c9db810c9d1f8835e75404db794b0e966c84cc8e7493636533",
+      "sources": []
+    },
+    {
+      "path": "public/assets/icon-13.svg",
+      "bytes": 1174,
+      "sha256": "f37ab7bc03e05607f223f32c08cc46477f58a1315506b2133ef5d3cbdfc13acb",
+      "sources": []
+    },
+    {
+      "path": "public/assets/icon-14.svg",
+      "bytes": 4078,
+      "sha256": "a2fef56244a23f517864bee7c0072acf735583cd0aa5cd152b602451731c270c",
+      "sources": []
+    },
+    {
+      "path": "public/assets/icon-9.svg",
+      "bytes": 4862,
+      "sha256": "46dfa8ba3211119651589515b0aa12c063452cb8cd6cdb837b2000a2b9d7395b",
+      "sources": []
+    },
+    {
+      "path": "public/assets/logo.svg",
+      "bytes": 34212,
+      "sha256": "cfc7015442b192fdf95f14c28b80a9ef601496769cddf5354d8560bd2beba69f",
+      "sources": []
+    },
+    {
+      "path": "public/assets/souvenir-bold.woff2",
+      "bytes": 16608,
+      "sha256": "ee5a63820cac34895664b3d2176b3c71811b4340d996a10e4bf6718844614756",
+      "sources": []
+    },
+    {
+      "path": "public/assets/souvenir-medium.woff2",
+      "bytes": 16952,
+      "sha256": "ef18007f7936cedbfd40624c56347be0050bd92bbf46c8b47d2cf83ba6b97cfb",
+      "sources": []
+    },
+    {
+      "path": "public/assets/united-way.jpg",
+      "bytes": 15439,
+      "sha256": "de815be9c951ef0b2fefab824b98ada876f48cc588fc627953720cdd89dcf0c5",
+      "sources": []
+    },
+    {
+      "path": "public/documents/non-discrimination-statement.pdf",
+      "bytes": 75922,
+      "sha256": "5dbce3941156713e04b85a1525d47c9c5f32b0b896c3bf6f06baddb4b8cf7520",
+      "sources": [
+        "https://www.projectstarburst.org/_files/ugd/ffdbc4_b7f37e5672f54b16a7713675a68249fd.pdf"
+      ]
+    },
+    {
+      "path": "public/documents/volunteer-application.pdf",
+      "bytes": 191619,
+      "sha256": "7f4ed292376cfbd29e8aa530df812c5190302af2af1e380144b0c0eb19ad5a1d",
+      "sources": [
+        "https://www.projectstarburst.org/_files/ugd/ffdbc4_9c90c2418eef4d0da44f142484523681.pdf"
+      ]
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 34212,
+      "sha256": "cfc7015442b192fdf95f14c28b80a9ef601496769cddf5354d8560bd2beba69f",
+      "sources": []
+    }
+  ]
+}

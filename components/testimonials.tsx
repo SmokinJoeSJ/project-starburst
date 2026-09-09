@@ -39,6 +39,8 @@ export function Testimonials() {
       <div
         ref={track}
         className="story-track"
+        // Keyboard users need focus here to scroll the story track.
+        // oxlint-disable-next-line jsx-a11y/no-noninteractive-tabindex
         tabIndex={0}
         aria-label="Community stories. Scroll to read more."
       >

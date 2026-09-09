@@ -1,7 +1,8 @@
+import { routeMetadata } from '@/lib/seo';
 import Link from 'next/link';
 import { PageHero, TextSection } from '@/components/page-parts';
 import { FacebookBand } from '@/components/site-shell';
-export const metadata = { title: 'Volunteer' };
+export const metadata = { ...routeMetadata('/volunteer'), title: 'Volunteer' };
 const ways = [
   [
     '📅 Monthly Food Truck',
@@ -79,8 +80,8 @@ export default function Page() {
           below.
         </p>
         <p className="small-note">
-          Note: If you're looking to complete community service, you must still
-          apply in person.
+          Note: If you&apos;re looking to complete community service, you must
+          still apply in person.
         </p>
         <a
           className="pill"

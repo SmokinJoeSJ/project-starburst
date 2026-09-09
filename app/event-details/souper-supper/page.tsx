@@ -1,6 +1,10 @@
+import { routeMetadata } from '@/lib/seo';
 import Link from 'next/link';
 import { PageHero, TextSection } from '@/components/page-parts';
-export const metadata = { title: 'Souper Supper — Event Details' };
+export const metadata = {
+  ...routeMetadata('/event-details/souper-supper'),
+  title: 'Souper Supper — Event Details',
+};
 export default function Page() {
   return (
     <main id="main">
