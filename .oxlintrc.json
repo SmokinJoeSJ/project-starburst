@@ -29,7 +29,11 @@
     "build/**",
     "dist/**",
     "coverage/**",
-    "next-env.d.ts"
+    "next-env.d.ts",
+    "components/ui/**",
+    "hooks/use-mobile.ts",
+    ".reference/**",
+    ".wrangler/**"
   ],
   "rules": {
     "no-array-constructor": "error",
@@ -51,6 +55,7 @@
     "typescript/no-namespace": "error",
     "typescript/no-require-imports": "error",
     "typescript/no-unnecessary-type-constraint": "error",
-    "typescript/no-unsafe-function-type": "error"
+    "typescript/no-unsafe-function-type": "error",
+    "nextjs/no-img-element": "off"
   }
 }

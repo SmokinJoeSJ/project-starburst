@@ -1,46 +1,63 @@
 # Project Starburst
 
-First rebuild of the existing Wix website for PLM Studio, based on the public site captured September 8, 2026.
+PLM's first client-site workflow, built from the existing [Project Starburst Wix site](https://www.projectstarburst.org/). This task prepares review and deployment infrastructure; it does not redesign the pages or launch the replacement.
 
-## Run locally
+**The live website is still on Wix.** The repository's main branch contains the initial rebuild, not Wix's backend or payment/submission history. Production DNS and the existing live implementation stay unchanged until Joe approves a separate launch.
 
-Requires Node.js 22.13 or newer.
+## PLM Development Workflow
 
-```sh
-npm ci
-npm run dev
-```
+| Purpose                      | Branch        | Domain / review destination                                |
+| ---------------------------- | ------------- | ---------------------------------------------------------- |
+| Production (reserved in Git) | main          | projectstarburst.org; currently Wix, with www as canonical |
+| Staging                      | redesign-2026 | preview.projectstarburst.org once configured               |
+| Feature work                 | feature/*     | Unique Vercel Preview deployment once configured           |
 
-## Build
+During redesign: _*feature/* → PR → redesign-2026_*. Use `gh pr create --base redesign-2026`. Review before merging; do not routinely push straight to the integration branch.
 
-```sh
-npm run build
-```
+Final launch: separately approved **redesign-2026 → main PR**. Setup includes guards against automatic main deployment. Ordinary feature review does not authorize production deployment, domain reassignment, or DNS cutover.
 
-The project uses React, TypeScript, Vinext/Vite, and the Sites Cloudflare starter. Server output is in `dist/server` and public assets are in `dist/client`.
+Joe can review from a phone, tablet, or browser without running the project locally. Send clients the stable staging URL after configuration; use a feature preview only when intentionally reviewing that feature. Follow the [remote workflow](docs/development-workflow.md) and [owner setup guide](docs/vercel-setup.md).
 
-## Included pages
+## Commands
 
-- Home
-- Get Help
-- About Us
-- Souper Supper (`/soupersupper`, with `/souper-supper` as an alias)
-- Souper Supper event details (registration is closed, as on the source site)
-- Volunteer
-- Contact
-- Donate
+Use Node.js 22 (at least 22.13) and the committed npm lockfile.
 
-Shared responsive navigation, footer, source photos, logo, Souvenir fonts, sponsor logos, community testimonials, and two public PDF forms are included. The source files are independent of Wix; the embedded Google map, Facebook links, and sponsor links remain external.
+| Task                                               | Command                |
+| -------------------------------------------------- | ---------------------- |
+| Install                                            | `npm ci`               |
+| Development server                                 | `npm run dev`          |
+| Lint                                               | `npm run lint`         |
+| Type-check                                         | `npm run type-check`   |
+| Tests                                              | `npm test`             |
+| Existing production build target: Cloudflare/Sites | `npm run build`        |
+| Vercel static production build output              | `npm run build:vercel` |
+| Serve existing Cloudflare build locally            | `npm start`            |
+| Formatter                                          | `npm run format`       |
 
-## Integrations still needed
+Build commands create local artifacts only; they do not deploy. A local Vercel build defaults to preview-safe output. Indexable output requires Vercel Production on main, with a separately approved launch flag. Both targets use dist; rebuild the Cloudflare target before npm start if the last build was for Vercel.
 
-- **Stripe:** The owner selected Stripe but does not have a Payment Link yet. Add a customer-chooses-amount public Stripe Payment Link in `lib/site-config.ts`. The donation controls explicitly show that online donations are not available until configured. No payment requests or charges are made by this build. The original amount/comments layout is retained as an inactive reference; the configured link delegates donation amount entry to Stripe.
-- **Contact delivery:** The contact form validates input and opens a prefilled email to `br@projectstarburst.org`. It does not send or store messages automatically. Choose a delivery service before enabling direct submissions.
-- **PLM Studio deployment:** Hosting requirements and production deployment credentials have not been supplied. A private Sites preview can be used for review. The Wix site and domain/DNS are untouched.
-- **Production search indexing:** The rebuild has `noindex, nofollow` metadata to avoid indexing a duplicate. Set the final canonical origin and update indexing before the production cutover.
+## Framework and deployment
 
-## Content fidelity
+React 19, TypeScript, Vinext on Vite, Tailwind, and the existing Sites/Cloudflare starter. This is **not a standard Next.js Vercel project** despite its App Router layout and next/* compatibility imports.
 
-The initial version deliberately preserves the source site's wording, displayed impact figures, staff names, event date, and 2025 copyright. Review these as a separate content update before going live. The full donor/sponsor list is retained. Unlinked individual sponsors are displayed without a fake website link. The expired event has no purchasable tickets.
+The existing build and .openai/hosting.json remain intact. The additional static export uses vercel.json, npm run build:vercel, and dist/client. It includes HTML and RSC navigation routing, generated robots/sitemap, and legacy PDF redirects. Adding server APIs, actions, authentication, or a CMS will require a reviewed hosting change.
 
-Assets in `public/assets` and `public/documents` were copied from the owner's existing public site for this migration. The website's existing assets and fonts are subject to their original rights and licenses. See `docs/migration-notes.md` for scope and validation notes.
+No linked Vercel project or working Vercel preview has been verified. [Configure GitHub, Vercel, and DNS manually](docs/vercel-setup.md) before treating the stable staging URL as available.
+
+## Integrations and review boundaries
+
+- Stripe is selected, but no Payment Link exists yet. The production setting in lib/site-config.ts remains empty. Previews accept only an explicitly supplied Stripe test Payment Link.
+- Contact is an email-draft flow, not a delivery service. Previews default to an on-page draft; an optional test inbox can open a test email draft. Production retains the original mailto recipient.
+- No PayPal SDK, Supabase, analytics, email provider, webhook, or admin/CMS integration is implemented. Live Wix dashboard/provider settings need owner inspection.
+- Preview pages are noindex with no canonical; approved main Production output is indexable and uses the existing www production origin. Preview sitemaps contain no URLs.
+- Original copy, dates, figures, sponsor lists, assets, and PDFs are preserved. /event-list was discovered on the live Wix sitemap and is a documented migration gap.
+
+See the [environment audit](docs/environment-safety.md), [site inventory](docs/site-inventory.md), [asset inventory](docs/asset-inventory.md), and [launch checklist](docs/launch-checklist.md).
+
+## Quality scope
+
+GitHub Actions validates PR targets, lint, TypeScript, safety tests, and both build targets. Static export verification checks implemented routes, linked assets, SEO, navigation payloads, and 404 output.
+
+Lint covers maintained site and workflow code. The pre-existing generated components/ui catalog and hooks/use-mobile.ts are excluded from lint because their baseline includes compiler and accessibility wrapper diagnostics; TypeScript still checks them. The Next Image recommendation is disabled because this build serves locally optimized static images. No dependency versions or public assets were changed.
+
+The [original migration notes](docs/migration-notes.md) describe the first rebuild. The current workflow and safety audit supersede their deployment assumptions. Actual Vercel-hosted behavior, viewport review, and provider delivery tests remain owner review steps.

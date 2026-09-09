@@ -1,7 +1,8 @@
+import { routeMetadata } from '@/lib/seo';
 import Link from 'next/link';
 import { PageHero, TextSection, ContactLines } from '@/components/page-parts';
 import { DonationForm } from '@/components/donation-form';
-export const metadata = { title: 'Donate' };
+export const metadata = { ...routeMetadata('/donate'), title: 'Donate' };
 export default function Page() {
   return (
     <main id="main">

@@ -1,0 +1,193 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build:vercel",
+  "outputDirectory": "dist/client",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "git": {
+    "deploymentEnabled": {
+      "**": false,
+      "main": false,
+      "redesign-2026": true,
+      "feature/**": true
+    }
+  },
+  "redirects": [
+    {
+      "source": "/_files/ugd/ffdbc4_b7f37e5672f54b16a7713675a68249fd.pdf",
+      "destination": "/documents/non-discrimination-statement.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/_files/ugd/ffdbc4_9c90c2418eef4d0da44f142484523681.pdf",
+      "destination": "/documents/volunteer-application.pdf",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "destination": "/index.rsc"
+    },
+    {
+      "source": "/about-us",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "destination": "/about-us.rsc"
+    },
+    {
+      "source": "/contact",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "destination": "/contact.rsc"
+    },
+    {
+      "source": "/donate",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "destination": "/donate.rsc"
+    },
+    {
+      "source": "/get-help",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "destination": "/get-help.rsc"
+    },
+    {
+      "source": "/volunteer",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "destination": "/volunteer.rsc"
+    },
+    {
+      "source": "/soupersupper",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "destination": "/soupersupper.rsc"
+    },
+    {
+      "source": "/souper-supper",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "destination": "/souper-supper.rsc"
+    },
+    {
+      "source": "/event-details/souper-supper",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "destination": "/event-details/souper-supper.rsc"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/:path*",
+      "headers": [
+        {
+          "key": "Vary",
+          "value": "RSC"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/x-component"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.rsc",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/x-component"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "preview.projectstarburst.org"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    }
+  ]
+}

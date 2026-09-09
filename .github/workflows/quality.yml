@@ -1,0 +1,36 @@
+name: PLM quality
+on:
+  pull_request:
+    branches: [redesign-2026, main]
+    types: [opened, synchronize, reopened, edited, ready_for_review]
+  push:
+    branches: [redesign-2026, 'feature/**']
+permissions:
+  contents: read
+concurrency:
+  group: plm-quality-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    name: Validate site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Check PR target
+        if: github.event_name == 'pull_request'
+        run: node scripts/pr-policy.mjs
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run type-check
+      - run: npm test
+      - name: Build existing Cloudflare target
+        run: npm run build
+      - name: Build and verify Vercel preview output
+        run: npm run build:vercel
+        env:
+          VERCEL_ENV: preview
+          VERCEL_GIT_COMMIT_REF: ${{ github.head_ref || github.ref_name }}

@@ -1,6 +1,8 @@
+import { routeMetadata } from '@/lib/seo';
 import Link from 'next/link';
 import { FacebookBand } from '@/components/site-shell';
 import { Testimonials } from '@/components/testimonials';
+export const metadata = routeMetadata('/');
 export default function Home() {
   return (
     <main id="main">

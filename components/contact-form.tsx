@@ -1,34 +1,44 @@
 'use client';
-import { useState, type FormEvent } from 'react';
+import { useState, type SyntheticEvent } from 'react';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { siteConfig } from '@/lib/site-config';
-export function ContactForm() {
+import { createContactDraft } from '@/lib/contact-draft.mjs';
+export function ContactForm({
+  recipient,
+  preview,
+}: {
+  recipient: string;
+  preview: boolean;
+}) {
   const [status, setStatus] = useState('');
-  function submit(event: FormEvent<HTMLFormElement>) {
+  const [draft, setDraft] = useState('');
+  function submit(event: SyntheticEvent<HTMLFormElement>) {
     event.preventDefault();
-    const form = event.currentTarget;
-    if (!form.reportValidity()) return;
-    const data = new FormData(form);
-    const body = [
-      'Name: ' +
-        String(data.get('firstName') ?? '') +
-        ' ' +
-        String(data.get('lastName') ?? ''),
-      'Email: ' + String(data.get('email') ?? ''),
-      'Phone: ' + String(data.get('phone') ?? ''),
-      '',
-      String(data.get('message') ?? ''),
-    ].join('\n');
-    window.location.href =
-      'mailto:' +
-      siteConfig.email +
-      '?subject=' +
-      encodeURIComponent('Project Starburst website inquiry') +
-      '&body=' +
-      encodeURIComponent(body);
+    if (!event.currentTarget.reportValidity()) return;
+    const data = new FormData(event.currentTarget);
+    const value = (key: string) => {
+      const entry = data.get(key);
+      return typeof entry === 'string' ? entry : '';
+    };
+    const result = createContactDraft(
+      {
+        firstName: value('firstName'),
+        lastName: value('lastName'),
+        email: value('email'),
+        phone: value('phone'),
+        message: value('message'),
+      },
+      recipient,
+      preview,
+    );
+    setDraft(result.mailto ? '' : result.body);
+    if (result.mailto) window.location.href = result.mailto;
     setStatus(
-      'Your email app should open with your message. Please review it and send it there. If it does not open, email br@projectstarburst.org or call (231) 796-5342.',
+      result.mailto
+        ? preview
+          ? 'Your email app should open a draft addressed to the test inbox. Nothing has been sent automatically.'
+          : 'Your email app should open with your message. Please review it and send it there. If it does not open, email br@projectstarburst.org or call (231) 796-5342.'
+        : 'Preview draft prepared below. No email was sent.',
     );
   }
   return (
@@ -80,16 +90,25 @@ export function ContactForm() {
           maxLength={2000}
         />
         <p className="form-note" id="email-help">
-          This opens your email app so you can review and send your message.
+          {preview
+            ? recipient
+              ? 'Preview: this opens an email draft to the test inbox.'
+              : 'Preview: prepare a draft here without sending email.'
+            : 'This opens your email app so you can review and send your message.'}
         </p>
         <div className="form-actions">
           <button className="pill" type="submit" aria-describedby="email-help">
-            Continue in email
+            {preview && !recipient ? 'Preview message' : 'Continue in email'}
           </button>
         </div>
-        <p className="form-status" role="status">
+        <output className="form-status" style={{ display: 'block' }}>
           {status}
-        </p>
+        </output>
+        {draft && (
+          <pre style={{ whiteSpace: 'pre-wrap', overflowWrap: 'anywhere' }}>
+            {draft}
+          </pre>
+        )}
       </form>
     </section>
   );

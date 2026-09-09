@@ -114,10 +114,10 @@ export function Footer() {
       <div className="footer-grid">
         <div>
           <p>
-            Project Starburst's mission is to provide food and basic needs in a
-            dignified manner for our neighbors in Mecosta and Osceola Counties.
-            We are primarily a food and hygiene need pantry but offer other
-            services as well.
+            Project Starburst&apos;s mission is to provide food and basic needs
+            in a dignified manner for our neighbors in Mecosta and Osceola
+            Counties. We are primarily a food and hygiene need pantry but offer
+            other services as well.
           </p>
           <address>
             <p>Hours: Monday- Wednesday- Friday, 10am - 4pm.</p>

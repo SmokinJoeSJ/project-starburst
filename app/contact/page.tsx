@@ -1,6 +1,12 @@
+import {
+  contactRecipient,
+  deploymentPolicy,
+} from '@/lib/deployment-policy.mjs';
+import { siteConfig } from '@/lib/site-config';
+import { routeMetadata } from '@/lib/seo';
 import { PageHero, TextSection } from '@/components/page-parts';
 import { ContactForm } from '@/components/contact-form';
-export const metadata = { title: 'Contact' };
+export const metadata = { ...routeMetadata('/contact'), title: 'Contact' };
 export default function Page() {
   return (
     <main id="main">
@@ -10,9 +16,9 @@ export default function Page() {
         alt="Volunteers collecting donations"
       >
         <p>
-          We'd love to hear from you! Whether you have a question, suggestion,
-          or need assistance, we're here to help. Get in touch with us using the
-          information below.
+          We&apos;d love to hear from you! Whether you have a question,
+          suggestion, or need assistance, we&apos;re here to help. Get in touch
+          with us using the information below.
         </p>
       </PageHero>
       <TextSection title="Our Location" className="location-section">
@@ -61,7 +67,7 @@ export default function Page() {
         </p>
         <p>
           For general inquiries or to reach a specific department, send us an
-          email, and we'll get back to you as soon as possible.
+          email, and we&apos;ll get back to you as soon as possible.
         </p>
       </TextSection>
       <TextSection title="Operating Hours">
@@ -71,7 +77,10 @@ export default function Page() {
           10 AM – 4 PM
         </p>
       </TextSection>
-      <ContactForm />
+      <ContactForm
+        recipient={contactRecipient(process.env, siteConfig.email)}
+        preview={!deploymentPolicy(process.env).isProduction}
+      />
       <TextSection title="Follow Us">
         <p>Stay updated and connected with us on our social media channels!</p>
         <a

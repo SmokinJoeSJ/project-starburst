@@ -35,6 +35,14 @@ const localBindingConfig = {
 };
 
 export default defineConfig(async () => {
+  // All current routes are static. Keep the original worker build separate.
+  if (process.env.PLM_BUILD_TARGET === 'vercel') {
+    return {
+      css: { postcss: { plugins: [tailwindcss()] } },
+      plugins: [vinext()],
+    };
+  }
+
   // Keep Wrangler and Miniflare state project-local. These are non-secret tool
   // settings; application environment belongs in ignored `.env*` files.
   process.env.WRANGLER_WRITE_LOGS ??= 'false';

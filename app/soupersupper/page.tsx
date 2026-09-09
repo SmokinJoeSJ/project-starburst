@@ -1,8 +1,12 @@
+import { routeMetadata } from '@/lib/seo';
 import Link from 'next/link';
 import { PageHero, TextSection } from '@/components/page-parts';
 import { FacebookBand } from '@/components/site-shell';
 import { sponsorGroups } from '@/lib/sponsors';
-export const metadata = { title: 'Souper Supper' };
+export const metadata = {
+  ...routeMetadata('/soupersupper'),
+  title: 'Souper Supper',
+};
 export default function Page() {
   return (
     <main id="main" className="souper-page">
