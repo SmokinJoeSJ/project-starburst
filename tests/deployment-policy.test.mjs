@@ -10,6 +10,7 @@ import {
 } from '../lib/deployment-policy.mjs';
 import { createContactDraft } from '../lib/contact-draft.mjs';
 import { validatePrTarget } from '../scripts/pr-policy.mjs';
+import { verifyVercelRouting } from '../scripts/verify-export.mjs';
 
 const production = { VERCEL_ENV: 'production', VERCEL_GIT_COMMIT_REF: 'main' };
 const preview = {
@@ -214,4 +215,30 @@ test('SEO documents exclude previews and include only canonical production route
     false,
   );
   assert.match(live['robots.txt'], /www\.projectstarburst\.org\/sitemap\.xml/);
+});
+
+test('RSC navigation cannot be shadowed by exported HTML or lose its response headers', () => {
+  const config = JSON.parse(
+    readFileSync(new URL('../vercel.json', import.meta.url), 'utf8'),
+  );
+  assert.doesNotThrow(() => verifyVercelRouting(config));
+
+  // Regression: all files existed and the old export checks passed, but Vercel
+  // resolved HTML before these high-level rewrites on the actual hosted site.
+  const shadowed = structuredClone(config);
+  shadowed.rewrites = shadowed.routes.map(({ src, dest, has }) => ({
+    source: src.slice(1, -1),
+    destination: dest,
+    has,
+  }));
+  delete shadowed.routes;
+  assert.throws(() => verifyVercelRouting(shadowed), /before the filesystem/);
+
+  const late = structuredClone(config);
+  late.routes.unshift({ handle: 'filesystem' });
+  assert.throws(() => verifyVercelRouting(late), /before the filesystem/);
+
+  const unsafe = structuredClone(config);
+  delete unsafe.routes[0].headers['Cache-Control'];
+  assert.throws(() => verifyVercelRouting(unsafe), /safe headers/);
 });

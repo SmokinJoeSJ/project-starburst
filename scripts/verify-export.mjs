@@ -8,12 +8,45 @@ import {
 } from '../lib/deployment-policy.mjs';
 import { publicRoutes } from '../lib/routes.mjs';
 
+// Explicit routes run before Vercel's filesystem lookup. High-level rewrites run
+// afterward, so an exported HTML file would shadow an RSC navigation request.
+export function verifyVercelRouting(config) {
+  for (const route of publicRoutes) {
+    const index = (config.routes ?? []).findIndex(
+      (entry) => entry.src === '^' + route + '$',
+    );
+    const rule = config.routes?.[index];
+    const filesystem = (config.routes ?? []).findIndex(
+      (entry) => entry.handle === 'filesystem',
+    );
+    if (
+      !rule ||
+      (filesystem >= 0 && index > filesystem) ||
+      rule.continue ||
+      rule.dest !== (route === '/' ? '/index.rsc' : route + '.rsc') ||
+      !rule.has?.some(
+        (entry) =>
+          entry.type === 'header' && entry.key === 'rsc' && entry.value === '1',
+      ) ||
+      rule.headers?.['Content-Type'] !== 'text/x-component' ||
+      rule.headers?.['Cache-Control'] !== 'private, no-store' ||
+      rule.headers?.Vary !== 'RSC' ||
+      rule.headers?.['X-Robots-Tag'] !== 'noindex'
+    ) {
+      throw new Error(
+        'RSC must route before the filesystem with safe headers: ' + route,
+      );
+    }
+  }
+}
+
 /** @param {Record<string, string | undefined>} env */
 export function verifyExport(env = process.env) {
   const root = 'dist/client';
   const { isProduction } = deploymentPolicy(env);
   const assets = new Set();
   const config = JSON.parse(readFileSync('vercel.json', 'utf8'));
+  verifyVercelRouting(config);
   const manifest = JSON.parse(
     readFileSync('docs/asset-inventory.json', 'utf8'),
   );
@@ -24,14 +57,6 @@ export function verifyExport(env = process.env) {
     );
     const html = readFileSync(file, 'utf8');
     const rscPath = route === '/' ? '/index.rsc' : route + '.rsc';
-    const rewrite = config.rewrites.find((entry) => entry.source === route);
-    if (
-      rewrite?.destination !== rscPath ||
-      rewrite?.has?.[0]?.key !== 'rsc' ||
-      rewrite?.has?.[0]?.value !== '1'
-    ) {
-      throw new Error('Missing RSC routing: ' + route);
-    }
     const rsc = readFileSync(join(root, rscPath.slice(1)), 'utf8');
     if (rsc.startsWith('<!DOCTYPE') || !rsc.includes('main'))
       throw new Error('Invalid navigation payload: ' + route);

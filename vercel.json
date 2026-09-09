@@ -26,107 +26,6 @@
       "permanent": true
     }
   ],
-  "rewrites": [
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "header",
-          "key": "rsc",
-          "value": "1"
-        }
-      ],
-      "destination": "/index.rsc"
-    },
-    {
-      "source": "/about-us",
-      "has": [
-        {
-          "type": "header",
-          "key": "rsc",
-          "value": "1"
-        }
-      ],
-      "destination": "/about-us.rsc"
-    },
-    {
-      "source": "/contact",
-      "has": [
-        {
-          "type": "header",
-          "key": "rsc",
-          "value": "1"
-        }
-      ],
-      "destination": "/contact.rsc"
-    },
-    {
-      "source": "/donate",
-      "has": [
-        {
-          "type": "header",
-          "key": "rsc",
-          "value": "1"
-        }
-      ],
-      "destination": "/donate.rsc"
-    },
-    {
-      "source": "/get-help",
-      "has": [
-        {
-          "type": "header",
-          "key": "rsc",
-          "value": "1"
-        }
-      ],
-      "destination": "/get-help.rsc"
-    },
-    {
-      "source": "/volunteer",
-      "has": [
-        {
-          "type": "header",
-          "key": "rsc",
-          "value": "1"
-        }
-      ],
-      "destination": "/volunteer.rsc"
-    },
-    {
-      "source": "/soupersupper",
-      "has": [
-        {
-          "type": "header",
-          "key": "rsc",
-          "value": "1"
-        }
-      ],
-      "destination": "/soupersupper.rsc"
-    },
-    {
-      "source": "/souper-supper",
-      "has": [
-        {
-          "type": "header",
-          "key": "rsc",
-          "value": "1"
-        }
-      ],
-      "destination": "/souper-supper.rsc"
-    },
-    {
-      "source": "/event-details/souper-supper",
-      "has": [
-        {
-          "type": "header",
-          "key": "rsc",
-          "value": "1"
-        }
-      ],
-      "destination": "/event-details/souper-supper.rsc"
-    }
-  ],
   "headers": [
     {
       "source": "/:path*",
@@ -134,30 +33,6 @@
         {
           "key": "Vary",
           "value": "RSC"
-        }
-      ]
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "header",
-          "key": "rsc",
-          "value": "1"
-        }
-      ],
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/x-component"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "private, no-store"
-        },
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex"
         }
       ]
     },
@@ -188,6 +63,161 @@
           "value": "noindex"
         }
       ]
+    }
+  ],
+  "routes": [
+    {
+      "src": "^/$",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "dest": "/index.rsc",
+      "headers": {
+        "Content-Type": "text/x-component",
+        "Cache-Control": "private, no-store",
+        "Vary": "RSC",
+        "X-Robots-Tag": "noindex"
+      }
+    },
+    {
+      "src": "^/about-us$",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "dest": "/about-us.rsc",
+      "headers": {
+        "Content-Type": "text/x-component",
+        "Cache-Control": "private, no-store",
+        "Vary": "RSC",
+        "X-Robots-Tag": "noindex"
+      }
+    },
+    {
+      "src": "^/contact$",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "dest": "/contact.rsc",
+      "headers": {
+        "Content-Type": "text/x-component",
+        "Cache-Control": "private, no-store",
+        "Vary": "RSC",
+        "X-Robots-Tag": "noindex"
+      }
+    },
+    {
+      "src": "^/donate$",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "dest": "/donate.rsc",
+      "headers": {
+        "Content-Type": "text/x-component",
+        "Cache-Control": "private, no-store",
+        "Vary": "RSC",
+        "X-Robots-Tag": "noindex"
+      }
+    },
+    {
+      "src": "^/get-help$",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "dest": "/get-help.rsc",
+      "headers": {
+        "Content-Type": "text/x-component",
+        "Cache-Control": "private, no-store",
+        "Vary": "RSC",
+        "X-Robots-Tag": "noindex"
+      }
+    },
+    {
+      "src": "^/volunteer$",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "dest": "/volunteer.rsc",
+      "headers": {
+        "Content-Type": "text/x-component",
+        "Cache-Control": "private, no-store",
+        "Vary": "RSC",
+        "X-Robots-Tag": "noindex"
+      }
+    },
+    {
+      "src": "^/soupersupper$",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "dest": "/soupersupper.rsc",
+      "headers": {
+        "Content-Type": "text/x-component",
+        "Cache-Control": "private, no-store",
+        "Vary": "RSC",
+        "X-Robots-Tag": "noindex"
+      }
+    },
+    {
+      "src": "^/souper-supper$",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "dest": "/souper-supper.rsc",
+      "headers": {
+        "Content-Type": "text/x-component",
+        "Cache-Control": "private, no-store",
+        "Vary": "RSC",
+        "X-Robots-Tag": "noindex"
+      }
+    },
+    {
+      "src": "^/event-details/souper-supper$",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "dest": "/event-details/souper-supper.rsc",
+      "headers": {
+        "Content-Type": "text/x-component",
+        "Cache-Control": "private, no-store",
+        "Vary": "RSC",
+        "X-Robots-Tag": "noindex"
+      }
     }
   ]
 }
