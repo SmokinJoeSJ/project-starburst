@@ -1,6 +1,6 @@
 # Environment and integration safety
 
-Inspected September 9, 2026. Environment files, relevant process variables, source, dependencies, and hosting files were inspected without displaying secret values. No existing application credential variables or .env files were found. Provider dashboards were not available.
+Inspected September 9, 2026. Environment files, relevant process variables, source, dependencies, and hosting configuration were inspected by name without displaying secret values. The connected Vercel project has no custom application environment variables; provider-managed build variables are enabled. CLI linking generated ignored .env.local with VERCEL_OIDC_TOKEN for tooling. It is not an application variable to copy into Preview settings. Payment/email dashboards remain outside this audit.
 
 ## Names and scopes
 

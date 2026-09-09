@@ -10,7 +10,7 @@ PLM's first client-site workflow, built from the existing [Project Starburst Wix
 | ---------------------------- | ------------- | ---------------------------------------------------------- |
 | Production (reserved in Git) | main          | projectstarburst.org; currently Wix, with www as canonical |
 | Staging                      | redesign-2026 | preview.projectstarburst.org once configured               |
-| Feature work                 | feature/*     | Unique Vercel Preview deployment once configured           |
+| Feature work                 | feature/*     | Unique Vercel Preview deployment           |
 
 During redesign: _*feature/* → PR → redesign-2026_*. Use `gh pr create --base redesign-2026`. Review before merging; do not routinely push straight to the integration branch.
 
@@ -42,7 +42,7 @@ React 19, TypeScript, Vinext on Vite, Tailwind, and the existing Sites/Cloudflar
 
 The existing build and .openai/hosting.json remain intact. The additional static export uses vercel.json, npm run build:vercel, and dist/client. It includes HTML and RSC navigation routing, generated robots/sitemap, and legacy PDF redirects. Adding server APIs, actions, authentication, or a CMS will require a reviewed hosting change.
 
-No linked Vercel project or working Vercel preview has been verified. [Configure GitHub, Vercel, and DNS manually](docs/vercel-setup.md) before treating the stable staging URL as available.
+The Vercel project project-starburst is connected under platinum-luxe-media. Git-triggered feature and integration Previews are verified. Use the [stable redesign branch preview](https://project-starburst-git-redesign-2026-platinum-luxe-media.vercel.app) with authorized Vercel access until preview.projectstarburst.org is configured. See [hosted verification](docs/staging-verification.md) and [remaining owner actions](docs/vercel-setup.md), including the dashboard guard for old main.
 
 ## Integrations and review boundaries
 
@@ -60,4 +60,4 @@ GitHub Actions validates PR targets, lint, TypeScript, safety tests, and both bu
 
 Lint covers maintained site and workflow code. The pre-existing generated components/ui catalog and hooks/use-mobile.ts are excluded from lint because their baseline includes compiler and accessibility wrapper diagnostics; TypeScript still checks them. The Next Image recommendation is disabled because this build serves locally optimized static images. No dependency versions or public assets were changed.
 
-The [original migration notes](docs/migration-notes.md) describe the first rebuild. The current workflow and safety audit supersede their deployment assumptions. Actual Vercel-hosted behavior, viewport review, and provider delivery tests remain owner review steps.
+The [original migration notes](docs/migration-notes.md) describe the first rebuild. The current workflow and safety audit supersede their deployment assumptions. Hosted HTTP routes, React navigation, assets, and SEO have been checked. Viewport/interaction review and provider delivery tests remain owner review steps.
