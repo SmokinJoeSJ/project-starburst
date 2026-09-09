@@ -6,6 +6,8 @@ import { siteConfig } from '@/lib/site-config';
 import { routeMetadata } from '@/lib/seo';
 import { PageHero, TextSection } from '@/components/page-parts';
 import { ContactForm } from '@/components/contact-form';
+import { organization } from '@/lib/organization';
+import { CtaLink } from '@/components/cta';
 export const metadata = { ...routeMetadata('/contact'), title: 'Contact' };
 export default function Page() {
   return (
@@ -22,31 +24,34 @@ export default function Page() {
         </p>
       </PageHero>
       <TextSection title="Our Location" className="location-section">
-        <p>📍 Project Starburst 120 S. State Street Big Rapids, MI 49307</p>
+        <p>
+          {organization.name} · {organization.address.full}
+        </p>
         <div className="location-card">
           <div>
             <p>
-              Project Starburst
+              {organization.name}
               <br />
-              120 S. State Street
+              {organization.address.street}
               <br />
-              Big Rapids, MI 49307
+              {organization.address.city}, {organization.address.state}{' '}
+              {organization.address.zip}
             </p>
-            <p>
-              Located in the United Church of Big Rapids. Please use the parking
-              lot door and take the elevator to the bottom floor.
-            </p>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=Project+Starburst+120+S+State+St+Big+Rapids+MI"
+            <p>{organization.address.entry}</p>
+            <CtaLink
+              variant="text"
+              icon="external"
+              href={organization.directions}
               target="_blank"
               rel="noreferrer"
             >
-              Get directions ↗
-            </a>
+              Get Directions
+              <span className="sr-only"> (opens in a new tab)</span>
+            </CtaLink>
           </div>
           <iframe
             title="Map showing Project Starburst at 120 S. State Street, Big Rapids"
-            src="https://maps.google.com/maps?q=Project%20Starburst%20120%20S%20State%20Street%20Big%20Rapids%20MI&t=m&z=16&output=embed&iwloc=near"
+            src={organization.mapEmbed}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
@@ -54,7 +59,9 @@ export default function Page() {
       </TextSection>
       <TextSection title="Phone">
         <p>
-          <a href="tel:+12317965342">(231) 796-5342</a>
+          <CtaLink href={organization.phone.href} variant="text" icon="phone">
+            {organization.phone.display}
+          </CtaLink>
         </p>
         <p>
           If you have questions or need more information about our services,
@@ -63,7 +70,9 @@ export default function Page() {
       </TextSection>
       <TextSection title="Email">
         <p>
-          <a href="mailto:br@projectstarburst.org">br@projectstarburst.org</a>
+          <CtaLink href={organization.emailHref} variant="text" icon="email">
+            {organization.email}
+          </CtaLink>
         </p>
         <p>
           For general inquiries or to reach a specific department, send us an
@@ -72,9 +81,9 @@ export default function Page() {
       </TextSection>
       <TextSection title="Operating Hours">
         <p>
-          Monday- Wednesday- Friday
+          {organization.hours.days}
           <br />
-          10 AM – 4 PM
+          {organization.hours.time}
         </p>
       </TextSection>
       <ContactForm
@@ -85,7 +94,7 @@ export default function Page() {
         <p>Stay updated and connected with us on our social media channels!</p>
         <a
           className="social-link"
-          href="https://www.facebook.com/ProjectStarburst"
+          href={organization.facebook}
           target="_blank"
           rel="noreferrer"
           aria-label="Project Starburst on Facebook"

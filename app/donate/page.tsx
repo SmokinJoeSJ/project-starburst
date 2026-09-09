@@ -1,132 +1,194 @@
 import { routeMetadata } from '@/lib/seo';
-import Link from 'next/link';
-import { PageHero, TextSection, ContactLines } from '@/components/page-parts';
+import {
+  organization,
+  acceptedGoods,
+  reportedImpact,
+} from '@/lib/organization';
+import { CtaLink } from '@/components/cta';
+import {
+  ActionHero,
+  PantryDetails,
+  ActionClosing,
+} from '@/components/action-page';
 import { DonationForm } from '@/components/donation-form';
-export const metadata = { ...routeMetadata('/donate'), title: 'Donate' };
+import { ShoppingBasket, Droplets, Baby, Package } from 'lucide-react';
+
+export const metadata = {
+  ...routeMetadata('/donate'),
+  title: 'Donate',
+  description:
+    'Support Project Starburst with a donation of food, hygiene products, or funds. Find donation options and drop-off hours at our Big Rapids pantry.',
+};
+const goodsIcons = [ShoppingBasket, Droplets, Baby, Package];
 export default function Page() {
   return (
-    <main id="main">
-      <PageHero
+    <main id="main" className="action-page action-donate">
+      <ActionHero
+        eyebrow="DONATE"
         title={
           <>
-            Donate to
+            Help keep the
             <br />
-            Project
-            <br />
-            Starburst
+            pantry stocked.
           </>
+        }
+        description={
+          'Food, hygiene products, and everyday essentials. Your generosity helps neighbors in ' +
+          organization.counties +
+          ' get through difficult times.'
         }
         image="/assets/11062b_e2da2b9b2d074ff8ab9a452d009d5c7f~mv2.jpg"
-        alt="Neighbors donating essential supplies"
-      />
-      <div className="donation-badge">
-        <img
-          src="/assets/ffdbc4_8ae35597893b416c8dd1e74db2f2b23e~mv2.png"
-          alt="Support your local food pantry"
-          width="155"
-          height="155"
-        />
-      </div>
-      <DonationForm />
-      <TextSection title="Make a Difference Today" className="wide-heading">
-        <p>
-          Your support directly helps families in need by keeping our pantry
-          stocked with food and essential supplies. Because we are
-          community-based and locally funded, 100% of your donation goes toward
-          feeding and assisting neighbors in Mecosta and Osceola counties.
-        </p>
-        <p>💙 Every donation makes an impact. Thank you for your generosity!</p>
-      </TextSection>
-      <TextSection title="Ways to Give">
-        <h3 className="body-heading">💳 Donate Online</h3>
-        <p>
-          Make a secure online donation to support our mission. Every dollar
-          helps provide food, hygiene items, and assistance to those in need.
-        </p>
-        <a className="pill" href="#donation">
-          Donate Now
-        </a>
-      </TextSection>
-      <TextSection title="📦 Donate Goods">
-        <p>
-          Help stock our pantry by donating non-perishable food and personal
-          care items.
-        </p>
-        <p>✅ We Accept:</p>
-        <ul className="plain-list">
-          <li>Canned &amp; dry food items</li>
-          <li>Toiletries (soap, shampoo, toothpaste, etc.)</li>
-          <li>Baby supplies (diapers, wipes, formula)</li>
-          <li>Household essentials (cleaning products, paper goods)</li>
-        </ul>
-        <p>
-          📍 Drop-Off Location:
-          <br />
-          120 S. State Street, Big Rapids, MI 49307
-          <br />
-          (Located inside the United Church of Big Rapids – Use the parking lot
-          door &amp; take the elevator to the bottom floor.)
-        </p>
-        <p>
-          🕒 Drop-Off Hours:
-          <br />
-          Monday, Wednesday &amp; Friday | 10 AM – 4 PM
-        </p>
-        <p>
-          📞 Questions? Call us at <a href="tel:+12317965342">(231) 796-5342</a>
-        </p>
-      </TextSection>
-      <TextSection title="🤝 Other Ways to Help">
-        <p>
-          💡 Employer Matching – Check if your
-          <br />
-          employer will match your donation!
-        </p>
-        <p className="spaced">
-          📢 Fundraise for Us – Start a fundraiser to help support our mission.
-        </p>
-        <p className="spaced">
-          🎁 Planned Giving – Leave a lasting impact with a legacy gift.
-        </p>
-        <p>Interested in alternative ways to give?</p>
-        <Link className="pill" href="/contact">
-          Contact Us Here
-        </Link>
-      </TextSection>
-      <TextSection title="Your Support in Action">
-        <p>Thanks to generous donors like you, we’ve helped:</p>
-        <p>
-          🥫 574,000+ Total Meals Provided
-          <br />
-          👨‍👩‍👧‍👦 3,561 Families Fed
-          <br />👶 705 Clients Assisted
-        </p>
-        <p>💙 Join us in the fight against hunger. Every donation counts!</p>
-      </TextSection>
-      <TextSection
-        title={
-          <>
-            Thank You for Your
-            <br />
-            Support!
-          </>
-        }
+        alt="Volunteers handing donated supplies to people at a collection table"
+        caption="From one neighbor to another. Every contribution matters."
       >
-        <p>
-          Project Starburst is a 501(c)(3) nonprofit organization. Your
-          donations are tax-deductible to the fullest extent of the law.
-        </p>
-        <ContactLines />
-        <p className="spaced">
-          <a
-            href="https://www.facebook.com/ProjectStarburst"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Follow Us on Social Media
-          </a>
-        </p>
-      </TextSection>
+        <CtaLink href="#donation">Donate Online</CtaLink>
+        <CtaLink href="#donate-goods" variant="secondary">
+          Donate Goods
+        </CtaLink>
+      </ActionHero>
+
+      <section
+        className="action-donation-layout action-container"
+        aria-labelledby="giving-intro"
+      >
+        <div className="action-donation-intro">
+          <p className="action-eyebrow">GIVE CLOSE TO HOME</p>
+          <h2 id="giving-intro">
+            Your gift.
+            <br />
+            Your community.
+          </h2>
+          <p>
+            Your support keeps our pantry stocked with food and essential
+            supplies for families in need.
+          </p>
+          <p>{organization.localGivingStatement}</p>
+          <img
+            src="/assets/ffdbc4_8ae35597893b416c8dd1e74db2f2b23e~mv2.png"
+            alt="From one neighbor to another — support your local food pantry"
+            width="168"
+            height="108"
+            loading="lazy"
+          />
+        </div>
+        <DonationForm />
+      </section>
+
+      <section
+        id="donate-goods"
+        tabIndex={-1}
+        className="action-process"
+        aria-labelledby="goods-title"
+      >
+        <div className="action-container">
+          <div className="action-section-heading">
+            <p className="action-eyebrow">DONATE GOODS</p>
+            <h2 id="goods-title">
+              Everyday items.
+              <br />
+              An everyday difference.
+            </h2>
+            <p>
+              Help stock the pantry with non-perishable food and personal care
+              items. These are the items we accept.
+            </p>
+          </div>
+          <ul className="action-goods-grid">
+            {acceptedGoods.map((group, index) => {
+              const Icon = goodsIcons[index];
+              return (
+                <li key={group.title}>
+                  <Icon aria-hidden="true" />
+                  <h3>{group.title}</h3>
+                  <p>{group.items}</p>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+      <PantryDetails id="drop-off" title="Bring your donation by." dropOff />
+
+      <section
+        className="action-other-giving action-container"
+        aria-labelledby="other-giving"
+      >
+        <div className="action-section-heading">
+          <p className="action-eyebrow">OTHER WAYS TO GIVE</p>
+          <h2 id="other-giving">Make your support go further.</h2>
+        </div>
+        <div className="action-service-grid">
+          <article>
+            <h3>Employer matching</h3>
+            <p>Check whether your employer will match your donation.</p>
+          </article>
+          <article>
+            <h3>Fundraise for Starburst</h3>
+            <p>
+              Start a fundraiser to help support the pantry and our neighbors.
+            </p>
+          </article>
+          <article>
+            <h3>Planned giving</h3>
+            <p>Leave a lasting impact through a legacy gift.</p>
+          </article>
+        </div>
+        <CtaLink href="/contact" variant="text">
+          Contact Project Starburst
+        </CtaLink>
+      </section>
+
+      <section className="action-impact-band" aria-labelledby="giving-impact">
+        <div className="action-container">
+          <div>
+            <p className="action-eyebrow">YOUR SUPPORT IN ACTION</p>
+            <h2 id="giving-impact">Neighbors make this possible.</h2>
+            <p>Thank you for helping provide food and support close to home.</p>
+          </div>
+          <div>
+            <dl className="action-reported-stats">
+              <div>
+                <dt>Total meals provided</dt>
+                <dd>{reportedImpact.mealsWithPlus}</dd>
+              </div>
+              <div>
+                <dt>Families fed</dt>
+                <dd>{reportedImpact.families}</dd>
+              </div>
+              <div>
+                <dt>Clients assisted</dt>
+                <dd>{reportedImpact.clients}</dd>
+              </div>
+            </dl>
+            <p className="action-caption">
+              Previously reported by Project Starburst. A reporting year was not
+              specified.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        className="action-tax-note action-container"
+        aria-labelledby="organization-note"
+      >
+        <h2 id="organization-note">Thank you for your support.</h2>
+        <p>{organization.taxStatement}</p>
+      </section>
+      <ActionClosing title="Have a question about giving?">
+        <p>We’d be glad to help you find a way to support the pantry.</p>
+      </ActionClosing>
+      <div className="action-follow action-container">
+        <CtaLink
+          href={organization.facebook}
+          variant="text"
+          icon="external"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Follow Project Starburst on Facebook
+          <span className="sr-only"> (opens in a new tab)</span>
+        </CtaLink>
+      </div>
     </main>
   );
 }

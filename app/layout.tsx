@@ -2,6 +2,7 @@ import { siteMetadata } from '@/lib/seo';
 import type { Metadata } from 'next';
 import { Header, Footer } from '@/components/site-shell';
 import './globals.css';
+import './actions.css';
 export const metadata: Metadata = {
   title: {
     default: 'Project Starburst | Food Pantry in Big Rapids, MI',

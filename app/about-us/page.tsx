@@ -1,5 +1,6 @@
 import { routeMetadata } from '@/lib/seo';
-import Link from 'next/link';
+import { CtaLink } from '@/components/cta';
+import { organization, reportedImpact } from '@/lib/organization';
 import { PageHero, TextSection } from '@/components/page-parts';
 import { FacebookBand } from '@/components/site-shell';
 export const metadata = { ...routeMetadata('/about-us'), title: 'About Us' };
@@ -27,10 +28,12 @@ export default function Page() {
         </p>
       </PageHero>
       <div className="quick-contact">
-        <p>📍 120 S. State Street, Big Rapids, MI</p>
-        <a href="tel:+12317965342">📞 (231) 796-5342</a>
-        <p>🕘 Monday- Wednesday- Friday | 10 AM – 4 PM</p>
-        <a href="mailto:br@projectstarburst.org">📧 br@projectstarburst.org</a>
+        <p>{organization.address.full}</p>
+        <a href={organization.phone.href}>{organization.phone.display}</a>
+        <p>
+          {organization.hours.days} | {organization.hours.time}
+        </p>
+        <a href={organization.emailHref}>{organization.email}</a>
       </div>
       <TextSection title="What We Do">
         <h3 className="large-subheading">📦 Monthly Grocery Program</h3>
@@ -55,7 +58,8 @@ export default function Page() {
           </p>
           <p>✅ Diaper Bank – For qualified children</p>
           <p>
-            📞 Call ahead: <a href="tel:+12317965342">(231) 796-5342</a>
+            📞 Call ahead:{' '}
+            <a href={organization.phone.href}>{organization.phone.display}</a>
           </p>
           <br />
           <p>✅ Referrals to Local Agencies:</p>
@@ -79,12 +83,12 @@ export default function Page() {
             volunteers, and partners, we have helped:
           </p>
           <p>
-            🆕 705 Clients
+            🆕 {reportedImpact.clients} Clients
             <br />
-            👨‍👩‍👧‍👦 14,350 Individuals Served
+            👨‍👩‍👧‍👦 {reportedImpact.individuals} Individuals Served
             <br />
-            🍽️ 3,561 Families Fed
-            <br />🥫 574,000 Total Meals Provided
+            🍽️ {reportedImpact.families} Families Fed
+            <br />🥫 {reportedImpact.meals} Total Meals Provided
           </p>
         </div>
       </TextSection>
@@ -105,7 +109,7 @@ export default function Page() {
         <p>
           Connie Koepke- Pantry Manager
           <br />
-          <a href="mailto:br@projectstarburst.org">br@projectstarburst.org</a>
+          <a href={organization.emailHref}>{organization.email}</a>
         </p>
         <p className="spaced">Allan Bauman- Assistant Pantry Manager</p>
         <p className="spaced">Board of Directors</p>
@@ -135,12 +139,10 @@ export default function Page() {
           cause.
         </p>
         <div className="button-row">
-          <Link className="pill" href="/donate">
-            Donate Now
-          </Link>
-          <Link className="pill" href="/volunteer">
+          <CtaLink href="/donate">Donate</CtaLink>
+          <CtaLink href="/volunteer" variant="secondary">
             Volunteer
-          </Link>
+          </CtaLink>
         </div>
       </TextSection>
       <TextSection title="Non Discrimination Statement" className="wide-copy">
@@ -150,14 +152,16 @@ export default function Page() {
           Read our full Non-Discrimination Statement to learn more about our
           policies and practices.
         </p>
-        <a
-          className="pill"
+        <CtaLink
+          variant="secondary"
+          icon="external"
           href="/documents/non-discrimination-statement.pdf"
           target="_blank"
           rel="noreferrer"
         >
-          Learn more
-        </a>
+          Read Non-Discrimination Statement (PDF)
+          <span className="sr-only"> (opens in a new tab)</span>
+        </CtaLink>
       </TextSection>
       <FacebookBand />
     </main>
