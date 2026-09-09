@@ -40,6 +40,13 @@ export default defineConfig(async () => {
     return {
       css: { postcss: { plugins: [tailwindcss()] } },
       plugins: [vinext()],
+      // The client router dynamically imports named navigation exports. Keep
+      // their facade intact when the static build combines shared CTA chunks.
+      environments: {
+        client: {
+          build: { rolldownOptions: { preserveEntrySignatures: 'strict' as const } },
+        },
+      },
     };
   }
 

@@ -42,6 +42,12 @@ The original 47-file asset inventory remains the integrity baseline. The volunte
 - Public tel/mailto links, directions, and Facebook remain real external actions. Automated review verifies their destinations without calling, sending email, or submitting data to external services.
 - No new environment variable is required. Do not configure a live payment link or production form recipient in Preview.
 
+## Vercel navigation compatibility
+
+The feature exposed a compiled-navigation failure: direct HTML and RSC requests succeeded, but a Link click failed because the dynamic navigation import had lost its named exports when bundled into the client entry. The Vercel-only client build now uses preserveEntrySignatures: strict. This preserves the router namespace while keeping code splitting and the existing RSC routes. The Cloudflare target, provider settings, dependency versions, production guards, and domains are unchanged. See [Rolldown’s entry-signature behavior](https://rolldown.rs/reference/InputOptions.preserveEntrySignatures).
+
+The corrected static output was served locally and exercised in a real browser: homepage Get Help and header Donate, Volunteer, About, and Contact all navigated with valid RSC responses and no console/page errors. This catches a failure that a dev-server check or HTTP-only export check would miss.
+
 ## Validation completed
 
 - npm run lint and npm run type-check: passed.
