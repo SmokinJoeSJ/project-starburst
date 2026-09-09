@@ -1,3 +1,5 @@
+import { CtaLink } from '@/components/cta';
+import { organization } from '@/lib/organization';
 import type { ReactNode } from 'react';
 export function PageHero({
   title,
@@ -43,14 +45,13 @@ export function TextSection({
 }
 export function ContactLines() {
   return (
-    <>
-      <p>
-        📞 Phone: <a href="tel:+12317965342">(231) 796-5342</a>
-      </p>
-      <p>
-        📧 Email:{' '}
-        <a href="mailto:br@projectstarburst.org">br@projectstarburst.org</a>
-      </p>
-    </>
+    <div className="contact-lines">
+      <CtaLink href={organization.phone.href} variant="text" icon="phone">
+        {organization.phone.display}
+      </CtaLink>
+      <CtaLink href={organization.emailHref} variant="text" icon="email">
+        {organization.email}
+      </CtaLink>
+    </div>
   );
 }

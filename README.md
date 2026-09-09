@@ -1,6 +1,6 @@
 # Project Starburst
 
-PLM's first client-site workflow, built from the existing [Project Starburst Wix site](https://www.projectstarburst.org/). This task prepares review and deployment infrastructure; it does not redesign the pages or launch the replacement.
+PLM's first client-site workflow, built from the existing [Project Starburst Wix site](https://www.projectstarburst.org/). The repository supports reviewed feature development and Vercel staging while the existing Wix website stays live.
 
 **The live website is still on Wix.** The repository's main branch contains the initial rebuild, not Wix's backend or payment/submission history. Production DNS and the existing live implementation stay unchanged until Joe approves a separate launch.
 
@@ -17,6 +17,10 @@ During redesign: _*feature/* → PR → redesign-2026_*. Use `gh pr create --bas
 Final launch: separately approved **redesign-2026 → main PR**. Setup includes guards against automatic main deployment. Ordinary feature review does not authorize production deployment, domain reassignment, or DNS cutover.
 
 Joe can review from a phone, tablet, or browser without running the project locally. Send clients the stable staging URL after configuration; use a feature preview only when intentionally reviewing that feature. Follow the [remote workflow](docs/development-workflow.md) and [owner setup guide](docs/vercel-setup.md).
+
+## Core action page redesign
+
+The current feature redesigns Get Help, Donate, and Volunteer and establishes shared Starburst CTAs. The homepage receives a CTA-only pass; About and Contact receive shared data/action updates. See the [feature review guide](docs/core-actions-review.md) for implementation scope, content sources, preserved payment/application behavior, and facts requiring owner review. Review its feature Preview before merging into redesign-2026.
 
 ## Commands
 

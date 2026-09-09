@@ -5,15 +5,22 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { siteConfig } from '@/lib/site-config';
+import { organization } from '@/lib/organization';
+import { CtaButton, CtaLink } from '@/components/cta';
 export function DonationForm() {
   // Amount selection belongs to Stripe's customer-chooses-amount checkout.
   // Keep the historical Wix form as an inactive visual reference until connected.
   const link = donationPaymentLink(process.env, siteConfig.stripePaymentLink);
   const preview = !deploymentPolicy(process.env).isProduction;
   return (
-    <section id="donation" className="donation-form-wrap">
-      <div className="site-form">
-        <h2>Donate</h2>
+    <section
+      id="donation"
+      tabIndex={-1}
+      aria-labelledby="donation-title"
+      className="donation-form-wrap"
+    >
+      <div className="site-form action-donation-form">
+        <h2 id="donation-title">Donate online</h2>
         {link ? (
           <>
             <p>
@@ -21,9 +28,15 @@ export function DonationForm() {
                 ? 'Preview: Stripe test checkout only. No real donation will be processed.'
                 : 'Choose your donation amount on our secure Stripe checkout.'}
             </p>
-            <a className="pill" href={link} target="_blank" rel="noreferrer">
+            <CtaLink
+              href={link}
+              icon="external"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Donate with Stripe
-            </a>
+              <span className="sr-only"> (opens in a new tab)</span>
+            </CtaLink>
           </>
         ) : (
           <>
@@ -49,13 +62,16 @@ export function DonationForm() {
             </fieldset>
             <p className="form-note" id="donation-status">
               Online donations will be available soon. To give today, please
-              call (231) 796-5342 or visit our pantry.
+              call {organization.phone.display} or visit our pantry.
             </p>
             <div className="form-actions">
-              <button type="button" className="pill" disabled>
+              <CtaButton type="button" icon="none" disabled>
                 Online donations coming soon
-              </button>
+              </CtaButton>
             </div>
+            <CtaLink href={organization.phone.href} variant="text" icon="phone">
+              Call to discuss your donation
+            </CtaLink>
           </>
         )}
       </div>

@@ -16,6 +16,13 @@
   font-display: swap;
 }
 :root {
+  --sb-gold: #febe10;
+  --sb-ink: #24312b;
+  --sb-muted: #505c54;
+  --sb-cream: #fff6dc;
+  --sb-paper: #f7f8f3;
+  --sb-line: #dce1d7;
+  --sb-ease: cubic-bezier(0.22, 1, 0.36, 1);
   --background: #fff;
   --foreground: #000;
   --card: #fff;
@@ -267,7 +274,7 @@ textarea:focus-visible {
 }
 .impact-grid p {
   font-family: Arial, sans-serif;
-  color: #6e6e6e;
+  color: #626262;
   font-size: 20px;
   line-height: 1.4;
   margin-top: 14px;
@@ -675,7 +682,7 @@ textarea:focus-visible {
 }
 .help-list article p {
   font-family: Arial, sans-serif;
-  color: #6e6e6e;
+  color: #626262;
   font-size: 20px;
   line-height: 1.4;
   margin-top: 10px;

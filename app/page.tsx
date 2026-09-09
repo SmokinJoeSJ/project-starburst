@@ -1,5 +1,6 @@
 import { routeMetadata } from '@/lib/seo';
-import Link from 'next/link';
+import { CtaLink } from '@/components/cta';
+import { organization, reportedImpact } from '@/lib/organization';
 import { FacebookBand } from '@/components/site-shell';
 import { Testimonials } from '@/components/testimonials';
 export const metadata = routeMetadata('/');
@@ -25,9 +26,12 @@ export default function Home() {
             temporarily in need of assistance. Our mission is to serve the
             community with dignity, respect, and compassion.
           </p>
-          <Link className="pill" href="/about-us">
-            Read More
-          </Link>
+          <div className="action-cta-row">
+            <CtaLink href="/get-help">Get Help</CtaLink>
+            <CtaLink href="/about-us" variant="secondary">
+              About Project Starburst
+            </CtaLink>
+          </div>
         </div>
       </section>
       <section className="impact section">
@@ -39,11 +43,11 @@ export default function Home() {
           <div>
             <img src="/assets/icon-9.svg" alt="" width="170" height="155" />
             <h3>Community-driven support since</h3>
-            <p>1971</p>
+            <p>{organization.founded}</p>
           </div>
           <div>
             <img src="/assets/icon-10.svg" alt="" width="170" height="155" />
-            <h3>14,350</h3>
+            <h3>{reportedImpact.individuals}</h3>
             <p>
               Individuals Served
               <br />
@@ -52,7 +56,7 @@ export default function Home() {
           </div>
           <div>
             <img src="/assets/icon-11.svg" alt="" width="170" height="155" />
-            <h3>574,000 +</h3>
+            <h3>{reportedImpact.mealsWithPlus}</h3>
             <p>
               Total Meals Provided
               <br />
@@ -105,15 +109,13 @@ export default function Home() {
           you are part of the change.
         </p>
         <div className="button-row">
-          <Link href="/donate" className="pill">
-            Donate Now
-          </Link>
-          <Link href="/volunteer" className="pill">
+          <CtaLink href="/get-help">Get Help</CtaLink>
+          <CtaLink href="/donate" variant="secondary">
+            Donate
+          </CtaLink>
+          <CtaLink href="/volunteer" variant="secondary">
             Volunteer
-          </Link>
-          <Link href="/get-help" className="pill">
-            Get Help
-          </Link>
+          </CtaLink>
         </div>
       </section>
       <FacebookBand />

@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
+import { CtaLink } from '@/components/cta';
+import { organization } from '@/lib/organization';
 import {
   Sheet,
   SheetTrigger,
@@ -10,19 +12,53 @@ import {
   SheetTitle,
   SheetDescription,
 } from '@/components/ui/sheet';
+
 export const navigation = [
   ['Get Help', '/get-help'],
-  ['About Us', '/about-us'],
-  ['Souper Supper', '/soupersupper'],
-  ['Volunteer', '/volunteer'],
-  ['Contact', '/contact'],
   ['Donate', '/donate'],
-];
+  ['Volunteer', '/volunteer'],
+  ['About', '/about-us'],
+  ['Contact', '/contact'],
+  ['Souper Supper', '/soupersupper'],
+] as const;
+
+function NavigationLinks({
+  pathname,
+  close,
+}: {
+  pathname?: string;
+  close?: () => void;
+}) {
+  return (
+    <>
+      {navigation.map(([name, href]) => {
+        const current = pathname === href ? 'page' : undefined;
+        return name === 'Get Help' || name === 'Donate' ? (
+          <CtaLink
+            key={href}
+            href={href}
+            variant={name === 'Get Help' ? 'primary' : 'secondary'}
+            icon="none"
+            aria-current={current}
+            onClick={close}
+          >
+            {name}
+          </CtaLink>
+        ) : (
+          <Link key={href} href={href} aria-current={current} onClick={close}>
+            {name}
+          </Link>
+        );
+      })}
+    </>
+  );
+}
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const light = ['/get-help', '/donate', '/volunteer'].includes(pathname);
   return (
-    <header className="site-header">
+    <header className={'site-header' + (light ? ' site-header--light' : '')}>
       <Link href="/" aria-label="Project Starburst home">
         <img
           className="logo"
@@ -33,39 +69,30 @@ export function Header() {
         />
       </Link>
       <nav className="desktop-nav" aria-label="Main navigation">
-        {navigation.map(([name, href]) => (
-          <Link
-            key={href}
-            href={href}
-            aria-current={pathname === href ? 'page' : undefined}
-          >
-            {name}
-          </Link>
-        ))}
+        <NavigationLinks pathname={pathname} />
       </nav>
-      <Sheet open={open} onOpenChange={setOpen}>
-        <SheetTrigger className="mobile-menu" aria-label="Open navigation">
-          <Menu size={28} />
-        </SheetTrigger>
-        <SheetContent className="mobile-panel">
-          <SheetTitle>Project Starburst</SheetTitle>
-          <SheetDescription>
-            Neighbors helping neighbors since 1971.
-          </SheetDescription>
-          <nav aria-label="Mobile navigation">
-            {navigation.map(([name, href]) => (
-              <Link
-                key={href}
-                href={href}
-                onClick={() => setOpen(false)}
-                aria-current={pathname === href ? 'page' : undefined}
-              >
-                {name}
-              </Link>
-            ))}
-          </nav>
-        </SheetContent>
-      </Sheet>
+      <div className="header-controls">
+        <CtaLink className="header-quick-help" href="/get-help" icon="none">
+          Get Help
+        </CtaLink>
+        <Sheet open={open} onOpenChange={setOpen}>
+          <SheetTrigger className="mobile-menu" aria-label="Open navigation">
+            <Menu size={28} aria-hidden="true" />
+          </SheetTrigger>
+          <SheetContent className="mobile-panel">
+            <SheetTitle>Project Starburst</SheetTitle>
+            <SheetDescription>
+              Neighbors helping neighbors since {organization.founded}.
+            </SheetDescription>
+            <nav aria-label="Mobile navigation">
+              <NavigationLinks
+                pathname={pathname}
+                close={() => setOpen(false)}
+              />
+            </nav>
+          </SheetContent>
+        </Sheet>
+      </div>
     </header>
   );
 }
@@ -76,14 +103,16 @@ export function FacebookBand() {
         <div>
           <h2>Follow Project Starburst on Facebook</h2>
           <p>Get updates on hours, events, and announcements.</p>
-          <a
-            className="pill"
-            href="https://www.facebook.com/ProjectStarburst"
+          <CtaLink
+            href={organization.facebook}
+            variant="secondary"
+            icon="external"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
-            Follow Us
-          </a>
+            Follow on Facebook
+            <span className="sr-only"> (opens in a new tab)</span>
+          </CtaLink>
         </div>
         <img src="/assets/facebook.svg" alt="" width="125" height="125" />
       </div>
@@ -104,11 +133,7 @@ export function Footer() {
           />
         </Link>
         <nav aria-label="Footer navigation">
-          {navigation.map(([name, href]) => (
-            <Link key={href} href={href}>
-              {name}
-            </Link>
-          ))}
+          <NavigationLinks />
         </nav>
       </div>
       <div className="footer-grid">
@@ -120,25 +145,27 @@ export function Footer() {
             other services as well.
           </p>
           <address>
-            <p>Hours: Monday- Wednesday- Friday, 10am - 4pm.</p>
             <p>
-              Phone: <a href="tel:+12317965342">(231) 796-5342.</a>
+              Hours: {organization.hours.days}, {organization.hours.time}.
+            </p>
+            <p>
+              Phone:{' '}
+              <a href={organization.phone.href}>{organization.phone.display}</a>
             </p>
             <p>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Project+Starburst+120+S+State+St+Big+Rapids+MI"
+                href={organization.directions}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
-                Address: 120 S. State Street, P.O. Box 313, Big Rapids, MI
-                49307.
+                Address: {organization.address.street},{' '}
+                {organization.address.mailingBox}, {organization.address.city},{' '}
+                {organization.address.state} {organization.address.zip}
+                <span className="sr-only"> (map opens in a new tab)</span>
               </a>
             </p>
             <p>
-              Email:{' '}
-              <a href="mailto:br@projectstarburst.org">
-                br@projectstarburst.org.
-              </a>
+              Email: <a href={organization.emailHref}>{organization.email}</a>
             </p>
           </address>
         </div>

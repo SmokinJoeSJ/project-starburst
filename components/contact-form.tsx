@@ -1,4 +1,6 @@
 'use client';
+import { CtaButton } from '@/components/cta';
+import { organization } from '@/lib/organization';
 import { useState, type SyntheticEvent } from 'react';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -37,7 +39,11 @@ export function ContactForm({
       result.mailto
         ? preview
           ? 'Your email app should open a draft addressed to the test inbox. Nothing has been sent automatically.'
-          : 'Your email app should open with your message. Please review it and send it there. If it does not open, email br@projectstarburst.org or call (231) 796-5342.'
+          : 'Your email app should open with your message. Please review it and send it there. If it does not open, email ' +
+            organization.email +
+            ' or call ' +
+            organization.phone.display +
+            '.'
         : 'Preview draft prepared below. No email was sent.',
     );
   }
@@ -97,9 +103,9 @@ export function ContactForm({
             : 'This opens your email app so you can review and send your message.'}
         </p>
         <div className="form-actions">
-          <button className="pill" type="submit" aria-describedby="email-help">
+          <CtaButton type="submit" aria-describedby="email-help">
             {preview && !recipient ? 'Preview message' : 'Continue in email'}
-          </button>
+          </CtaButton>
         </div>
         <output className="form-status" style={{ display: 'block' }}>
           {status}
