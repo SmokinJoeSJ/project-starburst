@@ -44,7 +44,7 @@ export default function Page() {
           ' get the support they need.'
         }
         image="/assets/1691a921dfec4d4f8637b1c7ffa2528a.jpg"
-        alt="Volunteers working together to sort donated food"
+        alt="People sorting food together outdoors"
         caption="There’s more than one way to make a difference."
       >
         <CtaLink
@@ -194,10 +194,9 @@ export default function Page() {
             {organization.volunteerApplication.communityService}
           </p>
           <p>
-            <strong>Before you plan your visit:</strong> The application lists
-            Monday–Friday hours. Please call to confirm volunteer availability;
-            public pantry hours are {organization.hours.days},{' '}
-            {organization.hours.time}.
+            <strong>Before you plan your visit:</strong> Please call to confirm
+            volunteer availability; public pantry hours are{' '}
+            {organization.hours.days}, {organization.hours.time}.
           </p>
         </div>
       </section>

@@ -2,7 +2,9 @@ import { siteMetadata } from '@/lib/seo';
 import type { Metadata } from 'next';
 import { Header, Footer } from '@/components/site-shell';
 import './globals.css';
+import './starburst.css';
 import './actions.css';
+import './brand-pages.css';
 export const metadata: Metadata = {
   title: {
     default: 'Project Starburst | Food Pantry in Big Rapids, MI',
@@ -24,7 +26,7 @@ export default function RootLayout({
         </a>
         <Header />
         {children}
-        <Footer />
+        <Footer year={new Date().getUTCFullYear()} />
       </body>
     </html>
   );

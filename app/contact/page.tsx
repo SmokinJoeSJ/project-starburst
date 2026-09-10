@@ -4,104 +4,158 @@ import {
 } from '@/lib/deployment-policy.mjs';
 import { siteConfig } from '@/lib/site-config';
 import { routeMetadata } from '@/lib/seo';
-import { PageHero, TextSection } from '@/components/page-parts';
 import { ContactForm } from '@/components/contact-form';
 import { organization } from '@/lib/organization';
 import { CtaLink } from '@/components/cta';
-export const metadata = { ...routeMetadata('/contact'), title: 'Contact' };
-export default function Page() {
+import { OrganizationAddress, SectionHeading } from '@/components/starburst';
+
+export const metadata = {
+  ...routeMetadata('/contact'),
+  title: 'Contact',
+  description:
+    'Contact Project Starburst in Big Rapids about food assistance, donations, or volunteering. Find pantry hours, visiting and mailing addresses, and directions.',
+};
+export default function ContactPage() {
   return (
-    <main id="main">
-      <PageHero
-        title="Contact Us"
-        image="/assets/11062b_841a038a35fe4e4da9c2871f63caed93~mv2.jpg"
-        alt="Volunteers collecting donations"
+    <main id="main" className="starburst-page contact-page">
+      <section
+        className="contact-intro sb-shell"
+        aria-labelledby="contact-title"
       >
+        <p className="sb-eyebrow">CONTACT PROJECT STARBURST</p>
+        <h1 id="contact-title">
+          Let’s get you
+          <br />
+          to the right place.
+        </h1>
         <p>
-          We&apos;d love to hear from you! Whether you have a question,
-          suggestion, or need assistance, we&apos;re here to help. Get in touch
-          with us using the information below.
+          Have a question about assistance, donations, or volunteering? We’re
+          here to help you find your next step.
         </p>
-      </PageHero>
-      <TextSection title="Our Location" className="location-section">
-        <p>
-          {organization.name} · {organization.address.full}
-        </p>
-        <div className="location-card">
+      </section>
+      <section
+        className="contact-essentials sb-shell"
+        aria-label="Contact information and public hours"
+      >
+        <div className="contact-direct">
           <div>
-            <p>
-              {organization.name}
-              <br />
-              {organization.address.street}
-              <br />
-              {organization.address.city}, {organization.address.state}{' '}
-              {organization.address.zip}
-            </p>
-            <p>{organization.address.entry}</p>
-            <CtaLink
-              variant="text"
-              icon="external"
-              href={organization.directions}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Get Directions
-              <span className="sr-only"> (opens in a new tab)</span>
+            <h2>Give us a call</h2>
+            <CtaLink href={organization.phone.href} variant="text" icon="phone">
+              {organization.phone.display}
+            </CtaLink>
+            <p>Call during public pantry hours.</p>
+          </div>
+          <div>
+            <h2>Send an email</h2>
+            <CtaLink href={organization.emailHref} variant="text" icon="email">
+              {organization.email}
             </CtaLink>
           </div>
+        </div>
+        <div className="contact-hours">
+          <h2>Public pantry hours</h2>
+          <p>
+            {organization.hours.days}
+            <strong>{organization.hours.time}</strong>
+          </p>
+        </div>
+      </section>
+      <section
+        id="visit"
+        tabIndex={-1}
+        className="contact-visit sb-shell"
+        aria-label="Visiting and mailing addresses"
+      >
+        <div className="contact-addresses">
+          <div className="contact-address">
+            <h2>Visit the pantry</h2>
+            <OrganizationAddress />
+          </div>
+          <div className="contact-address">
+            <h2>Mailing address</h2>
+            <OrganizationAddress mailing />
+          </div>
+        </div>
+        <div className="contact-entry">
+          <h2>When you arrive</h2>
+          <p>{organization.address.entry}</p>
+          <CtaLink
+            href={organization.directions}
+            variant="secondary"
+            icon="external"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Directions<span className="sr-only"> (opens in a new tab)</span>
+          </CtaLink>
+        </div>
+        <details className="contact-map">
+          <summary>Show map of the pantry</summary>
           <iframe
-            title="Map showing Project Starburst at 120 S. State Street, Big Rapids"
+            title="Project Starburst at 120 S. State Street, Big Rapids"
             src={organization.mapEmbed}
+            width="1160"
+            height="300"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
+        </details>
+      </section>
+      <nav
+        className="contact-choice"
+        aria-label="Find the information you need"
+      >
+        <div className="sb-shell">
+          <div>
+            <p>Need assistance?</p>
+            <CtaLink href="/get-help" variant="text">
+              Get Help
+            </CtaLink>
+          </div>
+          <div>
+            <p>Want to give?</p>
+            <CtaLink href="/donate" variant="text">
+              Donate
+            </CtaLink>
+          </div>
+          <div>
+            <p>Have time to share?</p>
+            <CtaLink href="/volunteer" variant="text">
+              Volunteer
+            </CtaLink>
+          </div>
         </div>
-      </TextSection>
-      <TextSection title="Phone">
-        <p>
-          <CtaLink href={organization.phone.href} variant="text" icon="phone">
-            {organization.phone.display}
-          </CtaLink>
-        </p>
-        <p>
-          If you have questions or need more information about our services,
-          feel free to call us during our operating hours.
-        </p>
-      </TextSection>
-      <TextSection title="Email">
-        <p>
-          <CtaLink href={organization.emailHref} variant="text" icon="email">
-            {organization.email}
-          </CtaLink>
-        </p>
-        <p>
-          For general inquiries or to reach a specific department, send us an
-          email, and we&apos;ll get back to you as soon as possible.
-        </p>
-      </TextSection>
-      <TextSection title="Operating Hours">
-        <p>
-          {organization.hours.days}
-          <br />
-          {organization.hours.time}
-        </p>
-      </TextSection>
-      <ContactForm
-        recipient={contactRecipient(process.env, siteConfig.email)}
-        preview={!deploymentPolicy(process.env).isProduction}
-      />
-      <TextSection title="Follow Us">
-        <p>Stay updated and connected with us on our social media channels!</p>
-        <a
-          className="social-link"
-          href={organization.facebook}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Project Starburst on Facebook"
-        >
-          <img src="/assets/facebook.svg" alt="" width="42" height="42" />
-        </a>
-      </TextSection>
+      </nav>
+      <section
+        className="contact-message sb-section sb-shell"
+        aria-labelledby="message-title"
+      >
+        <div>
+          <SectionHeading
+            id="message-title"
+            eyebrow="PUT YOUR QUESTION INTO WORDS"
+            title="Start an email."
+          >
+            <p>
+              Use this form to prepare your message. You’ll still need to send
+              it from your email application.
+            </p>
+          </SectionHeading>
+          <div className="contact-message-note">
+            <p>
+              For general questions only. Please leave out sensitive household
+              information. Food assistance registration happens in person.
+            </p>
+            <CtaLink href="/get-help#how-it-works" variant="text">
+              See How to Get Help
+            </CtaLink>
+          </div>
+        </div>
+        <ContactForm
+          recipient={contactRecipient(process.env, siteConfig.email)}
+          preview={!deploymentPolicy(process.env).isProduction}
+        />
+      </section>
     </main>
   );
 }

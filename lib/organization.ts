@@ -1,5 +1,5 @@
-// Approved public content retained from the repository and the live Wix pages.
-// Content provenance and items needing owner review: docs/core-actions-review.md.
+// Current published sources are recorded in docs/brand-and-trust-review.md.
+// Publication is not a substitute for owner confirmation before launch.
 export const organization = {
   name: 'Project Starburst',
   founded: '1971',
@@ -29,8 +29,6 @@ export const organization = {
   facebook: 'https://www.facebook.com/ProjectStarburst',
   taxStatement:
     'Project Starburst is a 501(c)(3) nonprofit organization. Your donations are tax-deductible to the fullest extent of the law.',
-  localGivingStatement:
-    'Because we are community-based and locally funded, 100% of your donation goes toward feeding and assisting neighbors in Mecosta and Osceola counties.',
   volunteerApplication: {
     href: '/documents/volunteer-application.pdf',
     format: 'PDF',
@@ -41,18 +39,6 @@ export const organization = {
     communityService:
       'If you are looking to complete community service, you must still apply in person.',
   },
-} as const;
-
-// These are existing published figures, not newly verified current statistics.
-// Retain original labels and differences (including the meals "+" sign).
-export const reportedImpact = {
-  needsOwnerReview: true,
-  reportingPeriod: null,
-  individuals: '14,350',
-  meals: '574,000',
-  mealsWithPlus: '574,000+',
-  families: '3,561',
-  clients: '705',
 } as const;
 
 export const acceptedGoods = [
@@ -70,9 +56,9 @@ export const acceptedGoods = [
 
 export const volunteerOpportunities = [
   {
-    title: 'Monthly Food Truck',
+    title: 'Food Truck Support',
     description:
-      'Help provide fresh food to families on the third Friday of each month.',
+      'Help provide fresh food to families. Contact the pantry for upcoming opportunities.',
     icon: 'truck',
   },
   {
@@ -104,3 +90,49 @@ export const volunteerOpportunities = [
     icon: 'heart',
   },
 ] as const;
+
+// Names/titles match the published Wix About page as checked September 10, 2026.
+// Owner confirmation remains a launch gate; no biographies are inferred.
+export const people = {
+  staff: [
+    { name: 'Connie Koepke', title: 'Pantry Manager' },
+    { name: 'Allan Bauman', title: 'Assistant Pantry Manager' },
+  ],
+  board: [
+    { name: 'Alice Bandstra', title: 'President' },
+    { name: 'Russ Nehmer', title: 'Vice President' },
+    { name: 'Dee Van Horn', title: 'Secretary' },
+    { name: 'Dave Scott', title: 'Treasurer' },
+    { name: 'Felicia Bielecki', title: '' },
+    { name: 'Laura Veersma', title: '' },
+    { name: 'Joie Cole', title: '' },
+    { name: 'Steve Cole', title: '' },
+  ],
+} as const;
+export const communityPartners = [
+  { name: 'United Way', image: '/assets/united-way.jpg' },
+  {
+    name: 'Fremont Area Community Foundation',
+    image: '/assets/fremont-area.jpg',
+  },
+] as const;
+export const starburstPhotos = {
+  community: {
+    src: '/assets/11062b_f1a4368086de462db72b31ae85053474~mv2_d_5760_3840_s_4_2.jpg',
+    alt: 'A group of people gathered outside a house',
+    width: 1920,
+    height: 1280,
+  },
+  giving: {
+    src: '/assets/11062b_e2da2b9b2d074ff8ab9a452d009d5c7f~mv2.jpg',
+    alt: 'People passing bags and supplies across a donation table',
+    width: 1920,
+    height: 1280,
+  },
+  volunteer: {
+    src: '/assets/1691a921dfec4d4f8637b1c7ffa2528a.jpg',
+    alt: 'People sorting food together outdoors',
+    width: 1920,
+    height: 1280,
+  },
+} as const;
