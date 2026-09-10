@@ -48,6 +48,7 @@ export function DonationForm() {
                 ))}
               </div>
               <Input
+                id="donation-amount"
                 aria-label="Donation amount"
                 type="number"
                 placeholder="Enter an amount"

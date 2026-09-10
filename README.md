@@ -10,7 +10,7 @@ PLM's first client-site workflow, built from the existing [Project Starburst Wix
 | ---------------------------- | ------------- | ---------------------------------------------------------- |
 | Production (reserved in Git) | main          | projectstarburst.org; currently Wix, with www as canonical |
 | Staging                      | redesign-2026 | preview.projectstarburst.org once configured               |
-| Feature work                 | feature/*     | Unique Vercel Preview deployment           |
+| Feature work                 | feature/*     | Unique Vercel Preview deployment                           |
 
 During redesign: _*feature/* → PR → redesign-2026_*. Use `gh pr create --base redesign-2026`. Review before merging; do not routinely push straight to the integration branch.
 
@@ -18,9 +18,9 @@ Final launch: separately approved **redesign-2026 → main PR**. Setup includes 
 
 Joe can review from a phone, tablet, or browser without running the project locally. Send clients the stable staging URL after configuration; use a feature preview only when intentionally reviewing that feature. Follow the [remote workflow](docs/development-workflow.md) and [owner setup guide](docs/vercel-setup.md).
 
-## Core action page redesign
+## Website redesign review
 
-The current feature redesigns Get Help, Donate, and Volunteer and establishes shared Starburst CTAs. The homepage receives a CTA-only pass; About and Contact receive shared data/action updates. See the [feature review guide](docs/core-actions-review.md) for implementation scope, content sources, preserved payment/application behavior, and facts requiring owner review. Review its feature Preview before merging into redesign-2026.
+Get Help, Donate, and Volunteer establish the core action journeys. The [brand-and-trust refinement](docs/brand-and-trust-review.md) rebuilds About, Contact, and the homepage, refines shared navigation/footer and styles, and records source verification and launch decisions. Review each feature Preview and its PR before merging into redesign-2026. The [core-action review](docs/core-actions-review.md) remains a historical record of the earlier phase.
 
 ## Commands
 
@@ -54,7 +54,7 @@ The Vercel project project-starburst is connected under platinum-luxe-media. Git
 - Contact is an email-draft flow, not a delivery service. Previews default to an on-page draft; an optional test inbox can open a test email draft. Production retains the original mailto recipient.
 - No PayPal SDK, Supabase, analytics, email provider, webhook, or admin/CMS integration is implemented. Live Wix dashboard/provider settings need owner inspection.
 - Preview pages are noindex with no canonical; approved main Production output is indexable and uses the existing www production origin. Preview sitemaps contain no URLs.
-- Original copy, dates, figures, sponsor lists, assets, and PDFs are preserved. /event-list was discovered on the live Wix sitemap and is a documented migration gap.
+- Original assets, PDFs, event dates and sponsor lists are preserved. Unverified impact figures and financial/schedule claims are retained in internal review notes rather than public marketing copy. /event-list was discovered on the live Wix sitemap and is a documented migration gap.
 
 See the [environment audit](docs/environment-safety.md), [site inventory](docs/site-inventory.md), [asset inventory](docs/asset-inventory.md), and [launch checklist](docs/launch-checklist.md).
 

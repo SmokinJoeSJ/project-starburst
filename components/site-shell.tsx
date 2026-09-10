@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { CtaLink } from '@/components/cta';
 import { organization } from '@/lib/organization';
+import { OrganizationAddress, PartnerMarks } from '@/components/starburst';
 import {
   Sheet,
   SheetTrigger,
@@ -32,7 +33,13 @@ function NavigationLinks({
   return (
     <>
       {navigation.map(([name, href]) => {
-        const current = pathname === href ? 'page' : undefined;
+        const current =
+          pathname === href ||
+          (href === '/soupersupper' &&
+            (pathname === '/souper-supper' ||
+              pathname?.startsWith('/event-details/')))
+            ? 'page'
+            : undefined;
         return name === 'Get Help' || name === 'Donate' ? (
           <CtaLink
             key={href}
@@ -56,7 +63,14 @@ function NavigationLinks({
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const light = ['/get-help', '/donate', '/volunteer'].includes(pathname);
+  const light = [
+    '/',
+    '/about-us',
+    '/contact',
+    '/get-help',
+    '/donate',
+    '/volunteer',
+  ].includes(pathname);
   return (
     <header className={'site-header' + (light ? ' site-header--light' : '')}>
       <Link href="/" aria-label="Project Starburst home">
@@ -119,74 +133,93 @@ export function FacebookBand() {
     </section>
   );
 }
-export function Footer() {
+export function Footer({ year }: { year: number }) {
   return (
-    <footer className="site-footer">
-      <div className="footer-top">
-        <Link href="/" aria-label="Project Starburst home">
-          <img
-            className="logo"
-            src="/assets/logo.svg"
-            alt="Project Starburst"
-            width="155"
-            height="56"
-          />
-        </Link>
-        <nav aria-label="Footer navigation">
-          <NavigationLinks />
-        </nav>
-      </div>
-      <div className="footer-grid">
-        <div>
+    <footer className="sb-footer">
+      <div className="sb-footer-main sb-shell">
+        <div className="sb-footer-brand">
+          <Link href="/" aria-label="Project Starburst home">
+            <img
+              className="logo"
+              src="/assets/logo.svg"
+              alt="Project Starburst — food pantry plus"
+              width="155"
+              height="56"
+            />
+          </Link>
           <p>
-            Project Starburst&apos;s mission is to provide food and basic needs
-            in a dignified manner for our neighbors in Mecosta and Osceola
-            Counties. We are primarily a food and hygiene need pantry but offer
-            other services as well.
+            Food and basic needs, offered with dignity and care to our neighbors
+            in {organization.counties}.
           </p>
-          <address>
-            <p>
-              Hours: {organization.hours.days}, {organization.hours.time}.
-            </p>
-            <p>
-              Phone:{' '}
-              <a href={organization.phone.href}>{organization.phone.display}</a>
-            </p>
-            <p>
-              <a
-                href={organization.directions}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Address: {organization.address.street},{' '}
-                {organization.address.mailingBox}, {organization.address.city},{' '}
-                {organization.address.state} {organization.address.zip}
-                <span className="sr-only"> (map opens in a new tab)</span>
-              </a>
-            </p>
-            <p>
-              Email: <a href={organization.emailHref}>{organization.email}</a>
-            </p>
-          </address>
+          <CtaLink href={organization.phone.href} variant="text" icon="phone">
+            {organization.phone.display}
+          </CtaLink>
+          <CtaLink href={organization.emailHref} variant="text" icon="email">
+            {organization.email}
+          </CtaLink>
+        </div>
+        <nav aria-label="Footer navigation">
+          <h2>Find your way</h2>
+          {navigation.map(([name, href]) => (
+            <Link href={href} key={href}>
+              {name}
+            </Link>
+          ))}
+        </nav>
+        <div className="sb-footer-visit">
+          <h2>Visit the pantry</h2>
+          <OrganizationAddress />
+          <CtaLink
+            href={organization.directions}
+            variant="text"
+            icon="external"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Directions<span className="sr-only"> (opens in a new tab)</span>
+          </CtaLink>
+          <h2 className="sb-footer-hours-title">Public pantry hours</h2>
+          <p>
+            {organization.hours.days}
+            <br />
+            {organization.hours.time}
+          </p>
+        </div>
+        <div className="sb-footer-mail">
+          <h2>Mailing address</h2>
+          <OrganizationAddress mailing />
+          <CtaLink
+            href={organization.facebook}
+            variant="text"
+            icon="external"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Updates on Facebook
+            <span className="sr-only"> (opens in a new tab)</span>
+          </CtaLink>
+          <CtaLink
+            href="/documents/non-discrimination-statement.pdf"
+            variant="text"
+            icon="external"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Non-Discrimination Statement (PDF)
+            <span className="sr-only"> (opens in a new tab)</span>
+          </CtaLink>
+        </div>
+      </div>
+      <div className="sb-footer-bottom sb-shell">
+        <div>
+          <span className="sb-meta-label">Community partners</span>
+          <PartnerMarks />
         </div>
         <p>
-          Copyright ©2025 Project Starburst. All rights reserved. We are a 501c3
-          non-profit agency.
+          © {year} Project Starburst. All rights reserved.
+          <br />
+          We are a 501(c)(3) nonprofit organization.
         </p>
-        <div className="partners">
-          <img
-            src="/assets/united-way.jpg"
-            alt="United Way"
-            width="124"
-            height="55"
-          />
-          <img
-            src="/assets/fremont-area.jpg"
-            alt="Fremont Area Community Foundation"
-            width="124"
-            height="55"
-          />
-        </div>
       </div>
     </footer>
   );

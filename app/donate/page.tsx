@@ -1,9 +1,5 @@
 import { routeMetadata } from '@/lib/seo';
-import {
-  organization,
-  acceptedGoods,
-  reportedImpact,
-} from '@/lib/organization';
+import { organization, acceptedGoods } from '@/lib/organization';
 import { CtaLink } from '@/components/cta';
 import {
   ActionHero,
@@ -38,7 +34,7 @@ export default function Page() {
           ' get through difficult times.'
         }
         image="/assets/11062b_e2da2b9b2d074ff8ab9a452d009d5c7f~mv2.jpg"
-        alt="Volunteers handing donated supplies to people at a collection table"
+        alt="People passing bags and supplies across a donation table"
         caption="From one neighbor to another. Every contribution matters."
       >
         <CtaLink href="#donation">Donate Online</CtaLink>
@@ -62,7 +58,6 @@ export default function Page() {
             Your support keeps our pantry stocked with food and essential
             supplies for families in need.
           </p>
-          <p>{organization.localGivingStatement}</p>
           <img
             src="/assets/ffdbc4_8ae35597893b416c8dd1e74db2f2b23e~mv2.png"
             alt="From one neighbor to another — support your local food pantry"
@@ -138,35 +133,6 @@ export default function Page() {
         </CtaLink>
       </section>
 
-      <section className="action-impact-band" aria-labelledby="giving-impact">
-        <div className="action-container">
-          <div>
-            <p className="action-eyebrow">YOUR SUPPORT IN ACTION</p>
-            <h2 id="giving-impact">Neighbors make this possible.</h2>
-            <p>Thank you for helping provide food and support close to home.</p>
-          </div>
-          <div>
-            <dl className="action-reported-stats">
-              <div>
-                <dt>Total meals provided</dt>
-                <dd>{reportedImpact.mealsWithPlus}</dd>
-              </div>
-              <div>
-                <dt>Families fed</dt>
-                <dd>{reportedImpact.families}</dd>
-              </div>
-              <div>
-                <dt>Clients assisted</dt>
-                <dd>{reportedImpact.clients}</dd>
-              </div>
-            </dl>
-            <p className="action-caption">
-              Previously reported by Project Starburst. A reporting year was not
-              specified.
-            </p>
-          </div>
-        </div>
-      </section>
       <section
         className="action-tax-note action-container"
         aria-labelledby="organization-note"

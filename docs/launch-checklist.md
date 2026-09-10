@@ -4,6 +4,8 @@ Owner: Joe / Project Starburst. For a **future separately authorized launch**. S
 
 ## Review and preservation
 
+Resolve the current [brand-and-trust source/review table](brand-and-trust-review.md#sources-and-owner-decisions), including names/titles, PDF hours, donation readiness and contact delivery.
+
 - [ ] Client/Joe approves staging sitemap, design, content, navigation and exact release commit.
 - [ ] Resolve /event-list: implement or approve/test a relevant redirect.
 - [ ] Verify every route in site-inventory.md, aliases and expired event detail.

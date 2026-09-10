@@ -1,5 +1,7 @@
 # Core action pages — review guide
 
+Historical implementation record. The subsequent [brand-and-trust review](brand-and-trust-review.md) supersedes public statistics, giving-claim, Food Truck schedule, About/Contact/homepage, and shared-style descriptions below. Original source claims remain recorded for owner review.
+
 This feature fully redesigns /get-help, /donate, and /volunteer on feature/core-actions, based on redesign-2026 at 7ec5c5d. The PR targets redesign-2026 and requires review before merge. This is a Preview feature, not a production launch.
 
 ## What changed
