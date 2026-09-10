@@ -1,7 +1,9 @@
 # Starburst brand and trust — review guide
 
-Feature: `feature/starburst-brand-and-trust`  
-Baseline: `origin/redesign-2026` at `21cd8e8bc3dfebbfad2cbe38373a738b9cad4a55` (the merged core-actions work).  
+Feature: `feature/starburst-brand-and-trust`
+
+Baseline: `origin/redesign-2026` at `21cd8e8bc3dfebbfad2cbe38373a738b9cad4a55` (the merged core-actions work).
+
 PR target: **redesign-2026**. This feature does not authorize a merge or launch.
 
 ## Delivered design
