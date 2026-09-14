@@ -33,7 +33,9 @@
     "components/ui/**",
     "hooks/use-mobile.ts",
     ".reference/**",
-    ".wrangler/**"
+    ".wrangler/**",
+    "tests/fixtures/editor/plm/**",
+    "outputs/**"
   ],
   "rules": {
     "no-array-constructor": "error",

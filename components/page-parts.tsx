@@ -1,3 +1,5 @@
+import { ContentImage, ContentText } from '@/components/content/fields';
+import type { FieldId } from '@/lib/content/approved';
 import { CtaLink } from '@/components/cta';
 import { organization } from '@/lib/organization';
 import type { ReactNode } from 'react';
@@ -5,18 +7,29 @@ export function PageHero({
   title,
   image,
   alt,
+  imageField,
+  altField,
   children,
   className = '',
 }: {
   title: ReactNode;
   image: string;
   alt: string;
+  imageField?: FieldId;
+  altField?: FieldId;
   children?: ReactNode;
   className?: string;
 }) {
   return (
     <section className={'hero page-hero ' + className}>
-      <img className="hero-image" src={image} alt={alt} fetchPriority="high" />
+      <ContentImage
+        imageField={imageField}
+        altField={altField}
+        className="hero-image"
+        src={image}
+        alt={alt}
+        fetchPriority="high"
+      />
       <div className="hero-shade" />
       <div className="page-hero-content">
         <h1>{title}</h1>
@@ -47,10 +60,10 @@ export function ContactLines() {
   return (
     <div className="contact-lines">
       <CtaLink href={organization.phone.href} variant="text" icon="phone">
-        {organization.phone.display}
+        <ContentText fieldId="shared.phone.display" />
       </CtaLink>
       <CtaLink href={organization.emailHref} variant="text" icon="email">
-        {organization.email}
+        <ContentText fieldId="shared.email" />
       </CtaLink>
     </div>
   );

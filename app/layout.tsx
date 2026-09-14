@@ -1,8 +1,10 @@
+import { approvedContent } from '@/lib/content/approved';
 import { siteMetadata } from '@/lib/seo';
 import type { Metadata } from 'next';
-import { Header, Footer } from '@/components/site-shell';
+import { SiteChrome } from '@/components/content/site-chrome';
 import './globals.css';
 import './actions.css';
+import './editor-preview.css';
 export const metadata: Metadata = {
   title: {
     default: 'Project Starburst | Food Pantry in Big Rapids, MI',
@@ -18,13 +20,11 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>
+      <body data-content-revision={approvedContent.baseContentHash}>
         <a className="skip-link" href="#main">
           Skip to content
         </a>
-        <Header />
-        {children}
-        <Footer />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );

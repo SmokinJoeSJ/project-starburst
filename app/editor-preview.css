@@ -1,0 +1,67 @@
+.plm-preview-waiting {
+  max-width: 46rem;
+  margin: 10vh auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+.plm-preview-waiting h1 {
+  font-size: 2rem;
+}
+.plm-preview-canvas [data-plm-field]:focus-visible {
+  outline: 2px solid #765700;
+  outline-offset: 4px;
+}
+.plm-preview-canvas[data-preview-mode='edit'] [data-plm-field] {
+  cursor: crosshair;
+}
+.plm-preview-canvas iframe {
+  pointer-events: none;
+}
+.plm-field-outline {
+  position: fixed;
+  z-index: 2147483600;
+  border: 2px dashed #947000;
+  pointer-events: none;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px white;
+}
+.plm-field-outline.is-selected {
+  border-style: solid;
+  border-color: #765700;
+}
+.plm-field-outline.is-locked {
+  border-color: #666;
+}
+.plm-preview-notice {
+  position: fixed;
+  z-index: 2147483500;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  margin: auto;
+  width: fit-content;
+  max-width: calc(100% - 1rem);
+  background: #26241f;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font:
+    14px/1.5 Arial,
+    sans-serif;
+  pointer-events: none;
+}
+
+.plm-image-error {
+  position: fixed;
+  z-index: 2147483501;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background: white;
+  color: #28251e;
+  padding: 1rem;
+  border: 2px solid #765700;
+  font:
+    16px/1.5 Arial,
+    sans-serif;
+}

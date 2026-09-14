@@ -63,6 +63,27 @@
           "value": "noindex"
         }
       ]
+    },
+    {
+      "source": "/plm-preview",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors 'none'"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        }
+      ]
     }
   ],
   "routes": [
@@ -217,6 +238,24 @@
         "Cache-Control": "private, no-store",
         "Vary": "RSC",
         "X-Robots-Tag": "noindex"
+      }
+    },
+    {
+      "src": "^/plm-preview$",
+      "has": [
+        {
+          "type": "header",
+          "key": "rsc",
+          "value": "1"
+        }
+      ],
+      "dest": "/plm-preview.rsc",
+      "headers": {
+        "Content-Type": "text/x-component",
+        "Cache-Control": "private, no-store",
+        "Vary": "RSC",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Content-Security-Policy": "frame-ancestors 'none'"
       }
     }
   ]
