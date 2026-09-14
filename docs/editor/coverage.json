@@ -1,0 +1,3412 @@
+[
+  {
+    "field": "shared.name",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.name",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.founded",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.founded",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.counties",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.counties",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.phone.display",
+    "section": "shared",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.phone.display",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.phone.number",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.phone.number",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.phone.href",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.phone.href",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.email",
+    "section": "shared",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.email",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.email-href",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.email-href",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.address.street",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.address.street",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.address.city",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.address.city",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.address.state",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.address.state",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.address.zip",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.address.zip",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.address.mailing-box",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.address.mailing-box",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.address.full",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.address.full",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.address.entry",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.address.entry",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.hours.days",
+    "section": "shared",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.hours.days",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.hours.time",
+    "section": "shared",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.hours.time",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.directions",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.directions",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.map-embed",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.map-embed",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.facebook",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.facebook",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.tax-statement",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.tax-statement",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.local-giving-statement",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.local-giving-statement",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.volunteer-application.href",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.volunteer-application.href",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.volunteer-application.format",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.volunteer-application.format",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.volunteer-application.size",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.volunteer-application.size",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.volunteer-application.updated",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.volunteer-application.updated",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.volunteer-application.hours-on-form",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.volunteer-application.hours-on-form",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "shared.volunteer-application.community-service",
+    "section": "shared",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.volunteer-application.community-service",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "home.seo.title",
+    "section": "seo",
+    "type": "seo_title",
+    "editable": true,
+    "source": "app/page.tsx metadata",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.seo.title",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.seo.description",
+    "section": "seo",
+    "type": "seo_description",
+    "editable": true,
+    "source": "app/page.tsx metadata",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.seo.description",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.hero-home-hero.image",
+    "section": "hero-home-hero",
+    "type": "image",
+    "editable": true,
+    "source": "app/page.tsx:11",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.hero-home-hero.image",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.hero-home-hero.image.alt",
+    "section": "hero-home-hero",
+    "type": "alt",
+    "editable": true,
+    "source": "app/page.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.hero-home-hero.image.alt",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.heading",
+    "section": "hero-home-hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/page.tsx:19",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.heading",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.hero-home-hero.project-starburst-provides-food-personal-h",
+    "section": "hero-home-hero",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/page.tsx:23",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.hero-home-hero.project-starburst-provides-food-personal-h",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.hero-home-hero.get-help",
+    "section": "hero-home-hero",
+    "type": "button",
+    "editable": true,
+    "source": "app/page.tsx:30",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.hero-home-hero.get-help",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.hero-home-hero.about-project-starburst",
+    "section": "hero-home-hero",
+    "type": "button",
+    "editable": true,
+    "source": "app/page.tsx:31",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.hero-home-hero.about-project-starburst",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.impact-section.making-a-difference-in-our-community",
+    "section": "impact-section",
+    "type": "text",
+    "editable": false,
+    "source": "app/page.tsx:38",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.impact-section.making-a-difference-in-our-community",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.impact-section.community-driven-support-since",
+    "section": "impact-section",
+    "type": "text",
+    "editable": false,
+    "source": "app/page.tsx:45",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.impact-section.community-driven-support-since",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.impact-section.individuals-served-annually",
+    "section": "impact-section",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/page.tsx:51",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.impact-section.individuals-served-annually",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.impact-section.total-meals-provided-annually",
+    "section": "impact-section",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/page.tsx:60",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.impact-section.total-meals-provided-annually",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.section-help-section.how-we-help",
+    "section": "section-help-section",
+    "type": "text",
+    "editable": true,
+    "source": "app/page.tsx:69",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.section-help-section.how-we-help",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.section-join-section.join-us-in-making-a-difference",
+    "section": "section-join-section",
+    "type": "text",
+    "editable": true,
+    "source": "app/page.tsx:105",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.section-join-section.join-us-in-making-a-difference",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.section-join-section.every-contribution-helps-us-provide-food",
+    "section": "section-join-section",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/page.tsx:106",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.section-join-section.every-contribution-helps-us-provide-food",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.section-join-section.get-help",
+    "section": "section-join-section",
+    "type": "button",
+    "editable": true,
+    "source": "app/page.tsx:112",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.section-join-section.get-help",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.section-join-section.donate",
+    "section": "section-join-section",
+    "type": "button",
+    "editable": true,
+    "source": "app/page.tsx:113",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.section-join-section.donate",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "home.section-join-section.volunteer",
+    "section": "section-join-section",
+    "type": "button",
+    "editable": true,
+    "source": "app/page.tsx:116",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.home.section-join-section.volunteer",
+    "rendererSource": "components/pages/home.tsx"
+  },
+  {
+    "field": "about.seo.title",
+    "section": "seo",
+    "type": "seo_title",
+    "editable": true,
+    "source": "app/about-us/page.tsx metadata",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.seo.title",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.seo.description",
+    "section": "seo",
+    "type": "seo_description",
+    "editable": true,
+    "source": "app/about-us/page.tsx metadata",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.seo.description",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.about-hero.image",
+    "section": "about-hero",
+    "type": "image",
+    "editable": true,
+    "source": "app/about-us/page.tsx:10",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.about-hero.image",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.about-hero.image.alt",
+    "section": "about-hero",
+    "type": "alt",
+    "editable": true,
+    "source": "app/about-us/page.tsx",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.about-hero.image.alt",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.about-hero.neighbors-helping",
+    "section": "about-hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/about-us/page.tsx:14",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.about-hero.neighbors-helping",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.about-hero.neighbors-since-1971",
+    "section": "about-hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/about-us/page.tsx:16",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.about-hero.neighbors-since-1971",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.about-hero.project-starburst-is-dedicated-to-providin",
+    "section": "about-hero",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/about-us/page.tsx:22",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.about-hero.project-starburst-is-dedicated-to-providin",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.what-we-do.what-we-do",
+    "section": "what-we-do",
+    "type": "text",
+    "editable": true,
+    "source": "app/about-us/page.tsx:38",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.what-we-do.what-we-do",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.what-we-do.monthly-grocery-program",
+    "section": "what-we-do",
+    "type": "text",
+    "editable": true,
+    "source": "app/about-us/page.tsx:39",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.what-we-do.monthly-grocery-program",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.what-we-do.we-provide-monthly-groceries-based-on",
+    "section": "what-we-do",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/about-us/page.tsx:40",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.what-we-do.we-provide-monthly-groceries-based-on",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.what-we-do.how-it-works",
+    "section": "what-we-do",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/about-us/page.tsx:45",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.what-we-do.how-it-works",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.what-we-do.1-fill-out-a-brief-intake",
+    "section": "what-we-do",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/about-us/page.tsx:46",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.what-we-do.1-fill-out-a-brief-intake",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.what-we-do.2-volunteers-prepare-customized-grocery-pa",
+    "section": "what-we-do",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/about-us/page.tsx:47",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.what-we-do.2-volunteers-prepare-customized-grocery-pa",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.what-we-do.3-pick-up-your-groceries-and",
+    "section": "what-we-do",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/about-us/page.tsx:48",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.what-we-do.3-pick-up-your-groceries-and",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.individual-case-management.individual-case-management",
+    "section": "individual-case-management",
+    "type": "text",
+    "editable": true,
+    "source": "app/about-us/page.tsx:53",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.individual-case-management.individual-case-management",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.individual-case-management.we-go-beyond-food-assistance-by",
+    "section": "individual-case-management",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/about-us/page.tsx:55",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.individual-case-management.we-go-beyond-food-assistance-by",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.individual-case-management.diaper-bank-for-qualified",
+    "section": "individual-case-management",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/about-us/page.tsx:59",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.individual-case-management.diaper-bank-for-qualified",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.individual-case-management.call-ahead",
+    "section": "individual-case-management",
+    "type": "text",
+    "editable": true,
+    "source": "app/about-us/page.tsx:61",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.individual-case-management.call-ahead",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.individual-case-management.referrals-to-local-agencies",
+    "section": "individual-case-management",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/about-us/page.tsx:65",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.individual-case-management.referrals-to-local-agencies",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.individual-case-management.mid-michigan-community-action-center",
+    "section": "individual-case-management",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/about-us/page.tsx:67",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.individual-case-management.mid-michigan-community-action-center",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.individual-case-management.michigan-works",
+    "section": "individual-case-management",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/about-us/page.tsx:68",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.individual-case-management.michigan-works",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.individual-case-management.michigan-department-of-health-human",
+    "section": "individual-case-management",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/about-us/page.tsx:69",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.individual-case-management.michigan-department-of-health-human",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.individual-case-management.hygiene-items-assistance-donated",
+    "section": "individual-case-management",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/about-us/page.tsx:72",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.individual-case-management.hygiene-items-assistance-donated",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.making-a-difference-in-our-community.making-a-difference-in-our-community",
+    "section": "making-a-difference-in-our-community",
+    "type": "text",
+    "editable": false,
+    "source": "app/about-us/page.tsx:76",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.making-a-difference-in-our-community.making-a-difference-in-our-community",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.making-a-difference-in-our-community.for-over-50-years-project-starburst",
+    "section": "making-a-difference-in-our-community",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/about-us/page.tsx:80",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.making-a-difference-in-our-community.for-over-50-years-project-starburst",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.making-a-difference-in-our-community.clients",
+    "section": "making-a-difference-in-our-community",
+    "type": "text",
+    "editable": false,
+    "source": "app/about-us/page.tsx:86",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.making-a-difference-in-our-community.clients",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.making-a-difference-in-our-community.copy",
+    "section": "making-a-difference-in-our-community",
+    "type": "text",
+    "editable": false,
+    "source": "app/about-us/page.tsx:88",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.making-a-difference-in-our-community.copy",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.making-a-difference-in-our-community.individuals-served",
+    "section": "making-a-difference-in-our-community",
+    "type": "text",
+    "editable": false,
+    "source": "app/about-us/page.tsx:88",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.making-a-difference-in-our-community.individuals-served",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.making-a-difference-in-our-community.families-fed",
+    "section": "making-a-difference-in-our-community",
+    "type": "text",
+    "editable": false,
+    "source": "app/about-us/page.tsx:90",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.making-a-difference-in-our-community.families-fed",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.making-a-difference-in-our-community.total-meals-provided",
+    "section": "making-a-difference-in-our-community",
+    "type": "text",
+    "editable": false,
+    "source": "app/about-us/page.tsx:91",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.making-a-difference-in-our-community.total-meals-provided",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.our-values.our-values",
+    "section": "our-values",
+    "type": "text",
+    "editable": false,
+    "source": "app/about-us/page.tsx:95",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.our-values.our-values",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.our-values.a-neighborly-resource-providing",
+    "section": "our-values",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/about-us/page.tsx:97",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.our-values.a-neighborly-resource-providing",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.our-values.locally-funded-every-donation",
+    "section": "our-values",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/about-us/page.tsx:100",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.our-values.locally-funded-every-donation",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.our-values.community-based-we-believe-in",
+    "section": "our-values",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/about-us/page.tsx:104",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.our-values.community-based-we-believe-in",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.meet-our-team.meet-our-team",
+    "section": "meet-our-team",
+    "type": "text",
+    "editable": false,
+    "source": "app/about-us/page.tsx:107",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.meet-our-team.meet-our-team",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.meet-our-team.our-staff",
+    "section": "meet-our-team",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/about-us/page.tsx:108",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.meet-our-team.our-staff",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.meet-our-team.connie-koepke-pantry-manager",
+    "section": "meet-our-team",
+    "type": "text",
+    "editable": false,
+    "source": "app/about-us/page.tsx:110",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.meet-our-team.connie-koepke-pantry-manager",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.meet-our-team.allan-bauman-assistant-pantry-manager",
+    "section": "meet-our-team",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/about-us/page.tsx:114",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.meet-our-team.allan-bauman-assistant-pantry-manager",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.meet-our-team.board-of-directors",
+    "section": "meet-our-team",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/about-us/page.tsx:115",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.meet-our-team.board-of-directors",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.meet-our-team.alice-bandstra-president-russ-nehmer",
+    "section": "meet-our-team",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/about-us/page.tsx:116",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.meet-our-team.alice-bandstra-president-russ-nehmer",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.how-you-can-help.how-you-can-help",
+    "section": "how-you-can-help",
+    "type": "text",
+    "editable": false,
+    "source": "app/about-us/page.tsx:134",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.how-you-can-help.how-you-can-help",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.how-you-can-help.donate-every-dollar-goes",
+    "section": "how-you-can-help",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/about-us/page.tsx:135",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.how-you-can-help.donate-every-dollar-goes",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.how-you-can-help.donate",
+    "section": "how-you-can-help",
+    "type": "button",
+    "editable": false,
+    "source": "app/about-us/page.tsx:142",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.how-you-can-help.donate",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.how-you-can-help.volunteer",
+    "section": "how-you-can-help",
+    "type": "button",
+    "editable": false,
+    "source": "app/about-us/page.tsx:143",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.how-you-can-help.volunteer",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.non-discrimination-statement.non-discrimination-statement",
+    "section": "non-discrimination-statement",
+    "type": "text",
+    "editable": false,
+    "source": "app/about-us/page.tsx:148",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.non-discrimination-statement.non-discrimination-statement",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.non-discrimination-statement.we-re-committed-to-providing-equal-access",
+    "section": "non-discrimination-statement",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/about-us/page.tsx:149",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.non-discrimination-statement.we-re-committed-to-providing-equal-access",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.non-discrimination-statement.read-non-discrimination-statement-pdf",
+    "section": "non-discrimination-statement",
+    "type": "text",
+    "editable": false,
+    "source": "app/about-us/page.tsx:162",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.non-discrimination-statement.read-non-discrimination-statement-pdf",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "about.non-discrimination-statement.opens-in-a-new-tab",
+    "section": "non-discrimination-statement",
+    "type": "text",
+    "editable": false,
+    "source": "app/about-us/page.tsx:163",
+    "pages": ["/about-us"],
+    "approvedValueSource": "content/plm-content.json#values.about.non-discrimination-statement.opens-in-a-new-tab",
+    "rendererSource": "components/pages/about.tsx"
+  },
+  {
+    "field": "contact.seo.title",
+    "section": "seo",
+    "type": "seo_title",
+    "editable": true,
+    "source": "app/contact/page.tsx metadata",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.seo.title",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.seo.description",
+    "section": "seo",
+    "type": "seo_description",
+    "editable": true,
+    "source": "app/contact/page.tsx metadata",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.seo.description",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.contact-us.image",
+    "section": "contact-us",
+    "type": "image",
+    "editable": true,
+    "source": "app/contact/page.tsx:15",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.contact-us.image",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.contact-us.image.alt",
+    "section": "contact-us",
+    "type": "alt",
+    "editable": true,
+    "source": "app/contact/page.tsx",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.contact-us.image.alt",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.contact-us.contact-us",
+    "section": "contact-us",
+    "type": "text",
+    "editable": true,
+    "source": "app/contact/page.tsx:16",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.contact-us.contact-us",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.contact-us.we-d-love-to-hear-from-you",
+    "section": "contact-us",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/contact/page.tsx:20",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.contact-us.we-d-love-to-hear-from-you",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.our-location.our-location",
+    "section": "our-location",
+    "type": "text",
+    "editable": true,
+    "source": "app/contact/page.tsx:26",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.our-location.our-location",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.our-location.get-directions",
+    "section": "our-location",
+    "type": "text",
+    "editable": true,
+    "source": "app/contact/page.tsx:48",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.our-location.get-directions",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.our-location.opens-in-a-new-tab",
+    "section": "our-location",
+    "type": "text",
+    "editable": true,
+    "source": "app/contact/page.tsx:49",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.our-location.opens-in-a-new-tab",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.phone.phone",
+    "section": "phone",
+    "type": "text",
+    "editable": true,
+    "source": "app/contact/page.tsx:60",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.phone.phone",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.phone.if-you-have-questions-or-need",
+    "section": "phone",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/contact/page.tsx:66",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.phone.if-you-have-questions-or-need",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.email.email",
+    "section": "email",
+    "type": "text",
+    "editable": true,
+    "source": "app/contact/page.tsx:71",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.email.email",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.email.for-general-inquiries-or-to-reach",
+    "section": "email",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/contact/page.tsx:77",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.email.for-general-inquiries-or-to-reach",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.operating-hours.operating-hours",
+    "section": "operating-hours",
+    "type": "text",
+    "editable": true,
+    "source": "app/contact/page.tsx:82",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.operating-hours.operating-hours",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.follow-us.follow-us",
+    "section": "follow-us",
+    "type": "text",
+    "editable": true,
+    "source": "app/contact/page.tsx:93",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.follow-us.follow-us",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "contact.follow-us.stay-updated-and-connected-with-us",
+    "section": "follow-us",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/contact/page.tsx:94",
+    "pages": ["/contact"],
+    "approvedValueSource": "content/plm-content.json#values.contact.follow-us.stay-updated-and-connected-with-us",
+    "rendererSource": "components/pages/contact.tsx"
+  },
+  {
+    "field": "help.seo.title",
+    "section": "seo",
+    "type": "seo_title",
+    "editable": true,
+    "source": "app/get-help/page.tsx metadata",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.seo.title",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.seo.description",
+    "section": "seo",
+    "type": "seo_description",
+    "editable": true,
+    "source": "app/get-help/page.tsx metadata",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.seo.description",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.hero.image",
+    "section": "hero",
+    "type": "image",
+    "editable": true,
+    "source": "app/get-help/page.tsx:21",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.hero.image",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.hero.image.alt",
+    "section": "hero",
+    "type": "alt",
+    "editable": true,
+    "source": "app/get-help/page.tsx",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.hero.image.alt",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.hero.get-help",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:22",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.hero.get-help",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.hero.a-little-help",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:25",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.hero.a-little-help",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.hero.a-caring-neighbor",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:26",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.hero.a-caring-neighbor",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.hero.here-for-our-neighbors-with-dignity",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:36",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.hero.here-for-our-neighbors-with-dignity",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.hero.view-hours-location",
+    "section": "hero",
+    "type": "button",
+    "editable": true,
+    "source": "app/get-help/page.tsx:38",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.hero.view-hours-location",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.hero.call",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:40",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.hero.call",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.content.visit-the-pantry",
+    "section": "content",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/get-help/page.tsx:47",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.content.visit-the-pantry",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.action-section-action-container.support-close-to-home",
+    "section": "action-section-action-container",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/get-help/page.tsx:62",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.action-section-action-container.support-close-to-home",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.action-section-action-container.help-with-the-essentials",
+    "section": "action-section-action-container",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:63",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.action-section-action-container.help-with-the-essentials",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.action-section-action-container.food-on-the-table-everyday-necessities",
+    "section": "action-section-action-container",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/get-help/page.tsx:64",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.action-section-action-container.food-on-the-table-everyday-necessities",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.action-section-action-container.monthly-groceries",
+    "section": "action-section-action-container",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:72",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.action-section-action-container.monthly-groceries",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.action-section-action-container.groceries-for-families-and-individuals-pac",
+    "section": "action-section-action-container",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/get-help/page.tsx:73",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.action-section-action-container.groceries-for-families-and-individuals-pac",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.action-section-action-container.hygiene-basic-needs",
+    "section": "action-section-action-container",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:80",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.action-section-action-container.hygiene-basic-needs",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.action-section-action-container.personal-hygiene-items-donated-bombas-sock",
+    "section": "action-section-action-container",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/get-help/page.tsx:81",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.action-section-action-container.personal-hygiene-items-donated-bombas-sock",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.action-section-action-container.a-connection-to-support",
+    "section": "action-section-action-container",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:88",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.action-section-action-container.a-connection-to-support",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.action-section-action-container.individual-case-management-and-referrals-t",
+    "section": "action-section-action-container",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/get-help/page.tsx:89",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.action-section-action-container.individual-case-management-and-referrals-t",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.how-it-works.your-first-visit",
+    "section": "how-it-works",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/get-help/page.tsx:106",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.how-it-works.your-first-visit",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.how-it-works.start-by-coming-in",
+    "section": "how-it-works",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:107",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.how-it-works.start-by-coming-in",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.how-it-works.registration-happens-in-person-our-team",
+    "section": "how-it-works",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/get-help/page.tsx:108",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.how-it-works.registration-happens-in-person-our-team",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.how-it-works.register-in-person",
+    "section": "how-it-works",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:118",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.how-it-works.register-in-person",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.how-it-works.visit-the-pantry-and-fill-out",
+    "section": "how-it-works",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/get-help/page.tsx:119",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.how-it-works.visit-the-pantry-and-fill-out",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.how-it-works.groceries-for-your-household",
+    "section": "how-it-works",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:129",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.how-it-works.groceries-for-your-household",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.how-it-works.once-you-re-registered-volunteers-pack-you",
+    "section": "how-it-works",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/get-help/page.tsx:130",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.how-it-works.once-you-re-registered-volunteers-pack-you",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.how-it-works.pick-up-head-home",
+    "section": "how-it-works",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:139",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.how-it-works.pick-up-head-home",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.how-it-works.your-groceries-are-placed-in-a",
+    "section": "how-it-works",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/get-help/page.tsx:140",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.how-it-works.your-groceries-are-placed-in-a",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.not-sure-where-to-start.not-sure-where-to-start",
+    "section": "not-sure-where-to-start",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:151",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.not-sure-where-to-start.not-sure-where-to-start",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.not-sure-where-to-start.call-during-pantry-hours-or-send",
+    "section": "not-sure-where-to-start",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/get-help/page.tsx:152",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.not-sure-where-to-start.call-during-pantry-hours-or-send",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.content.follow-project-starburst-on-facebook",
+    "section": "content",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:165",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.content.follow-project-starburst-on-facebook",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.content.opens-in-a-new-tab",
+    "section": "content",
+    "type": "text",
+    "editable": true,
+    "source": "app/get-help/page.tsx:166",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.content.opens-in-a-new-tab",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "help.content.updates-on-hours-events-and-announcements",
+    "section": "content",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/get-help/page.tsx:168",
+    "pages": ["/get-help"],
+    "approvedValueSource": "content/plm-content.json#values.help.content.updates-on-hours-events-and-announcements",
+    "rendererSource": "components/pages/help.tsx"
+  },
+  {
+    "field": "donate.seo.title",
+    "section": "seo",
+    "type": "seo_title",
+    "editable": true,
+    "source": "app/donate/page.tsx metadata",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.seo.title",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.seo.description",
+    "section": "seo",
+    "type": "seo_description",
+    "editable": true,
+    "source": "app/donate/page.tsx metadata",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.seo.description",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.hero.image",
+    "section": "hero",
+    "type": "image",
+    "editable": true,
+    "source": "app/donate/page.tsx:26",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.hero.image",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.hero.image.alt",
+    "section": "hero",
+    "type": "alt",
+    "editable": true,
+    "source": "app/donate/page.tsx",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.hero.image.alt",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.hero.donate",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:27",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.hero.donate",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.hero.help-keep-the",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:30",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.hero.help-keep-the",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.hero.pantry-stocked",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:32",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.hero.pantry-stocked",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.hero.from-one-neighbor-to-another-every",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:42",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.hero.from-one-neighbor-to-another-every",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.hero.donate-online",
+    "section": "hero",
+    "type": "button",
+    "editable": true,
+    "source": "app/donate/page.tsx:44",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.hero.donate-online",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.hero.donate-goods",
+    "section": "hero",
+    "type": "button",
+    "editable": true,
+    "source": "app/donate/page.tsx:45",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.hero.donate-goods",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-donation-layout-action-container.give-close-to-home",
+    "section": "action-donation-layout-action-container",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/donate/page.tsx:55",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-donation-layout-action-container.give-close-to-home",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-donation-layout-action-container.your-gift-your-community",
+    "section": "action-donation-layout-action-container",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:56",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-donation-layout-action-container.your-gift-your-community",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-donation-layout-action-container.your-support-keeps-our-pantry-stocked",
+    "section": "action-donation-layout-action-container",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/donate/page.tsx:61",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-donation-layout-action-container.your-support-keeps-our-pantry-stocked",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-donation-layout-action-container.image",
+    "section": "action-donation-layout-action-container",
+    "type": "image",
+    "editable": true,
+    "source": "app/donate/page.tsx:66",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-donation-layout-action-container.image",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-donation-layout-action-container.image.alt",
+    "section": "action-donation-layout-action-container",
+    "type": "alt",
+    "editable": true,
+    "source": "app/donate/page.tsx",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-donation-layout-action-container.image.alt",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.donate-goods.donate-goods",
+    "section": "donate-goods",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/donate/page.tsx:85",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.donate-goods.donate-goods",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.donate-goods.everyday-items-an-everyday-difference",
+    "section": "donate-goods",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:86",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.donate-goods.everyday-items-an-everyday-difference",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.donate-goods.help-stock-the-pantry-with-non-perishable",
+    "section": "donate-goods",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/donate/page.tsx:91",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.donate-goods.help-stock-the-pantry-with-non-perishable",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-other-giving-action-container.other-ways-to-give",
+    "section": "action-other-giving-action-container",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/donate/page.tsx:117",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-other-giving-action-container.other-ways-to-give",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-other-giving-action-container.make-your-support-go-further",
+    "section": "action-other-giving-action-container",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:118",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-other-giving-action-container.make-your-support-go-further",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-other-giving-action-container.employer-matching",
+    "section": "action-other-giving-action-container",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:122",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-other-giving-action-container.employer-matching",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-other-giving-action-container.check-whether-your-employer-will-match",
+    "section": "action-other-giving-action-container",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/donate/page.tsx:123",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-other-giving-action-container.check-whether-your-employer-will-match",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-other-giving-action-container.fundraise-for-starburst",
+    "section": "action-other-giving-action-container",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:126",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-other-giving-action-container.fundraise-for-starburst",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-other-giving-action-container.start-a-fundraiser-to-help-support",
+    "section": "action-other-giving-action-container",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/donate/page.tsx:127",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-other-giving-action-container.start-a-fundraiser-to-help-support",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-other-giving-action-container.planned-giving",
+    "section": "action-other-giving-action-container",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:132",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-other-giving-action-container.planned-giving",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-other-giving-action-container.leave-a-lasting-impact-through-a",
+    "section": "action-other-giving-action-container",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/donate/page.tsx:133",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-other-giving-action-container.leave-a-lasting-impact-through-a",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-other-giving-action-container.contact-project-starburst",
+    "section": "action-other-giving-action-container",
+    "type": "button",
+    "editable": true,
+    "source": "app/donate/page.tsx:136",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-other-giving-action-container.contact-project-starburst",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-impact-band.your-support-in-action",
+    "section": "action-impact-band",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/donate/page.tsx:144",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-impact-band.your-support-in-action",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-impact-band.neighbors-make-this-possible",
+    "section": "action-impact-band",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:145",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-impact-band.neighbors-make-this-possible",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-impact-band.thank-you-for-helping-provide-food",
+    "section": "action-impact-band",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/donate/page.tsx:146",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-impact-band.thank-you-for-helping-provide-food",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-impact-band.total-meals-provided",
+    "section": "action-impact-band",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:151",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-impact-band.total-meals-provided",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-impact-band.families-fed",
+    "section": "action-impact-band",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:155",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-impact-band.families-fed",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-impact-band.clients-assisted",
+    "section": "action-impact-band",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:159",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-impact-band.clients-assisted",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-impact-band.previously-reported-by-project-starburst-a",
+    "section": "action-impact-band",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/donate/page.tsx:163",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-impact-band.previously-reported-by-project-starburst-a",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.action-tax-note-action-container.thank-you-for-your-support",
+    "section": "action-tax-note-action-container",
+    "type": "text",
+    "editable": false,
+    "source": "app/donate/page.tsx:174",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.action-tax-note-action-container.thank-you-for-your-support",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.have-a-question-about-giving.have-a-question-about-giving",
+    "section": "have-a-question-about-giving",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:177",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.have-a-question-about-giving.have-a-question-about-giving",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.have-a-question-about-giving.we-d-be-glad-to-help-you",
+    "section": "have-a-question-about-giving",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/donate/page.tsx:178",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.have-a-question-about-giving.we-d-be-glad-to-help-you",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.content.follow-project-starburst-on-facebook",
+    "section": "content",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:188",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.content.follow-project-starburst-on-facebook",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "donate.content.opens-in-a-new-tab",
+    "section": "content",
+    "type": "text",
+    "editable": true,
+    "source": "app/donate/page.tsx:189",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.donate.content.opens-in-a-new-tab",
+    "rendererSource": "components/pages/donate.tsx"
+  },
+  {
+    "field": "volunteer.seo.title",
+    "section": "seo",
+    "type": "seo_title",
+    "editable": true,
+    "source": "app/volunteer/page.tsx metadata",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.seo.title",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.seo.description",
+    "section": "seo",
+    "type": "seo_description",
+    "editable": true,
+    "source": "app/volunteer/page.tsx metadata",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.seo.description",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.hero.image",
+    "section": "hero",
+    "type": "image",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:32",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.hero.image",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.hero.image.alt",
+    "section": "hero",
+    "type": "alt",
+    "editable": true,
+    "source": "app/volunteer/page.tsx",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.hero.image.alt",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.hero.volunteer",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:33",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.hero.volunteer",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.hero.give-your-time",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:36",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.hero.give-your-time",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.hero.help-your-neighbors",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:38",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.hero.help-your-neighbors",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.hero.there-s-more-than-one-way-to",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:48",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.hero.there-s-more-than-one-way-to",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.hero.apply-to-volunteer",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:56",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.hero.apply-to-volunteer",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.hero.pdf-opens-in-a-new",
+    "section": "hero",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:57",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.hero.pdf-opens-in-a-new",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.hero.contact-us",
+    "section": "hero",
+    "type": "button",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:59",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.hero.contact-us",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-section-action-container-action-vol.find-your-way-to-help",
+    "section": "action-section-action-container-action-vol",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:69",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-section-action-container-action-vol.find-your-way-to-help",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-section-action-container-action-vol.good-people-meaningful-work",
+    "section": "action-section-action-container-action-vol",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:70",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-section-action-container-action-vol.good-people-meaningful-work",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-section-action-container-action-vol.whether-you-re-coming-on-your-own",
+    "section": "action-section-action-container-action-vol",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:75",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-section-action-container-action-vol.whether-you-re-coming-on-your-own",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-process.what-to-expect",
+    "section": "action-process",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:97",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-process.what-to-expect",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-process.let-s-get-you-started",
+    "section": "action-process",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:98",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-process.let-s-get-you-started",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-process.our-pantry-is-at",
+    "section": "action-process",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:100",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-process.our-pantry-is-at",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-process.public-pantry-hours",
+    "section": "action-process",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:104",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-process.public-pantry-hours",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-process.get-directions",
+    "section": "action-process",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:115",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-process.get-directions",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-process.opens-in-a-new-tab",
+    "section": "action-process",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:116",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-process.opens-in-a-new-tab",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-process.get-the-application",
+    "section": "action-process",
+    "type": "text",
+    "editable": false,
+    "source": "app/volunteer/page.tsx:123",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-process.get-the-application",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-process.download-the-one-page-volunteer-intern-for",
+    "section": "action-process",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:124",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-process.download-the-one-page-volunteer-intern-for",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-process.tell-us-about-yourself",
+    "section": "action-process",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:130",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-process.tell-us-about-yourself",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-process.the-form-asks-for-your-contact",
+    "section": "action-process",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:131",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-process.the-form-asks-for-your-contact",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-process.arrange-your-next-steps",
+    "section": "action-process",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:141",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-process.arrange-your-next-steps",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-process.call-or-email-project-starburst-to",
+    "section": "action-process",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:142",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-process.call-or-email-project-starburst-to",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.application.volunteer-application",
+    "section": "application",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/volunteer/page.tsx:164",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.application.volunteer-application",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.application.your-first-step-is-right-here",
+    "section": "application",
+    "type": "text",
+    "editable": false,
+    "source": "app/volunteer/page.tsx:165",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.application.your-first-step-is-right-here",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.application.download-the-original-volunteer-intern-for",
+    "section": "application",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/volunteer/page.tsx:166",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.application.download-the-original-volunteer-intern-for",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.application.1-page-pdf",
+    "section": "application",
+    "type": "text",
+    "editable": false,
+    "source": "app/volunteer/page.tsx:168",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.application.1-page-pdf",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.application.download-application-pdf",
+    "section": "application",
+    "type": "button",
+    "editable": false,
+    "source": "app/volunteer/page.tsx:171",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.application.download-application-pdf",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.application.view-application",
+    "section": "application",
+    "type": "text",
+    "editable": false,
+    "source": "app/volunteer/page.tsx:185",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.application.view-application",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.application.pdf-opens-in-a-new-tab",
+    "section": "application",
+    "type": "text",
+    "editable": false,
+    "source": "app/volunteer/page.tsx:186",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.application.pdf-opens-in-a-new-tab",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.application.community-service",
+    "section": "application",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/volunteer/page.tsx:193",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.application.community-service",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.application.before-you-plan-your-visit",
+    "section": "application",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/volunteer/page.tsx:197",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.application.before-you-plan-your-visit",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.application.the-application-lists-monday-friday-hours-",
+    "section": "application",
+    "type": "text",
+    "editable": false,
+    "source": "app/volunteer/page.tsx:197",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.application.the-application-lists-monday-friday-hours-",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.have-a-question-before-volunteering.have-a-question-before-volunteering",
+    "section": "have-a-question-before-volunteering",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:205",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.have-a-question-before-volunteering.have-a-question-before-volunteering",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.have-a-question-before-volunteering.give-us-a-call-or-send",
+    "section": "have-a-question-before-volunteering",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:206",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.have-a-question-before-volunteering.give-us-a-call-or-send",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-other-support-action-container.other-ways-to-support",
+    "section": "action-other-support-action-container",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:216",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-other-support-action-container.other-ways-to-support",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-other-support-action-container.give-in-a-way-that-works",
+    "section": "action-other-support-action-container",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:217",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-other-support-action-container.give-in-a-way-that-works",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-other-support-action-container.food-hygiene-products-essentials-and-finan",
+    "section": "action-other-support-action-container",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:218",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-other-support-action-container.food-hygiene-products-essentials-and-finan",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-other-support-action-container.donate",
+    "section": "action-other-support-action-container",
+    "type": "button",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:224",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-other-support-action-container.donate",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.action-other-support-action-container.donate-goods",
+    "section": "action-other-support-action-container",
+    "type": "button",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:227",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.action-other-support-action-container.donate-goods",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.content.follow-project-starburst-on-facebook",
+    "section": "content",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:240",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.content.follow-project-starburst-on-facebook",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.content.opens-in-a-new-tab",
+    "section": "content",
+    "type": "text",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:241",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.content.opens-in-a-new-tab",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "volunteer.content.updates-on-hours-events-and-announcements",
+    "section": "content",
+    "type": "paragraph",
+    "editable": true,
+    "source": "app/volunteer/page.tsx:243",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.volunteer.content.updates-on-hours-events-and-announcements",
+    "rendererSource": "components/pages/volunteer.tsx"
+  },
+  {
+    "field": "souper.seo.title",
+    "section": "seo",
+    "type": "seo_title",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx metadata",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.seo.title",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.seo.description",
+    "section": "seo",
+    "type": "seo_description",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx metadata",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.seo.description",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.souper-hero.image",
+    "section": "souper-hero",
+    "type": "image",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:13",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.souper-hero.image",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.souper-hero.image.alt",
+    "section": "souper-hero",
+    "type": "alt",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.souper-hero.image.alt",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.souper-hero.souper",
+    "section": "souper-hero",
+    "type": "text",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:17",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.souper-hero.souper",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.souper-hero.supper",
+    "section": "souper-hero",
+    "type": "text",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:19",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.souper-hero.supper",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.souper-hero.8th-annual",
+    "section": "souper-hero",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:25",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.souper-hero.8th-annual",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.souper-hero.warm-hearts-warm-bowls",
+    "section": "souper-hero",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:26",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.souper-hero.warm-hearts-warm-bowls",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.sponsor-section-title-sponsor.title-sponsor",
+    "section": "sponsor-section-title-sponsor",
+    "type": "text",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:29",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.sponsor-section-title-sponsor.title-sponsor",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.sponsor-section-title-sponsor.proudly-supporting-the-souper-supper-and",
+    "section": "sponsor-section-title-sponsor",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:30",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.sponsor-section-title-sponsor.proudly-supporting-the-souper-supper-and",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.sponsor-section-title-sponsor.image",
+    "section": "sponsor-section-title-sponsor",
+    "type": "image",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:40",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.sponsor-section-title-sponsor.image",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.sponsor-section-title-sponsor.image.alt",
+    "section": "sponsor-section-title-sponsor",
+    "type": "alt",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.sponsor-section-title-sponsor.image.alt",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.sponsor-section-title-sponsor.visit-northland-global-ministries",
+    "section": "sponsor-section-title-sponsor",
+    "type": "text",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:46",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.sponsor-section-title-sponsor.visit-northland-global-ministries",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.content.image",
+    "section": "content",
+    "type": "image",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:50",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.content.image",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.content.image.alt",
+    "section": "content",
+    "type": "alt",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.content.image.alt",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.content.souper-supper",
+    "section": "content",
+    "type": "text",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:57",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.content.souper-supper",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.content.mar-25-2026-11-00-am",
+    "section": "content",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:58",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.content.mar-25-2026-11-00-am",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.content.three-girls-bakery-106-n-michigan",
+    "section": "content",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:59",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.content.three-girls-bakery-106-n-michigan",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.content.this-event-is-a-fundraiser-for",
+    "section": "content",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:62",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.content.this-event-is-a-fundraiser-for",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.content.details",
+    "section": "content",
+    "type": "button",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:68",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.content.details",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.about-the-souper-supper.about-the-souper-supper",
+    "section": "about-the-souper-supper",
+    "type": "text",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:73",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.about-the-souper-supper.about-the-souper-supper",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.about-the-souper-supper.the-8th-annual-souper-supper",
+    "section": "about-the-souper-supper",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:74",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.about-the-souper-supper.the-8th-annual-souper-supper",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.content.proudly-supporting-the-souper-supper-and",
+    "section": "content",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:96",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.content.proudly-supporting-the-souper-supper-and",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "souper.content.visit-sponsor",
+    "section": "content",
+    "type": "button",
+    "editable": false,
+    "source": "app/soupersupper/page.tsx:114",
+    "pages": ["/soupersupper", "/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.souper.content.visit-sponsor",
+    "rendererSource": "components/pages/souper.tsx"
+  },
+  {
+    "field": "event.seo.title",
+    "section": "seo",
+    "type": "seo_title",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx metadata",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.seo.title",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.seo.description",
+    "section": "seo",
+    "type": "seo_description",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx metadata",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.seo.description",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.souper-supper.image",
+    "section": "souper-supper",
+    "type": "image",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:11",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.souper-supper.image",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.souper-supper.image.alt",
+    "section": "souper-supper",
+    "type": "alt",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.souper-supper.image.alt",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.souper-supper.souper-supper",
+    "section": "souper-supper",
+    "type": "text",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:12",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.souper-supper.souper-supper",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.souper-supper.wed-mar-25-three-girls",
+    "section": "souper-supper",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:16",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.souper-supper.wed-mar-25-three-girls",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.souper-supper.souper-supper-2",
+    "section": "souper-supper",
+    "type": "text",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:18",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.souper-supper.souper-supper-2",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.souper-supper.this-event-is-a-fundraiser-for",
+    "section": "souper-supper",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:19",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.souper-supper.this-event-is-a-fundraiser-for",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.souper-supper.registration-is-closed",
+    "section": "souper-supper",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:25",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.souper-supper.registration-is-closed",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.content.image",
+    "section": "content",
+    "type": "image",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:28",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.content.image",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.content.image.alt",
+    "section": "content",
+    "type": "alt",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.content.image.alt",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.time-location.time-location",
+    "section": "time-location",
+    "type": "text",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:35",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.time-location.time-location",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.time-location.mar-25-2026-11-00-am",
+    "section": "time-location",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:36",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.time-location.mar-25-2026-11-00-am",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.time-location.three-girls-bakery-106-n-michigan",
+    "section": "time-location",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:37",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.time-location.three-girls-bakery-106-n-michigan",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.tickets.tickets",
+    "section": "tickets",
+    "type": "text",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:39",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.tickets.tickets",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.tickets.souper-supper-8th-annual",
+    "section": "tickets",
+    "type": "text",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:40",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.tickets.souper-supper-8th-annual",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.tickets.sale-ended",
+    "section": "tickets",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:41",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.tickets.sale-ended",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.tickets.ages-18-20-00-0-50-ticket",
+    "section": "tickets",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:42",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.tickets.ages-18-20-00-0-50-ticket",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.tickets.ages-6-17-10-00",
+    "section": "tickets",
+    "type": "paragraph",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:43",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.tickets.ages-6-17-10-00",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "event.tickets.back-to-souper-supper",
+    "section": "tickets",
+    "type": "button",
+    "editable": false,
+    "source": "app/event-details/souper-supper/page.tsx:44",
+    "pages": ["/event-details/souper-supper"],
+    "approvedValueSource": "content/plm-content.json#values.event.tickets.back-to-souper-supper",
+    "rendererSource": "components/pages/event.tsx"
+  },
+  {
+    "field": "goods.food.title",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.goods.food.title",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "goods.food.items",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.goods.food.items",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "goods.personal-care.title",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.goods.personal-care.title",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "goods.personal-care.items",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.goods.personal-care.items",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "goods.baby.title",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.goods.baby.title",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "goods.baby.items",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.goods.baby.items",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "goods.household.title",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.goods.household.title",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "goods.household.items",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/donate"],
+    "approvedValueSource": "content/plm-content.json#values.goods.household.items",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "roles.food-truck.title",
+    "section": "opportunities",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.roles.food-truck.title",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "roles.food-truck.description",
+    "section": "opportunities",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.roles.food-truck.description",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "roles.food-drive.title",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.roles.food-drive.title",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "roles.food-drive.description",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.roles.food-drive.description",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "roles.groups.title",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.roles.groups.title",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "roles.groups.description",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.roles.groups.description",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "roles.community-service.title",
+    "section": "opportunities",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.roles.community-service.title",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "roles.community-service.description",
+    "section": "opportunities",
+    "type": "text",
+    "editable": false,
+    "source": "lib/organization.ts",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.roles.community-service.description",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "roles.shipments.title",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.roles.shipments.title",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "roles.shipments.description",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.roles.shipments.description",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "roles.distribution.title",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.roles.distribution.title",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "roles.distribution.description",
+    "section": "opportunities",
+    "type": "text",
+    "editable": true,
+    "source": "lib/organization.ts",
+    "pages": ["/volunteer"],
+    "approvedValueSource": "content/plm-content.json#values.roles.distribution.description",
+    "rendererSource": "lib/organization.ts"
+  },
+  {
+    "field": "stories.ruth.name",
+    "section": "stories",
+    "type": "text",
+    "editable": false,
+    "source": "components/testimonials.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.stories.ruth.name",
+    "rendererSource": "components/testimonials.tsx"
+  },
+  {
+    "field": "stories.ruth.quote",
+    "section": "stories",
+    "type": "paragraph",
+    "editable": false,
+    "source": "components/testimonials.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.stories.ruth.quote",
+    "rendererSource": "components/testimonials.tsx"
+  },
+  {
+    "field": "stories.kelly-birth-certificate.name",
+    "section": "stories",
+    "type": "text",
+    "editable": false,
+    "source": "components/testimonials.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.stories.kelly-birth-certificate.name",
+    "rendererSource": "components/testimonials.tsx"
+  },
+  {
+    "field": "stories.kelly-birth-certificate.quote",
+    "section": "stories",
+    "type": "paragraph",
+    "editable": false,
+    "source": "components/testimonials.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.stories.kelly-birth-certificate.quote",
+    "rendererSource": "components/testimonials.tsx"
+  },
+  {
+    "field": "stories.dawn.name",
+    "section": "stories",
+    "type": "text",
+    "editable": false,
+    "source": "components/testimonials.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.stories.dawn.name",
+    "rendererSource": "components/testimonials.tsx"
+  },
+  {
+    "field": "stories.dawn.quote",
+    "section": "stories",
+    "type": "paragraph",
+    "editable": false,
+    "source": "components/testimonials.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.stories.dawn.quote",
+    "rendererSource": "components/testimonials.tsx"
+  },
+  {
+    "field": "stories.kelly-food.name",
+    "section": "stories",
+    "type": "text",
+    "editable": false,
+    "source": "components/testimonials.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.stories.kelly-food.name",
+    "rendererSource": "components/testimonials.tsx"
+  },
+  {
+    "field": "stories.kelly-food.quote",
+    "section": "stories",
+    "type": "paragraph",
+    "editable": false,
+    "source": "components/testimonials.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.stories.kelly-food.quote",
+    "rendererSource": "components/testimonials.tsx"
+  },
+  {
+    "field": "stories.ivory.name",
+    "section": "stories",
+    "type": "text",
+    "editable": false,
+    "source": "components/testimonials.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.stories.ivory.name",
+    "rendererSource": "components/testimonials.tsx"
+  },
+  {
+    "field": "stories.ivory.quote",
+    "section": "stories",
+    "type": "paragraph",
+    "editable": false,
+    "source": "components/testimonials.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.stories.ivory.quote",
+    "rendererSource": "components/testimonials.tsx"
+  },
+  {
+    "field": "stories.karla.name",
+    "section": "stories",
+    "type": "text",
+    "editable": false,
+    "source": "components/testimonials.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.stories.karla.name",
+    "rendererSource": "components/testimonials.tsx"
+  },
+  {
+    "field": "stories.karla.quote",
+    "section": "stories",
+    "type": "paragraph",
+    "editable": false,
+    "source": "components/testimonials.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.stories.karla.quote",
+    "rendererSource": "components/testimonials.tsx"
+  },
+  {
+    "field": "stories.renee.name",
+    "section": "stories",
+    "type": "text",
+    "editable": false,
+    "source": "components/testimonials.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.stories.renee.name",
+    "rendererSource": "components/testimonials.tsx"
+  },
+  {
+    "field": "stories.renee.quote",
+    "section": "stories",
+    "type": "paragraph",
+    "editable": false,
+    "source": "components/testimonials.tsx",
+    "pages": ["/"],
+    "approvedValueSource": "content/plm-content.json#values.stories.renee.quote",
+    "rendererSource": "components/testimonials.tsx"
+  },
+  {
+    "field": "shared.facebook.heading",
+    "section": "shared-content",
+    "type": "text",
+    "editable": true,
+    "source": "components/site-shell.tsx",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.facebook.heading",
+    "rendererSource": "components/site-shell.tsx"
+  },
+  {
+    "field": "shared.facebook.description",
+    "section": "shared-content",
+    "type": "paragraph",
+    "editable": true,
+    "source": "components/site-shell.tsx",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.facebook.description",
+    "rendererSource": "components/site-shell.tsx"
+  },
+  {
+    "field": "shared.facebook.action",
+    "section": "shared-content",
+    "type": "button",
+    "editable": true,
+    "source": "components/site-shell.tsx",
+    "pages": [
+      "/",
+      "/about-us",
+      "/contact",
+      "/get-help",
+      "/donate",
+      "/volunteer",
+      "/soupersupper",
+      "/event-details/souper-supper",
+      "/souper-supper"
+    ],
+    "approvedValueSource": "content/plm-content.json#values.shared.facebook.action",
+    "rendererSource": "components/site-shell.tsx"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "siteId": null,
+  "parentOrigins": [],
+  "mediaOrigins": [],
+  "mediaPathPrefixes": ["/storage/v1/object/sign/plm-files/"],
+  "repository": "SmokinJoeSJ/project-starburst",
+  "targetBranch": "redesign-2026",
+  "contentPath": "content/plm-content.json",
+  "assetPath": "public/media/starburst",
+  "previewPath": "/plm-preview"
+}

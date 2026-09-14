@@ -1,3 +1,5 @@
+import { ContentImage, ContentText } from '@/components/content/fields';
+import type { FieldId } from '@/lib/content/approved';
 import type { ReactNode } from 'react';
 import { Clock3, MapPin, Phone } from 'lucide-react';
 import { organization } from '@/lib/organization';
@@ -9,16 +11,20 @@ export function ActionHero({
   description,
   image,
   alt,
+  imageField,
+  altField,
   children,
   caption,
 }: {
-  eyebrow: string;
+  eyebrow: ReactNode;
   title: ReactNode;
-  description: string;
+  description: ReactNode;
   image: string;
   alt: string;
+  imageField?: FieldId;
+  altField?: FieldId;
   children: ReactNode;
-  caption: string;
+  caption: ReactNode;
 }) {
   return (
     <section
@@ -32,7 +38,9 @@ export function ActionHero({
         <div className="action-cta-row">{children}</div>
       </div>
       <figure className="action-hero-photo">
-        <img
+        <ContentImage
+          imageField={imageField}
+          altField={altField}
           src={image}
           alt={alt}
           width="960"
@@ -83,9 +91,11 @@ export function PantryDetails({
           <div>
             <h3>{dropOff ? 'Drop-off hours' : 'Pantry hours'}</h3>
             <p>
-              {organization.hours.days}
+              <ContentText fieldId="shared.hours.days" />
               <br />
-              <strong>{organization.hours.time}</strong>
+              <strong>
+                <ContentText fieldId="shared.hours.time" />
+              </strong>
             </p>
           </div>
         </div>
@@ -106,10 +116,10 @@ export function PantryDetails({
           <div>
             <h3>Have a question?</h3>
             <CtaLink href={organization.phone.href} variant="text" icon="phone">
-              {organization.phone.display}
+              <ContentText fieldId="shared.phone.display" />
             </CtaLink>
             <CtaLink href={organization.emailHref} variant="text" icon="email">
-              {organization.email}
+              <ContentText fieldId="shared.email" />
             </CtaLink>
           </div>
         </div>
@@ -122,7 +132,7 @@ export function ActionClosing({
   title,
   children,
 }: {
-  title: string;
+  title: ReactNode;
   children: ReactNode;
 }) {
   return (
@@ -134,7 +144,7 @@ export function ActionClosing({
       </div>
       <div className="action-closing-links">
         <CtaLink href={organization.phone.href} icon="phone">
-          Call {organization.phone.display}
+          Call <ContentText fieldId="shared.phone.display" />
         </CtaLink>
         <CtaLink href={organization.emailHref} variant="text" icon="email">
           Email Project Starburst

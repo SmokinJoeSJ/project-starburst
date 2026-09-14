@@ -10,7 +10,7 @@ PLM's first client-site workflow, built from the existing [Project Starburst Wix
 | ---------------------------- | ------------- | ---------------------------------------------------------- |
 | Production (reserved in Git) | main          | projectstarburst.org; currently Wix, with www as canonical |
 | Staging                      | redesign-2026 | preview.projectstarburst.org once configured               |
-| Feature work                 | feature/*     | Unique Vercel Preview deployment           |
+| Feature work                 | feature/*     | Unique Vercel Preview deployment                           |
 
 During redesign: _*feature/* → PR → redesign-2026_*. Use `gh pr create --base redesign-2026`. Review before merging; do not routinely push straight to the integration branch.
 
@@ -65,3 +65,9 @@ GitHub Actions validates PR targets, lint, TypeScript, safety tests, and both bu
 Lint covers maintained site and workflow code. The pre-existing generated components/ui catalog and hooks/use-mobile.ts are excluded from lint because their baseline includes compiler and accessibility wrapper diagnostics; TypeScript still checks them. The Next Image recommendation is disabled because this build serves locally optimized static images. No dependency versions or public assets were changed.
 
 The [original migration notes](docs/migration-notes.md) describe the first rebuild. The current workflow and safety audit supersede their deployment assumptions. Hosted HTTP routes, React navigation, assets, and SEO have been checked. Viewport/interaction review and provider delivery tests remain owner review steps.
+
+## PLM Studio content adapter
+
+The site now has a versioned approved-content model and an isolated `/plm-preview` renderer. The real editor connection remains disabled until the canonical PLM Site and exact origins are registered. Start with [the integration handoff](docs/editor/plm-handoff.md), [coverage matrix](docs/editor/content-coverage.md), and [validation evidence](docs/editor/validation.md). Drafts, authentication, review and publishing stay in PLM. Ordinary content exports use reviewed feature PRs into `redesign-2026`; no production launch is implied.
+
+`npm run validate:content` runs before both builds. `npm run content:import -- bundle.json` validates an authorized PLM export without writing; see the handoff for constrained application and media transfer.

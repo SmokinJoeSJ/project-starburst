@@ -1,4 +1,6 @@
 'use client';
+import { ContentText } from '@/components/content/fields';
+
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
@@ -53,8 +55,11 @@ function NavigationLinks({
     </>
   );
 }
-export function Header() {
-  const pathname = usePathname();
+export function Header({
+  pathnameOverride,
+}: { pathnameOverride?: string } = {}) {
+  const actualPathname = usePathname();
+  const pathname = pathnameOverride ?? actualPathname;
   const [open, setOpen] = useState(false);
   const light = ['/get-help', '/donate', '/volunteer'].includes(pathname);
   return (
@@ -101,8 +106,12 @@ export function FacebookBand() {
     <section className="facebook-band">
       <div className="facebook-card">
         <div>
-          <h2>Follow Project Starburst on Facebook</h2>
-          <p>Get updates on hours, events, and announcements.</p>
+          <h2>
+            <ContentText fieldId="shared.facebook.heading" />
+          </h2>
+          <p>
+            <ContentText fieldId="shared.facebook.description" />
+          </p>
           <CtaLink
             href={organization.facebook}
             variant="secondary"
@@ -110,7 +119,7 @@ export function FacebookBand() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Follow on Facebook
+            <ContentText fieldId="shared.facebook.action" />
             <span className="sr-only"> (opens in a new tab)</span>
           </CtaLink>
         </div>
@@ -146,11 +155,14 @@ export function Footer() {
           </p>
           <address>
             <p>
-              Hours: {organization.hours.days}, {organization.hours.time}.
+              Hours: <ContentText fieldId="shared.hours.days" />,{' '}
+              <ContentText fieldId="shared.hours.time" />.
             </p>
             <p>
               Phone:{' '}
-              <a href={organization.phone.href}>{organization.phone.display}</a>
+              <a href={organization.phone.href}>
+                <ContentText fieldId="shared.phone.display" />
+              </a>
             </p>
             <p>
               <a
@@ -165,7 +177,10 @@ export function Footer() {
               </a>
             </p>
             <p>
-              Email: <a href={organization.emailHref}>{organization.email}</a>
+              Email:{' '}
+              <a href={organization.emailHref}>
+                <ContentText fieldId="shared.email" />
+              </a>
             </p>
           </address>
         </div>

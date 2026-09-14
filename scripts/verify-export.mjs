@@ -43,6 +43,17 @@ export function verifyVercelRouting(config) {
 /** @param {Record<string, string | undefined>} env */
 export function verifyExport(env = process.env) {
   const root = 'dist/client';
+  const content = JSON.parse(readFileSync('content/plm-content.json', 'utf8'));
+  const editor = readFileSync(join(root, 'plm-preview.html'), 'utf8');
+  const editorRsc = readFileSync(join(root, 'plm-preview.rsc'), 'utf8');
+  if (
+    !editor.includes('Project Starburst content preview') ||
+    !editor.includes('noindex') ||
+    !editor.includes('nofollow') ||
+    editor.includes('rel="canonical"') ||
+    !editorRsc.includes('PreviewCanvas')
+  )
+    throw Error('Invalid isolated preview export');
   const { isProduction } = deploymentPolicy(env);
   const assets = new Set();
   const config = JSON.parse(readFileSync('vercel.json', 'utf8'));
@@ -58,6 +69,11 @@ export function verifyExport(env = process.env) {
     const html = readFileSync(file, 'utf8');
     const rscPath = route === '/' ? '/index.rsc' : route + '.rsc';
     const rsc = readFileSync(join(root, rscPath.slice(1)), 'utf8');
+    if (
+      !html.includes(content.baseContentHash) ||
+      !rsc.includes(content.baseContentHash)
+    )
+      throw Error('HTML/RSC content revision mismatch: ' + route);
     if (rsc.startsWith('<!DOCTYPE') || !rsc.includes('main'))
       throw new Error('Invalid navigation payload: ' + route);
     if (!html.includes('id="main"'))
@@ -110,6 +126,8 @@ export function verifyExport(env = process.env) {
   if (!notFound.includes('Page not found'))
     throw new Error('Missing custom 404 page.');
   const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
+  if (sitemap.includes('/plm-preview'))
+    throw Error('Editor must not enter public sitemap');
   if (!isProduction && sitemap.includes('<loc>'))
     throw new Error('Preview sitemap must be empty.');
   if (isProduction && !sitemap.includes(PRODUCTION_ORIGIN))

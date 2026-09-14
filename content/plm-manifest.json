@@ -1,0 +1,4072 @@
+{
+  "contractVersion": "plm-content/1",
+  "siteId": null,
+  "manifestVersion": "starburst-v1",
+  "rendererVersion": "starburst-renderer-v1",
+  "pages": [
+    {
+      "id": "home",
+      "path": "/",
+      "label": "Home",
+      "sections": [
+        {
+          "id": "seo",
+          "label": "Page title and description",
+          "fields": ["home.seo.title", "home.seo.description"]
+        },
+        {
+          "id": "hero-home-hero",
+          "label": "Homepage introduction",
+          "fields": [
+            "home.hero-home-hero.image",
+            "home.hero-home-hero.image.alt",
+            "home.heading",
+            "home.hero-home-hero.project-starburst-provides-food-personal-h",
+            "home.hero-home-hero.get-help",
+            "home.hero-home-hero.about-project-starburst"
+          ]
+        },
+        {
+          "id": "impact-section",
+          "label": "Existing impact claims (review required)",
+          "fields": [
+            "home.impact-section.making-a-difference-in-our-community",
+            "home.impact-section.community-driven-support-since",
+            "home.impact-section.individuals-served-annually",
+            "home.impact-section.total-meals-provided-annually"
+          ]
+        },
+        {
+          "id": "shared",
+          "label": "Shared displayed details",
+          "fields": ["shared.founded"]
+        },
+        {
+          "id": "section-help-section",
+          "label": "How we help",
+          "fields": ["home.section-help-section.how-we-help"]
+        },
+        {
+          "id": "section-join-section",
+          "label": "Ways to participate",
+          "fields": [
+            "home.section-join-section.join-us-in-making-a-difference",
+            "home.section-join-section.every-contribution-helps-us-provide-food",
+            "home.section-join-section.get-help",
+            "home.section-join-section.donate",
+            "home.section-join-section.volunteer"
+          ]
+        },
+        {
+          "id": "organization",
+          "label": "Shared organization details (protected destinations)",
+          "fields": [
+            "shared.name",
+            "shared.founded",
+            "shared.counties",
+            "shared.phone.display",
+            "shared.phone.number",
+            "shared.phone.href",
+            "shared.email",
+            "shared.email-href",
+            "shared.address.street",
+            "shared.address.city",
+            "shared.address.state",
+            "shared.address.zip",
+            "shared.address.mailing-box",
+            "shared.address.full",
+            "shared.address.entry",
+            "shared.hours.days",
+            "shared.hours.time",
+            "shared.directions",
+            "shared.map-embed",
+            "shared.facebook",
+            "shared.tax-statement",
+            "shared.local-giving-statement",
+            "shared.volunteer-application.href",
+            "shared.volunteer-application.format",
+            "shared.volunteer-application.size",
+            "shared.volunteer-application.updated",
+            "shared.volunteer-application.hours-on-form",
+            "shared.volunteer-application.community-service"
+          ]
+        },
+        {
+          "id": "stories",
+          "label": "Stories",
+          "fields": [
+            "stories.ruth.name",
+            "stories.ruth.quote",
+            "stories.kelly-birth-certificate.name",
+            "stories.kelly-birth-certificate.quote",
+            "stories.dawn.name",
+            "stories.dawn.quote",
+            "stories.kelly-food.name",
+            "stories.kelly-food.quote",
+            "stories.ivory.name",
+            "stories.ivory.quote",
+            "stories.karla.name",
+            "stories.karla.quote",
+            "stories.renee.name",
+            "stories.renee.quote"
+          ]
+        },
+        {
+          "id": "shared-content",
+          "label": "Shared site copy",
+          "fields": [
+            "shared.facebook.heading",
+            "shared.facebook.description",
+            "shared.facebook.action"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "path": "/about-us",
+      "label": "About Project Starburst",
+      "sections": [
+        {
+          "id": "seo",
+          "label": "Page title and description",
+          "fields": ["about.seo.title", "about.seo.description"]
+        },
+        {
+          "id": "about-hero",
+          "label": "About introduction",
+          "fields": [
+            "about.about-hero.image",
+            "about.about-hero.image.alt",
+            "about.about-hero.neighbors-helping",
+            "about.about-hero.neighbors-since-1971",
+            "about.about-hero.project-starburst-is-dedicated-to-providin"
+          ]
+        },
+        {
+          "id": "shared",
+          "label": "Shared displayed details",
+          "fields": [
+            "shared.address.full",
+            "shared.phone.display",
+            "shared.hours.days",
+            "shared.hours.time",
+            "shared.email"
+          ]
+        },
+        {
+          "id": "what-we-do",
+          "label": "What we do",
+          "fields": [
+            "about.what-we-do.what-we-do",
+            "about.what-we-do.monthly-grocery-program",
+            "about.what-we-do.we-provide-monthly-groceries-based-on",
+            "about.what-we-do.how-it-works",
+            "about.what-we-do.1-fill-out-a-brief-intake",
+            "about.what-we-do.2-volunteers-prepare-customized-grocery-pa",
+            "about.what-we-do.3-pick-up-your-groceries-and"
+          ]
+        },
+        {
+          "id": "individual-case-management",
+          "label": "Individual case management",
+          "fields": [
+            "about.individual-case-management.individual-case-management",
+            "about.individual-case-management.we-go-beyond-food-assistance-by",
+            "about.individual-case-management.diaper-bank-for-qualified",
+            "about.individual-case-management.call-ahead",
+            "about.individual-case-management.referrals-to-local-agencies",
+            "about.individual-case-management.mid-michigan-community-action-center",
+            "about.individual-case-management.michigan-works",
+            "about.individual-case-management.michigan-department-of-health-human",
+            "about.individual-case-management.hygiene-items-assistance-donated"
+          ]
+        },
+        {
+          "id": "making-a-difference-in-our-community",
+          "label": "Making a difference in our community",
+          "fields": [
+            "about.making-a-difference-in-our-community.making-a-difference-in-our-community",
+            "about.making-a-difference-in-our-community.for-over-50-years-project-starburst",
+            "about.making-a-difference-in-our-community.clients",
+            "about.making-a-difference-in-our-community.copy",
+            "about.making-a-difference-in-our-community.individuals-served",
+            "about.making-a-difference-in-our-community.families-fed",
+            "about.making-a-difference-in-our-community.total-meals-provided"
+          ]
+        },
+        {
+          "id": "our-values",
+          "label": "Our values",
+          "fields": [
+            "about.our-values.our-values",
+            "about.our-values.a-neighborly-resource-providing",
+            "about.our-values.locally-funded-every-donation",
+            "about.our-values.community-based-we-believe-in"
+          ]
+        },
+        {
+          "id": "meet-our-team",
+          "label": "Meet our team",
+          "fields": [
+            "about.meet-our-team.meet-our-team",
+            "about.meet-our-team.our-staff",
+            "about.meet-our-team.connie-koepke-pantry-manager",
+            "about.meet-our-team.allan-bauman-assistant-pantry-manager",
+            "about.meet-our-team.board-of-directors",
+            "about.meet-our-team.alice-bandstra-president-russ-nehmer"
+          ]
+        },
+        {
+          "id": "how-you-can-help",
+          "label": "How you can help",
+          "fields": [
+            "about.how-you-can-help.how-you-can-help",
+            "about.how-you-can-help.donate-every-dollar-goes",
+            "about.how-you-can-help.donate",
+            "about.how-you-can-help.volunteer"
+          ]
+        },
+        {
+          "id": "non-discrimination-statement",
+          "label": "Non discrimination statement",
+          "fields": [
+            "about.non-discrimination-statement.non-discrimination-statement",
+            "about.non-discrimination-statement.we-re-committed-to-providing-equal-access",
+            "about.non-discrimination-statement.read-non-discrimination-statement-pdf",
+            "about.non-discrimination-statement.opens-in-a-new-tab"
+          ]
+        },
+        {
+          "id": "organization",
+          "label": "Shared organization details (protected destinations)",
+          "fields": [
+            "shared.name",
+            "shared.founded",
+            "shared.counties",
+            "shared.phone.display",
+            "shared.phone.number",
+            "shared.phone.href",
+            "shared.email",
+            "shared.email-href",
+            "shared.address.street",
+            "shared.address.city",
+            "shared.address.state",
+            "shared.address.zip",
+            "shared.address.mailing-box",
+            "shared.address.full",
+            "shared.address.entry",
+            "shared.hours.days",
+            "shared.hours.time",
+            "shared.directions",
+            "shared.map-embed",
+            "shared.facebook",
+            "shared.tax-statement",
+            "shared.local-giving-statement",
+            "shared.volunteer-application.href",
+            "shared.volunteer-application.format",
+            "shared.volunteer-application.size",
+            "shared.volunteer-application.updated",
+            "shared.volunteer-application.hours-on-form",
+            "shared.volunteer-application.community-service"
+          ]
+        },
+        {
+          "id": "shared-content",
+          "label": "Shared site copy",
+          "fields": [
+            "shared.facebook.heading",
+            "shared.facebook.description",
+            "shared.facebook.action"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "path": "/contact",
+      "label": "Contact",
+      "sections": [
+        {
+          "id": "seo",
+          "label": "Page title and description",
+          "fields": ["contact.seo.title", "contact.seo.description"]
+        },
+        {
+          "id": "contact-us",
+          "label": "Contact us",
+          "fields": [
+            "contact.contact-us.image",
+            "contact.contact-us.image.alt",
+            "contact.contact-us.contact-us",
+            "contact.contact-us.we-d-love-to-hear-from-you"
+          ]
+        },
+        {
+          "id": "our-location",
+          "label": "Our location",
+          "fields": [
+            "contact.our-location.our-location",
+            "contact.our-location.get-directions",
+            "contact.our-location.opens-in-a-new-tab"
+          ]
+        },
+        {
+          "id": "shared",
+          "label": "Shared displayed details",
+          "fields": [
+            "shared.name",
+            "shared.address.full",
+            "shared.address.street",
+            "shared.address.city",
+            "shared.address.state",
+            "shared.address.zip",
+            "shared.address.entry",
+            "shared.phone.display",
+            "shared.email",
+            "shared.hours.days",
+            "shared.hours.time"
+          ]
+        },
+        {
+          "id": "phone",
+          "label": "Phone",
+          "fields": [
+            "contact.phone.phone",
+            "contact.phone.if-you-have-questions-or-need"
+          ]
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "fields": [
+            "contact.email.email",
+            "contact.email.for-general-inquiries-or-to-reach"
+          ]
+        },
+        {
+          "id": "operating-hours",
+          "label": "Operating hours",
+          "fields": ["contact.operating-hours.operating-hours"]
+        },
+        {
+          "id": "follow-us",
+          "label": "Follow us",
+          "fields": [
+            "contact.follow-us.follow-us",
+            "contact.follow-us.stay-updated-and-connected-with-us"
+          ]
+        },
+        {
+          "id": "organization",
+          "label": "Shared organization details (protected destinations)",
+          "fields": [
+            "shared.name",
+            "shared.founded",
+            "shared.counties",
+            "shared.phone.display",
+            "shared.phone.number",
+            "shared.phone.href",
+            "shared.email",
+            "shared.email-href",
+            "shared.address.street",
+            "shared.address.city",
+            "shared.address.state",
+            "shared.address.zip",
+            "shared.address.mailing-box",
+            "shared.address.full",
+            "shared.address.entry",
+            "shared.hours.days",
+            "shared.hours.time",
+            "shared.directions",
+            "shared.map-embed",
+            "shared.facebook",
+            "shared.tax-statement",
+            "shared.local-giving-statement",
+            "shared.volunteer-application.href",
+            "shared.volunteer-application.format",
+            "shared.volunteer-application.size",
+            "shared.volunteer-application.updated",
+            "shared.volunteer-application.hours-on-form",
+            "shared.volunteer-application.community-service"
+          ]
+        },
+        {
+          "id": "shared-content",
+          "label": "Shared site copy",
+          "fields": [
+            "shared.facebook.heading",
+            "shared.facebook.description",
+            "shared.facebook.action"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "path": "/get-help",
+      "label": "Get Help",
+      "sections": [
+        {
+          "id": "seo",
+          "label": "Page title and description",
+          "fields": ["help.seo.title", "help.seo.description"]
+        },
+        {
+          "id": "hero",
+          "label": "Page introduction",
+          "fields": [
+            "help.hero.image",
+            "help.hero.image.alt",
+            "help.hero.get-help",
+            "help.hero.a-little-help",
+            "help.hero.a-caring-neighbor",
+            "help.hero.here-for-our-neighbors-with-dignity",
+            "help.hero.view-hours-location",
+            "help.hero.call"
+          ]
+        },
+        {
+          "id": "shared",
+          "label": "Shared displayed details",
+          "fields": [
+            "shared.phone.display",
+            "shared.address.full",
+            "shared.hours.days",
+            "shared.hours.time"
+          ]
+        },
+        {
+          "id": "content",
+          "label": "Supporting copy",
+          "fields": [
+            "help.content.visit-the-pantry",
+            "help.content.follow-project-starburst-on-facebook",
+            "help.content.opens-in-a-new-tab",
+            "help.content.updates-on-hours-events-and-announcements"
+          ]
+        },
+        {
+          "id": "action-section-action-container",
+          "label": "Available assistance",
+          "fields": [
+            "help.action-section-action-container.support-close-to-home",
+            "help.action-section-action-container.help-with-the-essentials",
+            "help.action-section-action-container.food-on-the-table-everyday-necessities",
+            "help.action-section-action-container.monthly-groceries",
+            "help.action-section-action-container.groceries-for-families-and-individuals-pac",
+            "help.action-section-action-container.hygiene-basic-needs",
+            "help.action-section-action-container.personal-hygiene-items-donated-bombas-sock",
+            "help.action-section-action-container.a-connection-to-support",
+            "help.action-section-action-container.individual-case-management-and-referrals-t"
+          ]
+        },
+        {
+          "id": "how-it-works",
+          "label": "How it works",
+          "fields": [
+            "help.how-it-works.your-first-visit",
+            "help.how-it-works.start-by-coming-in",
+            "help.how-it-works.registration-happens-in-person-our-team",
+            "help.how-it-works.register-in-person",
+            "help.how-it-works.visit-the-pantry-and-fill-out",
+            "help.how-it-works.groceries-for-your-household",
+            "help.how-it-works.once-you-re-registered-volunteers-pack-you",
+            "help.how-it-works.pick-up-head-home",
+            "help.how-it-works.your-groceries-are-placed-in-a"
+          ]
+        },
+        {
+          "id": "not-sure-where-to-start",
+          "label": "Not sure where to start",
+          "fields": [
+            "help.not-sure-where-to-start.not-sure-where-to-start",
+            "help.not-sure-where-to-start.call-during-pantry-hours-or-send"
+          ]
+        },
+        {
+          "id": "organization",
+          "label": "Shared organization details (protected destinations)",
+          "fields": [
+            "shared.name",
+            "shared.founded",
+            "shared.counties",
+            "shared.phone.display",
+            "shared.phone.number",
+            "shared.phone.href",
+            "shared.email",
+            "shared.email-href",
+            "shared.address.street",
+            "shared.address.city",
+            "shared.address.state",
+            "shared.address.zip",
+            "shared.address.mailing-box",
+            "shared.address.full",
+            "shared.address.entry",
+            "shared.hours.days",
+            "shared.hours.time",
+            "shared.directions",
+            "shared.map-embed",
+            "shared.facebook",
+            "shared.tax-statement",
+            "shared.local-giving-statement",
+            "shared.volunteer-application.href",
+            "shared.volunteer-application.format",
+            "shared.volunteer-application.size",
+            "shared.volunteer-application.updated",
+            "shared.volunteer-application.hours-on-form",
+            "shared.volunteer-application.community-service"
+          ]
+        },
+        {
+          "id": "shared-content",
+          "label": "Shared site copy",
+          "fields": [
+            "shared.facebook.heading",
+            "shared.facebook.description",
+            "shared.facebook.action"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "donate",
+      "path": "/donate",
+      "label": "Donate",
+      "sections": [
+        {
+          "id": "seo",
+          "label": "Page title and description",
+          "fields": ["donate.seo.title", "donate.seo.description"]
+        },
+        {
+          "id": "hero",
+          "label": "Page introduction",
+          "fields": [
+            "donate.hero.image",
+            "donate.hero.image.alt",
+            "donate.hero.donate",
+            "donate.hero.help-keep-the",
+            "donate.hero.pantry-stocked",
+            "donate.hero.from-one-neighbor-to-another-every",
+            "donate.hero.donate-online",
+            "donate.hero.donate-goods"
+          ]
+        },
+        {
+          "id": "action-donation-layout-action-container",
+          "label": "Online donation introduction",
+          "fields": [
+            "donate.action-donation-layout-action-container.give-close-to-home",
+            "donate.action-donation-layout-action-container.your-gift-your-community",
+            "donate.action-donation-layout-action-container.your-support-keeps-our-pantry-stocked",
+            "donate.action-donation-layout-action-container.image",
+            "donate.action-donation-layout-action-container.image.alt"
+          ]
+        },
+        {
+          "id": "shared",
+          "label": "Shared displayed details",
+          "fields": ["shared.local-giving-statement", "shared.tax-statement"]
+        },
+        {
+          "id": "donate-goods",
+          "label": "Donate goods",
+          "fields": [
+            "donate.donate-goods.donate-goods",
+            "donate.donate-goods.everyday-items-an-everyday-difference",
+            "donate.donate-goods.help-stock-the-pantry-with-non-perishable"
+          ]
+        },
+        {
+          "id": "action-other-giving-action-container",
+          "label": "Other ways to give",
+          "fields": [
+            "donate.action-other-giving-action-container.other-ways-to-give",
+            "donate.action-other-giving-action-container.make-your-support-go-further",
+            "donate.action-other-giving-action-container.employer-matching",
+            "donate.action-other-giving-action-container.check-whether-your-employer-will-match",
+            "donate.action-other-giving-action-container.fundraise-for-starburst",
+            "donate.action-other-giving-action-container.start-a-fundraiser-to-help-support",
+            "donate.action-other-giving-action-container.planned-giving",
+            "donate.action-other-giving-action-container.leave-a-lasting-impact-through-a",
+            "donate.action-other-giving-action-container.contact-project-starburst"
+          ]
+        },
+        {
+          "id": "action-impact-band",
+          "label": "Existing impact claims (review required)",
+          "fields": [
+            "donate.action-impact-band.your-support-in-action",
+            "donate.action-impact-band.neighbors-make-this-possible",
+            "donate.action-impact-band.thank-you-for-helping-provide-food",
+            "donate.action-impact-band.total-meals-provided",
+            "donate.action-impact-band.families-fed",
+            "donate.action-impact-band.clients-assisted",
+            "donate.action-impact-band.previously-reported-by-project-starburst-a"
+          ]
+        },
+        {
+          "id": "action-tax-note-action-container",
+          "label": "Organization and tax statement",
+          "fields": [
+            "donate.action-tax-note-action-container.thank-you-for-your-support"
+          ]
+        },
+        {
+          "id": "have-a-question-about-giving",
+          "label": "Have a question about giving",
+          "fields": [
+            "donate.have-a-question-about-giving.have-a-question-about-giving",
+            "donate.have-a-question-about-giving.we-d-be-glad-to-help-you"
+          ]
+        },
+        {
+          "id": "content",
+          "label": "Supporting copy",
+          "fields": [
+            "donate.content.follow-project-starburst-on-facebook",
+            "donate.content.opens-in-a-new-tab"
+          ]
+        },
+        {
+          "id": "organization",
+          "label": "Shared organization details (protected destinations)",
+          "fields": [
+            "shared.name",
+            "shared.founded",
+            "shared.counties",
+            "shared.phone.display",
+            "shared.phone.number",
+            "shared.phone.href",
+            "shared.email",
+            "shared.email-href",
+            "shared.address.street",
+            "shared.address.city",
+            "shared.address.state",
+            "shared.address.zip",
+            "shared.address.mailing-box",
+            "shared.address.full",
+            "shared.address.entry",
+            "shared.hours.days",
+            "shared.hours.time",
+            "shared.directions",
+            "shared.map-embed",
+            "shared.facebook",
+            "shared.tax-statement",
+            "shared.local-giving-statement",
+            "shared.volunteer-application.href",
+            "shared.volunteer-application.format",
+            "shared.volunteer-application.size",
+            "shared.volunteer-application.updated",
+            "shared.volunteer-application.hours-on-form",
+            "shared.volunteer-application.community-service"
+          ]
+        },
+        {
+          "id": "opportunities",
+          "label": "Goods or volunteer opportunities",
+          "fields": [
+            "goods.food.title",
+            "goods.food.items",
+            "goods.personal-care.title",
+            "goods.personal-care.items",
+            "goods.baby.title",
+            "goods.baby.items",
+            "goods.household.title",
+            "goods.household.items"
+          ]
+        },
+        {
+          "id": "shared-content",
+          "label": "Shared site copy",
+          "fields": [
+            "shared.facebook.heading",
+            "shared.facebook.description",
+            "shared.facebook.action"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "volunteer",
+      "path": "/volunteer",
+      "label": "Volunteer",
+      "sections": [
+        {
+          "id": "seo",
+          "label": "Page title and description",
+          "fields": ["volunteer.seo.title", "volunteer.seo.description"]
+        },
+        {
+          "id": "hero",
+          "label": "Page introduction",
+          "fields": [
+            "volunteer.hero.image",
+            "volunteer.hero.image.alt",
+            "volunteer.hero.volunteer",
+            "volunteer.hero.give-your-time",
+            "volunteer.hero.help-your-neighbors",
+            "volunteer.hero.there-s-more-than-one-way-to",
+            "volunteer.hero.apply-to-volunteer",
+            "volunteer.hero.pdf-opens-in-a-new",
+            "volunteer.hero.contact-us"
+          ]
+        },
+        {
+          "id": "action-section-action-container-action-vol",
+          "label": "Volunteer introduction",
+          "fields": [
+            "volunteer.action-section-action-container-action-vol.find-your-way-to-help",
+            "volunteer.action-section-action-container-action-vol.good-people-meaningful-work",
+            "volunteer.action-section-action-container-action-vol.whether-you-re-coming-on-your-own"
+          ]
+        },
+        {
+          "id": "action-process",
+          "label": "What to expect",
+          "fields": [
+            "volunteer.action-process.what-to-expect",
+            "volunteer.action-process.let-s-get-you-started",
+            "volunteer.action-process.our-pantry-is-at",
+            "volunteer.action-process.public-pantry-hours",
+            "volunteer.action-process.get-directions",
+            "volunteer.action-process.opens-in-a-new-tab",
+            "volunteer.action-process.get-the-application",
+            "volunteer.action-process.download-the-one-page-volunteer-intern-for",
+            "volunteer.action-process.tell-us-about-yourself",
+            "volunteer.action-process.the-form-asks-for-your-contact",
+            "volunteer.action-process.arrange-your-next-steps",
+            "volunteer.action-process.call-or-email-project-starburst-to"
+          ]
+        },
+        {
+          "id": "shared",
+          "label": "Shared displayed details",
+          "fields": [
+            "shared.address.full",
+            "shared.address.entry",
+            "shared.hours.days",
+            "shared.hours.time",
+            "shared.volunteer-application.size",
+            "shared.volunteer-application.community-service"
+          ]
+        },
+        {
+          "id": "application",
+          "label": "Application",
+          "fields": [
+            "volunteer.application.volunteer-application",
+            "volunteer.application.your-first-step-is-right-here",
+            "volunteer.application.download-the-original-volunteer-intern-for",
+            "volunteer.application.1-page-pdf",
+            "volunteer.application.download-application-pdf",
+            "volunteer.application.view-application",
+            "volunteer.application.pdf-opens-in-a-new-tab",
+            "volunteer.application.community-service",
+            "volunteer.application.before-you-plan-your-visit",
+            "volunteer.application.the-application-lists-monday-friday-hours-"
+          ]
+        },
+        {
+          "id": "have-a-question-before-volunteering",
+          "label": "Have a question before volunteering",
+          "fields": [
+            "volunteer.have-a-question-before-volunteering.have-a-question-before-volunteering",
+            "volunteer.have-a-question-before-volunteering.give-us-a-call-or-send"
+          ]
+        },
+        {
+          "id": "action-other-support-action-container",
+          "label": "Other support",
+          "fields": [
+            "volunteer.action-other-support-action-container.other-ways-to-support",
+            "volunteer.action-other-support-action-container.give-in-a-way-that-works",
+            "volunteer.action-other-support-action-container.food-hygiene-products-essentials-and-finan",
+            "volunteer.action-other-support-action-container.donate",
+            "volunteer.action-other-support-action-container.donate-goods"
+          ]
+        },
+        {
+          "id": "content",
+          "label": "Supporting copy",
+          "fields": [
+            "volunteer.content.follow-project-starburst-on-facebook",
+            "volunteer.content.opens-in-a-new-tab",
+            "volunteer.content.updates-on-hours-events-and-announcements"
+          ]
+        },
+        {
+          "id": "organization",
+          "label": "Shared organization details (protected destinations)",
+          "fields": [
+            "shared.name",
+            "shared.founded",
+            "shared.counties",
+            "shared.phone.display",
+            "shared.phone.number",
+            "shared.phone.href",
+            "shared.email",
+            "shared.email-href",
+            "shared.address.street",
+            "shared.address.city",
+            "shared.address.state",
+            "shared.address.zip",
+            "shared.address.mailing-box",
+            "shared.address.full",
+            "shared.address.entry",
+            "shared.hours.days",
+            "shared.hours.time",
+            "shared.directions",
+            "shared.map-embed",
+            "shared.facebook",
+            "shared.tax-statement",
+            "shared.local-giving-statement",
+            "shared.volunteer-application.href",
+            "shared.volunteer-application.format",
+            "shared.volunteer-application.size",
+            "shared.volunteer-application.updated",
+            "shared.volunteer-application.hours-on-form",
+            "shared.volunteer-application.community-service"
+          ]
+        },
+        {
+          "id": "opportunities",
+          "label": "Goods or volunteer opportunities",
+          "fields": [
+            "roles.food-truck.title",
+            "roles.food-truck.description",
+            "roles.food-drive.title",
+            "roles.food-drive.description",
+            "roles.groups.title",
+            "roles.groups.description",
+            "roles.community-service.title",
+            "roles.community-service.description",
+            "roles.shipments.title",
+            "roles.shipments.description",
+            "roles.distribution.title",
+            "roles.distribution.description"
+          ]
+        },
+        {
+          "id": "shared-content",
+          "label": "Shared site copy",
+          "fields": [
+            "shared.facebook.heading",
+            "shared.facebook.description",
+            "shared.facebook.action"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "souper",
+      "path": "/soupersupper",
+      "label": "Souper Supper",
+      "sections": [
+        {
+          "id": "seo",
+          "label": "Page title and description",
+          "fields": ["souper.seo.title", "souper.seo.description"]
+        },
+        {
+          "id": "souper-hero",
+          "label": "Event introduction",
+          "fields": [
+            "souper.souper-hero.image",
+            "souper.souper-hero.image.alt",
+            "souper.souper-hero.souper",
+            "souper.souper-hero.supper",
+            "souper.souper-hero.8th-annual",
+            "souper.souper-hero.warm-hearts-warm-bowls"
+          ]
+        },
+        {
+          "id": "sponsor-section-title-sponsor",
+          "label": "Existing event sponsors",
+          "fields": [
+            "souper.sponsor-section-title-sponsor.title-sponsor",
+            "souper.sponsor-section-title-sponsor.proudly-supporting-the-souper-supper-and",
+            "souper.sponsor-section-title-sponsor.image",
+            "souper.sponsor-section-title-sponsor.image.alt",
+            "souper.sponsor-section-title-sponsor.visit-northland-global-ministries"
+          ]
+        },
+        {
+          "id": "content",
+          "label": "Supporting copy",
+          "fields": [
+            "souper.content.image",
+            "souper.content.image.alt",
+            "souper.content.souper-supper",
+            "souper.content.mar-25-2026-11-00-am",
+            "souper.content.three-girls-bakery-106-n-michigan",
+            "souper.content.this-event-is-a-fundraiser-for",
+            "souper.content.details",
+            "souper.content.proudly-supporting-the-souper-supper-and",
+            "souper.content.visit-sponsor"
+          ]
+        },
+        {
+          "id": "about-the-souper-supper",
+          "label": "About the souper supper",
+          "fields": [
+            "souper.about-the-souper-supper.about-the-souper-supper",
+            "souper.about-the-souper-supper.the-8th-annual-souper-supper"
+          ]
+        },
+        {
+          "id": "organization",
+          "label": "Shared organization details (protected destinations)",
+          "fields": [
+            "shared.name",
+            "shared.founded",
+            "shared.counties",
+            "shared.phone.display",
+            "shared.phone.number",
+            "shared.phone.href",
+            "shared.email",
+            "shared.email-href",
+            "shared.address.street",
+            "shared.address.city",
+            "shared.address.state",
+            "shared.address.zip",
+            "shared.address.mailing-box",
+            "shared.address.full",
+            "shared.address.entry",
+            "shared.hours.days",
+            "shared.hours.time",
+            "shared.directions",
+            "shared.map-embed",
+            "shared.facebook",
+            "shared.tax-statement",
+            "shared.local-giving-statement",
+            "shared.volunteer-application.href",
+            "shared.volunteer-application.format",
+            "shared.volunteer-application.size",
+            "shared.volunteer-application.updated",
+            "shared.volunteer-application.hours-on-form",
+            "shared.volunteer-application.community-service"
+          ]
+        },
+        {
+          "id": "shared-content",
+          "label": "Shared site copy",
+          "fields": [
+            "shared.facebook.heading",
+            "shared.facebook.description",
+            "shared.facebook.action"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "event",
+      "path": "/event-details/souper-supper",
+      "label": "Souper Supper details",
+      "sections": [
+        {
+          "id": "seo",
+          "label": "Page title and description",
+          "fields": ["event.seo.title", "event.seo.description"]
+        },
+        {
+          "id": "souper-supper",
+          "label": "Souper supper",
+          "fields": [
+            "event.souper-supper.image",
+            "event.souper-supper.image.alt",
+            "event.souper-supper.souper-supper",
+            "event.souper-supper.wed-mar-25-three-girls",
+            "event.souper-supper.souper-supper-2",
+            "event.souper-supper.this-event-is-a-fundraiser-for",
+            "event.souper-supper.registration-is-closed"
+          ]
+        },
+        {
+          "id": "content",
+          "label": "Supporting copy",
+          "fields": ["event.content.image", "event.content.image.alt"]
+        },
+        {
+          "id": "time-location",
+          "label": "Time location",
+          "fields": [
+            "event.time-location.time-location",
+            "event.time-location.mar-25-2026-11-00-am",
+            "event.time-location.three-girls-bakery-106-n-michigan"
+          ]
+        },
+        {
+          "id": "tickets",
+          "label": "Tickets",
+          "fields": [
+            "event.tickets.tickets",
+            "event.tickets.souper-supper-8th-annual",
+            "event.tickets.sale-ended",
+            "event.tickets.ages-18-20-00-0-50-ticket",
+            "event.tickets.ages-6-17-10-00",
+            "event.tickets.back-to-souper-supper"
+          ]
+        },
+        {
+          "id": "organization",
+          "label": "Shared organization details (protected destinations)",
+          "fields": [
+            "shared.name",
+            "shared.founded",
+            "shared.counties",
+            "shared.phone.display",
+            "shared.phone.number",
+            "shared.phone.href",
+            "shared.email",
+            "shared.email-href",
+            "shared.address.street",
+            "shared.address.city",
+            "shared.address.state",
+            "shared.address.zip",
+            "shared.address.mailing-box",
+            "shared.address.full",
+            "shared.address.entry",
+            "shared.hours.days",
+            "shared.hours.time",
+            "shared.directions",
+            "shared.map-embed",
+            "shared.facebook",
+            "shared.tax-statement",
+            "shared.local-giving-statement",
+            "shared.volunteer-application.href",
+            "shared.volunteer-application.format",
+            "shared.volunteer-application.size",
+            "shared.volunteer-application.updated",
+            "shared.volunteer-application.hours-on-form",
+            "shared.volunteer-application.community-service"
+          ]
+        },
+        {
+          "id": "shared-content",
+          "label": "Shared site copy",
+          "fields": [
+            "shared.facebook.heading",
+            "shared.facebook.description",
+            "shared.facebook.action"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "souper-alias",
+      "path": "/souper-supper",
+      "label": "Souper Supper legacy route",
+      "sections": [
+        {
+          "id": "seo",
+          "label": "Page title and description",
+          "fields": ["souper.seo.title", "souper.seo.description"]
+        },
+        {
+          "id": "souper-hero",
+          "label": "Event introduction",
+          "fields": [
+            "souper.souper-hero.image",
+            "souper.souper-hero.image.alt",
+            "souper.souper-hero.souper",
+            "souper.souper-hero.supper",
+            "souper.souper-hero.8th-annual",
+            "souper.souper-hero.warm-hearts-warm-bowls"
+          ]
+        },
+        {
+          "id": "sponsor-section-title-sponsor",
+          "label": "Existing event sponsors",
+          "fields": [
+            "souper.sponsor-section-title-sponsor.title-sponsor",
+            "souper.sponsor-section-title-sponsor.proudly-supporting-the-souper-supper-and",
+            "souper.sponsor-section-title-sponsor.image",
+            "souper.sponsor-section-title-sponsor.image.alt",
+            "souper.sponsor-section-title-sponsor.visit-northland-global-ministries"
+          ]
+        },
+        {
+          "id": "content",
+          "label": "Supporting copy",
+          "fields": [
+            "souper.content.image",
+            "souper.content.image.alt",
+            "souper.content.souper-supper",
+            "souper.content.mar-25-2026-11-00-am",
+            "souper.content.three-girls-bakery-106-n-michigan",
+            "souper.content.this-event-is-a-fundraiser-for",
+            "souper.content.details",
+            "souper.content.proudly-supporting-the-souper-supper-and",
+            "souper.content.visit-sponsor"
+          ]
+        },
+        {
+          "id": "about-the-souper-supper",
+          "label": "About the souper supper",
+          "fields": [
+            "souper.about-the-souper-supper.about-the-souper-supper",
+            "souper.about-the-souper-supper.the-8th-annual-souper-supper"
+          ]
+        },
+        {
+          "id": "organization",
+          "label": "Shared organization details (protected destinations)",
+          "fields": [
+            "shared.name",
+            "shared.founded",
+            "shared.counties",
+            "shared.phone.display",
+            "shared.phone.number",
+            "shared.phone.href",
+            "shared.email",
+            "shared.email-href",
+            "shared.address.street",
+            "shared.address.city",
+            "shared.address.state",
+            "shared.address.zip",
+            "shared.address.mailing-box",
+            "shared.address.full",
+            "shared.address.entry",
+            "shared.hours.days",
+            "shared.hours.time",
+            "shared.directions",
+            "shared.map-embed",
+            "shared.facebook",
+            "shared.tax-statement",
+            "shared.local-giving-statement",
+            "shared.volunteer-application.href",
+            "shared.volunteer-application.format",
+            "shared.volunteer-application.size",
+            "shared.volunteer-application.updated",
+            "shared.volunteer-application.hours-on-form",
+            "shared.volunteer-application.community-service"
+          ]
+        },
+        {
+          "id": "shared-content",
+          "label": "Shared site copy",
+          "fields": [
+            "shared.facebook.heading",
+            "shared.facebook.description",
+            "shared.facebook.action"
+          ]
+        }
+      ]
+    }
+  ],
+  "fields": {
+    "shared.name": {
+      "label": "name",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.founded": {
+      "label": "founded",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.counties": {
+      "label": "counties",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.phone.display": {
+      "label": "display",
+      "type": "text",
+      "editable": true,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      },
+      "help": "Display label only. The delivery recipient and link destination stay locked."
+    },
+    "shared.phone.number": {
+      "label": "number",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.phone.href": {
+      "label": "href",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.email": {
+      "label": "email",
+      "type": "text",
+      "editable": true,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      },
+      "help": "Display label only. The delivery recipient and link destination stay locked."
+    },
+    "shared.email-href": {
+      "label": "email href",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.address.street": {
+      "label": "street",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.address.city": {
+      "label": "city",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.address.state": {
+      "label": "state",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.address.zip": {
+      "label": "zip",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.address.mailing-box": {
+      "label": "mailing box",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.address.full": {
+      "label": "full",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.address.entry": {
+      "label": "entry",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.hours.days": {
+      "label": "days",
+      "type": "text",
+      "editable": true,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.hours.time": {
+      "label": "time",
+      "type": "text",
+      "editable": true,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.directions": {
+      "label": "directions",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.map-embed": {
+      "label": "map embed",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.facebook": {
+      "label": "facebook",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.tax-statement": {
+      "label": "tax statement",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.local-giving-statement": {
+      "label": "local giving statement",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.volunteer-application.href": {
+      "label": "href",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.volunteer-application.format": {
+      "label": "format",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.volunteer-application.size": {
+      "label": "size",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.volunteer-application.updated": {
+      "label": "updated",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.volunteer-application.hours-on-form": {
+      "label": "hours on form",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.volunteer-application.community-service": {
+      "label": "community service",
+      "type": "text",
+      "editable": false,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "home.seo.title": {
+      "label": "title",
+      "type": "seo_title",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 180
+      }
+    },
+    "home.seo.description": {
+      "label": "description",
+      "type": "seo_description",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 500
+      }
+    },
+    "home.hero-home-hero.image": {
+      "label": "image",
+      "type": "image",
+      "editable": true,
+      "constraints": {
+        "required": false,
+        "formats": ["jpeg", "png", "webp"],
+        "maxBytes": 8388608,
+        "maxWidth": 12000,
+        "maxHeight": 12000
+      },
+      "help": "Optional replacement. Null preserves the original approved local photo. Register existing media in PLM before choosing it there. No removal or focal control in v1."
+    },
+    "home.hero-home-hero.image.alt": {
+      "label": "alt",
+      "type": "alt",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "home.heading": {
+      "label": "heading",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "home.hero-home-hero.project-starburst-provides-food-personal-h": {
+      "label": "project starburst provides food personal h",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "home.hero-home-hero.get-help": {
+      "label": "get help",
+      "type": "button",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "home.hero-home-hero.about-project-starburst": {
+      "label": "about project starburst",
+      "type": "button",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "home.impact-section.making-a-difference-in-our-community": {
+      "label": "making a difference in our community",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "home.impact-section.community-driven-support-since": {
+      "label": "community driven support since",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "home.impact-section.individuals-served-annually": {
+      "label": "individuals served annually",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "home.impact-section.total-meals-provided-annually": {
+      "label": "total meals provided annually",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "home.section-help-section.how-we-help": {
+      "label": "how we help",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "home.section-join-section.join-us-in-making-a-difference": {
+      "label": "join us in making a difference",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "home.section-join-section.every-contribution-helps-us-provide-food": {
+      "label": "every contribution helps us provide food",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "home.section-join-section.get-help": {
+      "label": "get help",
+      "type": "button",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "home.section-join-section.donate": {
+      "label": "donate",
+      "type": "button",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "home.section-join-section.volunteer": {
+      "label": "volunteer",
+      "type": "button",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "about.seo.title": {
+      "label": "title",
+      "type": "seo_title",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 180
+      }
+    },
+    "about.seo.description": {
+      "label": "description",
+      "type": "seo_description",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 500
+      }
+    },
+    "about.about-hero.image": {
+      "label": "image",
+      "type": "image",
+      "editable": true,
+      "constraints": {
+        "required": false,
+        "formats": ["jpeg", "png", "webp"],
+        "maxBytes": 8388608,
+        "maxWidth": 12000,
+        "maxHeight": 12000
+      },
+      "help": "Optional replacement. Null preserves the original approved local photo. Register existing media in PLM before choosing it there. No removal or focal control in v1."
+    },
+    "about.about-hero.image.alt": {
+      "label": "alt",
+      "type": "alt",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.about-hero.neighbors-helping": {
+      "label": "neighbors helping",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.about-hero.neighbors-since-1971": {
+      "label": "neighbors since 1971",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.about-hero.project-starburst-is-dedicated-to-providin": {
+      "label": "project starburst is dedicated to providin",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.what-we-do.what-we-do": {
+      "label": "what we do",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.what-we-do.monthly-grocery-program": {
+      "label": "monthly grocery program",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.what-we-do.we-provide-monthly-groceries-based-on": {
+      "label": "we provide monthly groceries based on",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.what-we-do.how-it-works": {
+      "label": "how it works",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.what-we-do.1-fill-out-a-brief-intake": {
+      "label": "1 fill out a brief intake",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.what-we-do.2-volunteers-prepare-customized-grocery-pa": {
+      "label": "2 volunteers prepare customized grocery pa",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.what-we-do.3-pick-up-your-groceries-and": {
+      "label": "3 pick up your groceries and",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.individual-case-management.individual-case-management": {
+      "label": "individual case management",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.individual-case-management.we-go-beyond-food-assistance-by": {
+      "label": "we go beyond food assistance by",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.individual-case-management.diaper-bank-for-qualified": {
+      "label": "diaper bank for qualified",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.individual-case-management.call-ahead": {
+      "label": "call ahead",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.individual-case-management.referrals-to-local-agencies": {
+      "label": "referrals to local agencies",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.individual-case-management.mid-michigan-community-action-center": {
+      "label": "mid michigan community action center",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.individual-case-management.michigan-works": {
+      "label": "michigan works",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.individual-case-management.michigan-department-of-health-human": {
+      "label": "michigan department of health human",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.individual-case-management.hygiene-items-assistance-donated": {
+      "label": "hygiene items assistance donated",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.making-a-difference-in-our-community.making-a-difference-in-our-community": {
+      "label": "making a difference in our community",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.making-a-difference-in-our-community.for-over-50-years-project-starburst": {
+      "label": "for over 50 years project starburst",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.making-a-difference-in-our-community.clients": {
+      "label": "clients",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.making-a-difference-in-our-community.copy": {
+      "label": "copy",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.making-a-difference-in-our-community.individuals-served": {
+      "label": "individuals served",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.making-a-difference-in-our-community.families-fed": {
+      "label": "families fed",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.making-a-difference-in-our-community.total-meals-provided": {
+      "label": "total meals provided",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.our-values.our-values": {
+      "label": "our values",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.our-values.a-neighborly-resource-providing": {
+      "label": "a neighborly resource providing",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.our-values.locally-funded-every-donation": {
+      "label": "locally funded every donation",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.our-values.community-based-we-believe-in": {
+      "label": "community based we believe in",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.meet-our-team.meet-our-team": {
+      "label": "meet our team",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.meet-our-team.our-staff": {
+      "label": "our staff",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.meet-our-team.connie-koepke-pantry-manager": {
+      "label": "connie koepke pantry manager",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.meet-our-team.allan-bauman-assistant-pantry-manager": {
+      "label": "allan bauman assistant pantry manager",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.meet-our-team.board-of-directors": {
+      "label": "board of directors",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.meet-our-team.alice-bandstra-president-russ-nehmer": {
+      "label": "alice bandstra president russ nehmer",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.how-you-can-help.how-you-can-help": {
+      "label": "how you can help",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.how-you-can-help.donate-every-dollar-goes": {
+      "label": "donate every dollar goes",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.how-you-can-help.donate": {
+      "label": "donate",
+      "type": "button",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "about.how-you-can-help.volunteer": {
+      "label": "volunteer",
+      "type": "button",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "about.non-discrimination-statement.non-discrimination-statement": {
+      "label": "non discrimination statement",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.non-discrimination-statement.we-re-committed-to-providing-equal-access": {
+      "label": "we re committed to providing equal access",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.non-discrimination-statement.read-non-discrimination-statement-pdf": {
+      "label": "read non discrimination statement pdf",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "about.non-discrimination-statement.opens-in-a-new-tab": {
+      "label": "opens in a new tab",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "contact.seo.title": {
+      "label": "title",
+      "type": "seo_title",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 180
+      }
+    },
+    "contact.seo.description": {
+      "label": "description",
+      "type": "seo_description",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 500
+      }
+    },
+    "contact.contact-us.image": {
+      "label": "image",
+      "type": "image",
+      "editable": true,
+      "constraints": {
+        "required": false,
+        "formats": ["jpeg", "png", "webp"],
+        "maxBytes": 8388608,
+        "maxWidth": 12000,
+        "maxHeight": 12000
+      },
+      "help": "Optional replacement. Null preserves the original approved local photo. Register existing media in PLM before choosing it there. No removal or focal control in v1."
+    },
+    "contact.contact-us.image.alt": {
+      "label": "alt",
+      "type": "alt",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "contact.contact-us.contact-us": {
+      "label": "contact us",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "contact.contact-us.we-d-love-to-hear-from-you": {
+      "label": "we d love to hear from you",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "contact.our-location.our-location": {
+      "label": "our location",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "contact.our-location.get-directions": {
+      "label": "get directions",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "contact.our-location.opens-in-a-new-tab": {
+      "label": "opens in a new tab",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "contact.phone.phone": {
+      "label": "phone",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "contact.phone.if-you-have-questions-or-need": {
+      "label": "if you have questions or need",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "contact.email.email": {
+      "label": "email",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "contact.email.for-general-inquiries-or-to-reach": {
+      "label": "for general inquiries or to reach",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "contact.operating-hours.operating-hours": {
+      "label": "operating hours",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "contact.follow-us.follow-us": {
+      "label": "follow us",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "contact.follow-us.stay-updated-and-connected-with-us": {
+      "label": "stay updated and connected with us",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.seo.title": {
+      "label": "title",
+      "type": "seo_title",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 180
+      }
+    },
+    "help.seo.description": {
+      "label": "description",
+      "type": "seo_description",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 500
+      }
+    },
+    "help.hero.image": {
+      "label": "image",
+      "type": "image",
+      "editable": true,
+      "constraints": {
+        "required": false,
+        "formats": ["jpeg", "png", "webp"],
+        "maxBytes": 8388608,
+        "maxWidth": 12000,
+        "maxHeight": 12000
+      },
+      "help": "Optional replacement. Null preserves the original approved local photo. Register existing media in PLM before choosing it there. No removal or focal control in v1."
+    },
+    "help.hero.image.alt": {
+      "label": "alt",
+      "type": "alt",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.hero.get-help": {
+      "label": "get help",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.hero.a-little-help": {
+      "label": "a little help",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.hero.a-caring-neighbor": {
+      "label": "a caring neighbor",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.hero.here-for-our-neighbors-with-dignity": {
+      "label": "here for our neighbors with dignity",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.hero.view-hours-location": {
+      "label": "view hours location",
+      "type": "button",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "help.hero.call": {
+      "label": "call",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.content.visit-the-pantry": {
+      "label": "visit the pantry",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.action-section-action-container.support-close-to-home": {
+      "label": "support close to home",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.action-section-action-container.help-with-the-essentials": {
+      "label": "help with the essentials",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.action-section-action-container.food-on-the-table-everyday-necessities": {
+      "label": "food on the table everyday necessities",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.action-section-action-container.monthly-groceries": {
+      "label": "monthly groceries",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.action-section-action-container.groceries-for-families-and-individuals-pac": {
+      "label": "groceries for families and individuals pac",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.action-section-action-container.hygiene-basic-needs": {
+      "label": "hygiene basic needs",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.action-section-action-container.personal-hygiene-items-donated-bombas-sock": {
+      "label": "personal hygiene items donated bombas sock",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.action-section-action-container.a-connection-to-support": {
+      "label": "a connection to support",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.action-section-action-container.individual-case-management-and-referrals-t": {
+      "label": "individual case management and referrals t",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.how-it-works.your-first-visit": {
+      "label": "your first visit",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.how-it-works.start-by-coming-in": {
+      "label": "start by coming in",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.how-it-works.registration-happens-in-person-our-team": {
+      "label": "registration happens in person our team",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.how-it-works.register-in-person": {
+      "label": "register in person",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.how-it-works.visit-the-pantry-and-fill-out": {
+      "label": "visit the pantry and fill out",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.how-it-works.groceries-for-your-household": {
+      "label": "groceries for your household",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.how-it-works.once-you-re-registered-volunteers-pack-you": {
+      "label": "once you re registered volunteers pack you",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.how-it-works.pick-up-head-home": {
+      "label": "pick up head home",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.how-it-works.your-groceries-are-placed-in-a": {
+      "label": "your groceries are placed in a",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.not-sure-where-to-start.not-sure-where-to-start": {
+      "label": "not sure where to start",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.not-sure-where-to-start.call-during-pantry-hours-or-send": {
+      "label": "call during pantry hours or send",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.content.follow-project-starburst-on-facebook": {
+      "label": "follow project starburst on facebook",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.content.opens-in-a-new-tab": {
+      "label": "opens in a new tab",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "help.content.updates-on-hours-events-and-announcements": {
+      "label": "updates on hours events and announcements",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.seo.title": {
+      "label": "title",
+      "type": "seo_title",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 180
+      }
+    },
+    "donate.seo.description": {
+      "label": "description",
+      "type": "seo_description",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 500
+      }
+    },
+    "donate.hero.image": {
+      "label": "image",
+      "type": "image",
+      "editable": true,
+      "constraints": {
+        "required": false,
+        "formats": ["jpeg", "png", "webp"],
+        "maxBytes": 8388608,
+        "maxWidth": 12000,
+        "maxHeight": 12000
+      },
+      "help": "Optional replacement. Null preserves the original approved local photo. Register existing media in PLM before choosing it there. No removal or focal control in v1."
+    },
+    "donate.hero.image.alt": {
+      "label": "alt",
+      "type": "alt",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.hero.donate": {
+      "label": "donate",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.hero.help-keep-the": {
+      "label": "help keep the",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.hero.pantry-stocked": {
+      "label": "pantry stocked",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.hero.from-one-neighbor-to-another-every": {
+      "label": "from one neighbor to another every",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.hero.donate-online": {
+      "label": "donate online",
+      "type": "button",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "donate.hero.donate-goods": {
+      "label": "donate goods",
+      "type": "button",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "donate.action-donation-layout-action-container.give-close-to-home": {
+      "label": "give close to home",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-donation-layout-action-container.your-gift-your-community": {
+      "label": "your gift your community",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-donation-layout-action-container.your-support-keeps-our-pantry-stocked": {
+      "label": "your support keeps our pantry stocked",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-donation-layout-action-container.image": {
+      "label": "image",
+      "type": "image",
+      "editable": true,
+      "constraints": {
+        "required": false,
+        "formats": ["jpeg", "png", "webp"],
+        "maxBytes": 8388608,
+        "maxWidth": 12000,
+        "maxHeight": 12000
+      },
+      "help": "Optional replacement. Null preserves the original approved local photo. Register existing media in PLM before choosing it there. No removal or focal control in v1."
+    },
+    "donate.action-donation-layout-action-container.image.alt": {
+      "label": "alt",
+      "type": "alt",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.donate-goods.donate-goods": {
+      "label": "donate goods",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.donate-goods.everyday-items-an-everyday-difference": {
+      "label": "everyday items an everyday difference",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.donate-goods.help-stock-the-pantry-with-non-perishable": {
+      "label": "help stock the pantry with non perishable",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-other-giving-action-container.other-ways-to-give": {
+      "label": "other ways to give",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-other-giving-action-container.make-your-support-go-further": {
+      "label": "make your support go further",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-other-giving-action-container.employer-matching": {
+      "label": "employer matching",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-other-giving-action-container.check-whether-your-employer-will-match": {
+      "label": "check whether your employer will match",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-other-giving-action-container.fundraise-for-starburst": {
+      "label": "fundraise for starburst",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-other-giving-action-container.start-a-fundraiser-to-help-support": {
+      "label": "start a fundraiser to help support",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-other-giving-action-container.planned-giving": {
+      "label": "planned giving",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-other-giving-action-container.leave-a-lasting-impact-through-a": {
+      "label": "leave a lasting impact through a",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-other-giving-action-container.contact-project-starburst": {
+      "label": "contact project starburst",
+      "type": "button",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "donate.action-impact-band.your-support-in-action": {
+      "label": "your support in action",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-impact-band.neighbors-make-this-possible": {
+      "label": "neighbors make this possible",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-impact-band.thank-you-for-helping-provide-food": {
+      "label": "thank you for helping provide food",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-impact-band.total-meals-provided": {
+      "label": "total meals provided",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-impact-band.families-fed": {
+      "label": "families fed",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-impact-band.clients-assisted": {
+      "label": "clients assisted",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-impact-band.previously-reported-by-project-starburst-a": {
+      "label": "previously reported by project starburst a",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.action-tax-note-action-container.thank-you-for-your-support": {
+      "label": "thank you for your support",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.have-a-question-about-giving.have-a-question-about-giving": {
+      "label": "have a question about giving",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.have-a-question-about-giving.we-d-be-glad-to-help-you": {
+      "label": "we d be glad to help you",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.content.follow-project-starburst-on-facebook": {
+      "label": "follow project starburst on facebook",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "donate.content.opens-in-a-new-tab": {
+      "label": "opens in a new tab",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.seo.title": {
+      "label": "title",
+      "type": "seo_title",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 180
+      }
+    },
+    "volunteer.seo.description": {
+      "label": "description",
+      "type": "seo_description",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 500
+      }
+    },
+    "volunteer.hero.image": {
+      "label": "image",
+      "type": "image",
+      "editable": true,
+      "constraints": {
+        "required": false,
+        "formats": ["jpeg", "png", "webp"],
+        "maxBytes": 8388608,
+        "maxWidth": 12000,
+        "maxHeight": 12000
+      },
+      "help": "Optional replacement. Null preserves the original approved local photo. Register existing media in PLM before choosing it there. No removal or focal control in v1."
+    },
+    "volunteer.hero.image.alt": {
+      "label": "alt",
+      "type": "alt",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.hero.volunteer": {
+      "label": "volunteer",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.hero.give-your-time": {
+      "label": "give your time",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.hero.help-your-neighbors": {
+      "label": "help your neighbors",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.hero.there-s-more-than-one-way-to": {
+      "label": "there s more than one way to",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.hero.apply-to-volunteer": {
+      "label": "apply to volunteer",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.hero.pdf-opens-in-a-new": {
+      "label": "pdf opens in a new",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.hero.contact-us": {
+      "label": "contact us",
+      "type": "button",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "volunteer.action-section-action-container-action-vol.find-your-way-to-help": {
+      "label": "find your way to help",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-section-action-container-action-vol.good-people-meaningful-work": {
+      "label": "good people meaningful work",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-section-action-container-action-vol.whether-you-re-coming-on-your-own": {
+      "label": "whether you re coming on your own",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-process.what-to-expect": {
+      "label": "what to expect",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-process.let-s-get-you-started": {
+      "label": "let s get you started",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-process.our-pantry-is-at": {
+      "label": "our pantry is at",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-process.public-pantry-hours": {
+      "label": "public pantry hours",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-process.get-directions": {
+      "label": "get directions",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-process.opens-in-a-new-tab": {
+      "label": "opens in a new tab",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-process.get-the-application": {
+      "label": "get the application",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-process.download-the-one-page-volunteer-intern-for": {
+      "label": "download the one page volunteer intern for",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-process.tell-us-about-yourself": {
+      "label": "tell us about yourself",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-process.the-form-asks-for-your-contact": {
+      "label": "the form asks for your contact",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-process.arrange-your-next-steps": {
+      "label": "arrange your next steps",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-process.call-or-email-project-starburst-to": {
+      "label": "call or email project starburst to",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.application.volunteer-application": {
+      "label": "volunteer application",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.application.your-first-step-is-right-here": {
+      "label": "your first step is right here",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.application.download-the-original-volunteer-intern-for": {
+      "label": "download the original volunteer intern for",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.application.1-page-pdf": {
+      "label": "1 page pdf",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.application.download-application-pdf": {
+      "label": "download application pdf",
+      "type": "button",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "volunteer.application.view-application": {
+      "label": "view application",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.application.pdf-opens-in-a-new-tab": {
+      "label": "pdf opens in a new tab",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.application.community-service": {
+      "label": "community service",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.application.before-you-plan-your-visit": {
+      "label": "before you plan your visit",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.application.the-application-lists-monday-friday-hours-": {
+      "label": "the application lists monday friday hours ",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.have-a-question-before-volunteering.have-a-question-before-volunteering": {
+      "label": "have a question before volunteering",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.have-a-question-before-volunteering.give-us-a-call-or-send": {
+      "label": "give us a call or send",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-other-support-action-container.other-ways-to-support": {
+      "label": "other ways to support",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-other-support-action-container.give-in-a-way-that-works": {
+      "label": "give in a way that works",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-other-support-action-container.food-hygiene-products-essentials-and-finan": {
+      "label": "food hygiene products essentials and finan",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.action-other-support-action-container.donate": {
+      "label": "donate",
+      "type": "button",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "volunteer.action-other-support-action-container.donate-goods": {
+      "label": "donate goods",
+      "type": "button",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "volunteer.content.follow-project-starburst-on-facebook": {
+      "label": "follow project starburst on facebook",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.content.opens-in-a-new-tab": {
+      "label": "opens in a new tab",
+      "type": "text",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "volunteer.content.updates-on-hours-events-and-announcements": {
+      "label": "updates on hours events and announcements",
+      "type": "paragraph",
+      "editable": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.seo.title": {
+      "label": "title",
+      "type": "seo_title",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 180
+      }
+    },
+    "souper.seo.description": {
+      "label": "description",
+      "type": "seo_description",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 500
+      }
+    },
+    "souper.souper-hero.image": {
+      "label": "image",
+      "type": "image",
+      "editable": false,
+      "constraints": {
+        "required": false,
+        "formats": ["jpeg", "png", "webp"],
+        "maxBytes": 8388608,
+        "maxWidth": 12000,
+        "maxHeight": 12000
+      },
+      "help": "Optional replacement. Null preserves the original approved local photo. Register existing media in PLM before choosing it there. No removal or focal control in v1."
+    },
+    "souper.souper-hero.image.alt": {
+      "label": "alt",
+      "type": "alt",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.souper-hero.souper": {
+      "label": "souper",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.souper-hero.supper": {
+      "label": "supper",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.souper-hero.8th-annual": {
+      "label": "8th annual",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.souper-hero.warm-hearts-warm-bowls": {
+      "label": "warm hearts warm bowls",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.sponsor-section-title-sponsor.title-sponsor": {
+      "label": "title sponsor",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.sponsor-section-title-sponsor.proudly-supporting-the-souper-supper-and": {
+      "label": "proudly supporting the souper supper and",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.sponsor-section-title-sponsor.image": {
+      "label": "image",
+      "type": "image",
+      "editable": false,
+      "constraints": {
+        "required": false,
+        "formats": ["jpeg", "png", "webp"],
+        "maxBytes": 8388608,
+        "maxWidth": 12000,
+        "maxHeight": 12000
+      },
+      "help": "Optional replacement. Null preserves the original approved local photo. Register existing media in PLM before choosing it there. No removal or focal control in v1."
+    },
+    "souper.sponsor-section-title-sponsor.image.alt": {
+      "label": "alt",
+      "type": "alt",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.sponsor-section-title-sponsor.visit-northland-global-ministries": {
+      "label": "visit northland global ministries",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.content.image": {
+      "label": "image",
+      "type": "image",
+      "editable": false,
+      "constraints": {
+        "required": false,
+        "formats": ["jpeg", "png", "webp"],
+        "maxBytes": 8388608,
+        "maxWidth": 12000,
+        "maxHeight": 12000
+      },
+      "help": "Optional replacement. Null preserves the original approved local photo. Register existing media in PLM before choosing it there. No removal or focal control in v1."
+    },
+    "souper.content.image.alt": {
+      "label": "alt",
+      "type": "alt",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.content.souper-supper": {
+      "label": "souper supper",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.content.mar-25-2026-11-00-am": {
+      "label": "mar 25 2026 11 00 am",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.content.three-girls-bakery-106-n-michigan": {
+      "label": "three girls bakery 106 n michigan",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.content.this-event-is-a-fundraiser-for": {
+      "label": "this event is a fundraiser for",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.content.details": {
+      "label": "details",
+      "type": "button",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "souper.about-the-souper-supper.about-the-souper-supper": {
+      "label": "about the souper supper",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.about-the-souper-supper.the-8th-annual-souper-supper": {
+      "label": "the 8th annual souper supper",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1159
+      }
+    },
+    "souper.content.proudly-supporting-the-souper-supper-and": {
+      "label": "proudly supporting the souper supper and",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "souper.content.visit-sponsor": {
+      "label": "visit sponsor",
+      "type": "button",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "event.seo.title": {
+      "label": "title",
+      "type": "seo_title",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 180
+      }
+    },
+    "event.seo.description": {
+      "label": "description",
+      "type": "seo_description",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 500
+      }
+    },
+    "event.souper-supper.image": {
+      "label": "image",
+      "type": "image",
+      "editable": false,
+      "constraints": {
+        "required": false,
+        "formats": ["jpeg", "png", "webp"],
+        "maxBytes": 8388608,
+        "maxWidth": 12000,
+        "maxHeight": 12000
+      },
+      "help": "Optional replacement. Null preserves the original approved local photo. Register existing media in PLM before choosing it there. No removal or focal control in v1."
+    },
+    "event.souper-supper.image.alt": {
+      "label": "alt",
+      "type": "alt",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.souper-supper.souper-supper": {
+      "label": "souper supper",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.souper-supper.wed-mar-25-three-girls": {
+      "label": "wed mar 25 three girls",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.souper-supper.souper-supper-2": {
+      "label": "souper supper 2",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.souper-supper.this-event-is-a-fundraiser-for": {
+      "label": "this event is a fundraiser for",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.souper-supper.registration-is-closed": {
+      "label": "registration is closed",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.content.image": {
+      "label": "image",
+      "type": "image",
+      "editable": false,
+      "constraints": {
+        "required": false,
+        "formats": ["jpeg", "png", "webp"],
+        "maxBytes": 8388608,
+        "maxWidth": 12000,
+        "maxHeight": 12000
+      },
+      "help": "Optional replacement. Null preserves the original approved local photo. Register existing media in PLM before choosing it there. No removal or focal control in v1."
+    },
+    "event.content.image.alt": {
+      "label": "alt",
+      "type": "alt",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.time-location.time-location": {
+      "label": "time location",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.time-location.mar-25-2026-11-00-am": {
+      "label": "mar 25 2026 11 00 am",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.time-location.three-girls-bakery-106-n-michigan": {
+      "label": "three girls bakery 106 n michigan",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.tickets.tickets": {
+      "label": "tickets",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.tickets.souper-supper-8th-annual": {
+      "label": "souper supper 8th annual",
+      "type": "text",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.tickets.sale-ended": {
+      "label": "sale ended",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.tickets.ages-18-20-00-0-50-ticket": {
+      "label": "ages 18 20 00 0 50 ticket",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.tickets.ages-6-17-10-00": {
+      "label": "ages 6 17 10 00",
+      "type": "paragraph",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "event.tickets.back-to-souper-supper": {
+      "label": "back to souper supper",
+      "type": "button",
+      "editable": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    },
+    "goods.food.title": {
+      "label": "food title",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "goods.food.items": {
+      "label": "food items",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "goods.personal-care.title": {
+      "label": "personal care title",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "goods.personal-care.items": {
+      "label": "personal care items",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "goods.baby.title": {
+      "label": "baby title",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "goods.baby.items": {
+      "label": "baby items",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "goods.household.title": {
+      "label": "household title",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "goods.household.items": {
+      "label": "household items",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "roles.food-truck.title": {
+      "label": "food truck title",
+      "type": "text",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "roles.food-truck.description": {
+      "label": "food truck description",
+      "type": "text",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "roles.food-drive.title": {
+      "label": "food drive title",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "roles.food-drive.description": {
+      "label": "food drive description",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "roles.groups.title": {
+      "label": "groups title",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "roles.groups.description": {
+      "label": "groups description",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "roles.community-service.title": {
+      "label": "community service title",
+      "type": "text",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "roles.community-service.description": {
+      "label": "community service description",
+      "type": "text",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "roles.shipments.title": {
+      "label": "shipments title",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "roles.shipments.description": {
+      "label": "shipments description",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "roles.distribution.title": {
+      "label": "distribution title",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "roles.distribution.description": {
+      "label": "distribution description",
+      "type": "text",
+      "editable": true,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "stories.ruth.name": {
+      "label": "ruth name",
+      "type": "text",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "stories.ruth.quote": {
+      "label": "ruth quote",
+      "type": "paragraph",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "stories.kelly-birth-certificate.name": {
+      "label": "kelly birth certificate name",
+      "type": "text",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "stories.kelly-birth-certificate.quote": {
+      "label": "kelly birth certificate quote",
+      "type": "paragraph",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "stories.dawn.name": {
+      "label": "dawn name",
+      "type": "text",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "stories.dawn.quote": {
+      "label": "dawn quote",
+      "type": "paragraph",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "stories.kelly-food.name": {
+      "label": "kelly food name",
+      "type": "text",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "stories.kelly-food.quote": {
+      "label": "kelly food quote",
+      "type": "paragraph",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "stories.ivory.name": {
+      "label": "ivory name",
+      "type": "text",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "stories.ivory.quote": {
+      "label": "ivory quote",
+      "type": "paragraph",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "stories.karla.name": {
+      "label": "karla name",
+      "type": "text",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "stories.karla.quote": {
+      "label": "karla quote",
+      "type": "paragraph",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "stories.renee.name": {
+      "label": "renee name",
+      "type": "text",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "stories.renee.quote": {
+      "label": "renee quote",
+      "type": "paragraph",
+      "editable": false,
+      "shared": false,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.facebook.heading": {
+      "label": "facebook heading",
+      "type": "text",
+      "editable": true,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.facebook.description": {
+      "label": "facebook description",
+      "type": "paragraph",
+      "editable": true,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 1000
+      }
+    },
+    "shared.facebook.action": {
+      "label": "facebook action",
+      "type": "button",
+      "editable": true,
+      "shared": true,
+      "constraints": {
+        "required": true,
+        "maxLength": 100
+      }
+    }
+  },
+  "capabilities": {
+    "selection": true,
+    "draftOverlay": true,
+    "readOnlyPreview": true,
+    "viewports": ["desktop", "tablet", "mobile"]
+  }
+}

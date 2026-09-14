@@ -1,17 +1,15 @@
-import {
-  donationPaymentLink,
-  deploymentPolicy,
-} from '@/lib/deployment-policy.mjs';
+import { ContentText } from '@/components/content/fields';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { siteConfig } from '@/lib/site-config';
+
 import { organization } from '@/lib/organization';
 import { CtaButton, CtaLink } from '@/components/cta';
-export function DonationForm() {
+export function DonationForm({
+  link = '',
+  preview = true,
+}: { link?: string; preview?: boolean } = {}) {
   // Amount selection belongs to Stripe's customer-chooses-amount checkout.
   // Keep the historical Wix form as an inactive visual reference until connected.
-  const link = donationPaymentLink(process.env, siteConfig.stripePaymentLink);
-  const preview = !deploymentPolicy(process.env).isProduction;
   return (
     <section
       id="donation"
@@ -62,7 +60,8 @@ export function DonationForm() {
             </fieldset>
             <p className="form-note" id="donation-status">
               Online donations will be available soon. To give today, please
-              call {organization.phone.display} or visit our pantry.
+              call <ContentText fieldId="shared.phone.display" /> or visit our
+              pantry.
             </p>
             <div className="form-actions">
               <CtaButton type="button" icon="none" disabled>

@@ -18,7 +18,7 @@ const preview = {
   VERCEL_GIT_COMMIT_REF: 'redesign-2026',
 };
 
-test('only Production on main is indexable; unknown and branch previews stay noindex', () => {
+await test('only Production on main is indexable; unknown and branch previews stay noindex', () => {
   for (const env of [
     {},
     preview,
@@ -32,7 +32,7 @@ test('only Production on main is indexable; unknown and branch previews stay noi
   assert.equal(new URL(PRODUCTION_ORIGIN).hostname, 'www.projectstarburst.org');
 });
 
-test('production builds need main and the explicit launch flag', () => {
+await test('production builds need main and the explicit launch flag', () => {
   assert.doesNotThrow(() => assertVercelBuildAllowed({}));
   assert.doesNotThrow(() => assertVercelBuildAllowed(preview));
   assert.throws(() => assertVercelBuildAllowed(production), /blocked/);
@@ -54,7 +54,7 @@ test('production builds need main and the explicit launch flag', () => {
 });
 
 // These are synthetic URL fixtures, not credentials or working payment links.
-test('previews cannot fall back to live donations and reject non-test links', () => {
+await test('previews cannot fall back to live donations and reject non-test links', () => {
   const live = 'https://buy.stripe.com/example';
   const sandbox = 'https://buy.stripe.com/test_example';
   assert.equal(donationPaymentLink(preview, live), '');
@@ -83,7 +83,7 @@ test('previews cannot fall back to live donations and reject non-test links', ()
   assert.throws(() => donationPaymentLink(production, sandbox));
 });
 
-test('preview email requires a separate valid test inbox; production is preserved', () => {
+await test('preview email requires a separate valid test inbox; production is preserved', () => {
   const real = 'office@example.org';
   assert.equal(contactRecipient(preview, real), '');
   assert.equal(
@@ -103,7 +103,7 @@ test('preview email requires a separate valid test inbox; production is preserve
   }
 });
 
-test('draft-only preview never creates a mailto, and test email is labeled and encoded', () => {
+await test('draft-only preview never creates a mailto, and test email is labeled and encoded', () => {
   const fields = {
     firstName: 'A',
     lastName: 'B',
@@ -129,7 +129,7 @@ test('draft-only preview never creates a mailto, and test email is labeled and e
   );
 });
 
-test('feature PRs target staging; main accepts only the same-repository integration branch', () => {
+await test('feature PRs target staging; main accepts only the same-repository integration branch', () => {
   assert.doesNotThrow(() =>
     validatePrTarget({
       base: 'redesign-2026',
@@ -167,7 +167,7 @@ test('feature PRs target staging; main accepts only the same-repository integrat
   );
 });
 
-test('Vercel config keeps the production guard and a static output target', () => {
+await test('Vercel config keeps the production guard and a static output target', () => {
   const config = JSON.parse(
     readFileSync(new URL('../vercel.json', import.meta.url), 'utf8'),
   );
@@ -199,7 +199,7 @@ test('Vercel config keeps the production guard and a static output target', () =
   );
 });
 
-test('SEO documents exclude previews and include only canonical production routes', async () => {
+await test('SEO documents exclude previews and include only canonical production routes', async () => {
   const { staticSeoDocuments } = await import('../lib/seo-documents.mjs');
   const staging = staticSeoDocuments(preview);
   assert.doesNotMatch(staging['sitemap.xml'], /<loc>/);
@@ -217,7 +217,7 @@ test('SEO documents exclude previews and include only canonical production route
   assert.match(live['robots.txt'], /www\.projectstarburst\.org\/sitemap\.xml/);
 });
 
-test('RSC navigation cannot be shadowed by exported HTML or lose its response headers', () => {
+await test('RSC navigation cannot be shadowed by exported HTML or lose its response headers', () => {
   const config = JSON.parse(
     readFileSync(new URL('../vercel.json', import.meta.url), 'utf8'),
   );
