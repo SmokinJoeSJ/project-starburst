@@ -123,10 +123,26 @@ function bundle() {
   };
 }
 await test('local unbound templates validate, but wire/import require a canonical Site binding', () => {
-  assert.equal(validateApproved(rawManifest, raw, rawBinding).bound, false);
-  fail(() => C.validateManifest(rawManifest), 'incompatible_schema');
+  assert.equal(
+    validateApproved(rawManifest, raw, rawBinding).bound,
+    rawBinding.siteId !== null,
+  );
+  const templateManifest = { ...rawManifest, siteId: null };
+  const templateDocument = { ...raw, siteId: null };
+  const templateBinding = { ...rawBinding, siteId: null, parentOrigins: [] };
+  assert.equal(
+    validateApproved(templateManifest, templateDocument, templateBinding).bound,
+    false,
+  );
+  fail(() => C.validateManifest(templateManifest), 'incompatible_schema');
   fail(
-    () => validateBundle(rawManifest, raw, rawBinding, bundle()),
+    () =>
+      validateBundle(
+        templateManifest,
+        templateDocument,
+        templateBinding,
+        bundle(),
+      ),
     'site_registration_required',
   );
   C.validateManifest(manifest);
@@ -531,4 +547,58 @@ await test('JSONB key order does not break media validation or deterministic imp
   const p = draft();
   p.document.media = Object.fromEntries(Object.entries(base.media).reverse());
   assert.ok(validateDraft(manifest, base, p, policy));
+});
+
+await test('ESM contract is the pinned PLM validator body with packaging changes only', async () => {
+  const upstream = (
+    await readFile(
+      new URL('./fixtures/editor/plm/site-editor-contract.js', import.meta.url),
+      'utf8',
+    )
+  ).replaceAll('\r\n', '\n');
+  const local = (
+    await readFile(
+      new URL('../lib/content/plm-contract.mjs', import.meta.url),
+      'utf8',
+    )
+  ).replaceAll('\r\n', '\n');
+  const start = '  const VERSION =';
+  assert.equal(
+    local.slice(local.indexOf(start), local.indexOf('\nexport {')).trim(),
+    upstream
+      .slice(upstream.indexOf(start), upstream.lastIndexOf('  return {'))
+      .trim(),
+  );
+});
+
+await test('coverage inventory exactly matches manifest fields, permissions and public routes', async () => {
+  const inventory = await read('docs/editor/coverage.json');
+  const { publicRoutes } = await import('../lib/routes.mjs');
+  assert.deepEqual(
+    rawManifest.pages.map((p) => p.path).sort((a, b) => a.localeCompare(b)),
+    [...publicRoutes].sort((a, b) => a.localeCompare(b)),
+  );
+  assert.deepEqual(
+    inventory.map((row) => row.field).sort((a, b) => a.localeCompare(b)),
+    Object.keys(rawManifest.fields).sort((a, b) => a.localeCompare(b)),
+  );
+  assert.deepEqual(
+    Object.keys(raw.values).sort((a, b) => a.localeCompare(b)),
+    Object.keys(rawManifest.fields).sort((a, b) => a.localeCompare(b)),
+  );
+  for (const row of inventory) {
+    const field = rawManifest.fields[row.field];
+    assert.equal(row.type, field.type, row.field);
+    assert.equal(row.editable, field.editable, row.field);
+    const pages = rawManifest.pages
+      .filter((p) => p.sections.some((s) => s.fields.includes(row.field)))
+      .map((p) => p.path)
+      .sort((a, b) => a.localeCompare(b));
+    assert.ok(pages.length > 0, row.field + ' must be assigned to a page');
+    assert.deepEqual(
+      [...row.pages].sort((a, b) => a.localeCompare(b)),
+      pages,
+      row.field,
+    );
+  }
 });
