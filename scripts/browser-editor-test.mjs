@@ -375,12 +375,91 @@ try {
   );
   check(true, 'Touch selection works without hover');
   await touchContext.close();
+  // Exercise every editable visual field through the real parent and React renderer.
+  // SEO fields intentionally do not change the frame document head; approved-build tests cover them.
+  const coverageDraft = structuredClone(approved);
+  const coverageAsset = '33333333-3333-4333-8333-333333333333';
+  const expectedValues = {};
+  let fieldIndex = 0;
+  for (const [id, field] of Object.entries(manifest.fields)) {
+    if (!field.editable || field.type.startsWith('seo_')) continue;
+    const value =
+      field.type === 'image'
+        ? { assetId: coverageAsset }
+        : 'Field ' + ++fieldIndex;
+    coverageDraft.values[id] = value;
+    expectedValues[id] = value;
+  }
+  const coverageMedia = {
+    [coverageAsset]:
+      'https://fixture.supabase.co/storage/v1/object/sign/plm-files/coverage.webp',
+  };
+  const observed = new Set();
+  const pageCoverage = [];
+  for (const target of manifest.pages) {
+    await page.evaluate(
+      ({ document, media, pageId }) => {
+        window.connection.page(pageId);
+        window.connection.update(document, media, 'desktop', 'edit', null);
+      },
+      { document: coverageDraft, media: coverageMedia, pageId: target.id },
+    );
+    await frame.locator('[data-preview-page="' + target.id + '"]').waitFor();
+    const fields = await frame
+      .locator('[data-plm-field]')
+      .evaluateAll((nodes) =>
+        nodes.flatMap((node) => {
+          const result = [
+            {
+              id: node.dataset.plmField,
+              value:
+                node.tagName === 'IMG'
+                  ? node.getAttribute('src')
+                  : node.textContent,
+            },
+          ];
+          if (node.dataset.plmAltField)
+            result.push({
+              id: node.dataset.plmAltField,
+              value: node.getAttribute('alt'),
+            });
+          return result;
+        }),
+      );
+    for (const { id, value } of fields) {
+      check(
+        Object.hasOwn(manifest.fields, id),
+        'Known rendered field: ' + target.id + '/' + id,
+      );
+      if (!Object.hasOwn(expectedValues, id)) continue;
+      const expected =
+        manifest.fields[id].type === 'image'
+          ? coverageMedia[coverageAsset]
+          : expectedValues[id];
+      check(value === expected, 'Live binding: ' + target.id + '/' + id);
+      observed.add(id);
+    }
+    pageCoverage.push({
+      pageId: target.id,
+      boundFields: [...new Set(fields.map((f) => f.id))].sort((a, b) =>
+        a.localeCompare(b),
+      ),
+    });
+  }
+  const missing = Object.keys(expectedValues).filter((id) => !observed.has(id));
+  check(
+    missing.length === 0,
+    'Every editable visual field renders its draft value: ' +
+      missing.join(', '),
+  );
   check(errors.length === 0, 'No browser exceptions');
   writeFileSync(
     out + '/fixture-results.json',
     JSON.stringify(
       {
         kind: 'actual-parent-contract-fixture-only',
+        editableVisualFieldsVerified: observed.size,
+        pageCoverage,
         checks,
         errors,
         serverSaveReloadVerified: false,

@@ -2,13 +2,13 @@
 
 ## Status and boundaries
 
-Feature: feature/plm-studio-content-bridge; PR target redesign-2026. Integration baseline 21cd8e8bc3dfebbfad2cbe38373a738b9cad4a55. See the PR for the adapter commit and deployment evidence. main and the live Wix implementation are separate; neither was changed. No production deployment, DNS/domain assignment, provider credentials, recipients, PLM migration or membership change is part of this work.
+Original adapter PR #5 is merged. This integration-review follow-up uses feature/plm-editor-integration-review from the latest verified origin/redesign-2026 baseline 4fc4a0b8af318bbfde5ed1b41076d7d229df60c9. Its PR targets redesign-2026 and must not merge automatically. The content extraction provenance remains 21cd8e8bc3dfebbfad2cbe38373a738b9cad4a55. See [integration review](integration-review.md) for the next real heading-edit check; the follow-up PR records its exact commit and deployment evidence. main and the live Wix implementation are separate; neither was changed. No production deployment, DNS/domain assignment, provider credentials, recipients, PLM migration or membership change is part of this work.
 
 Implemented a static content adapter, not an editor/dashboard. Public pages and the isolated editor surface share components/pages/* and the existing Starburst components/styles. ContentText and ContentImage bind explicit field IDs; the context defaults to checked-in approved values during SSR. The public site does not fetch drafts or require PLM account credentials. HTML and RSC carry data-content-revision; metadata comes from the same snapshot. Editor drafts exist only in the frame's memory.
 
 ## Exact upstream contract
 
-Read-only PLM checkout: feature/studio-connected-content-editor. Final pinned PLM commit: **6888039604f718fcf488da3557ac9395fa6563fa**. The task initially inspected working changes on f4d2166; after PLM committed, the final validators and browser fixture were updated and retested against 6888039.
+Read-only PLM checkout: feature/studio-connected-content-editor. Pinned PLM commit: **6888039604f718fcf488da3557ac9395fa6563fa** (PLM PR #129, now merged). On this review, the contract and parent files still match that commit byte-for-byte; the latest PLM main is 94647eda1a4fb023d92834fd79d97151d70a0460. The task initially inspected working changes on f4d2166; after PLM committed, the final validators and browser fixture were updated and retested against 6888039.
 
 - assets/js/site-editor-contract.js SHA-256: ec7ce760e5f4850d0ad3e434881588884d4525b13ebb6645611cbba5a07bafa7
 - assets/js/site-editor-preview.js SHA-256: 445624658775b5d115088bf531dc9cf2efacef551ae3665deeb3a1f621c9a0c1

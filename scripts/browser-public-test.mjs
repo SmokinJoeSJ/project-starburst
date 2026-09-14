@@ -9,6 +9,7 @@ const { chromium } = createRequire(import.meta.url)(
 const root = resolve('dist/client'),
   out = 'outputs/editor-review/public';
 mkdirSync(out, { recursive: true });
+const binding = JSON.parse(readFileSync('content/editor-binding.json'));
 const config = JSON.parse(readFileSync('vercel.json')),
   approved = JSON.parse(readFileSync('content/plm-content.json'));
 const server = createServer((req, res) => {
@@ -231,8 +232,11 @@ try {
   check(
     response.status() === 200 &&
       response.headers()['content-security-policy'] ===
-        "frame-ancestors 'none'",
-    'Unbound preview HTTP framing is denied',
+        'frame-ancestors ' +
+          (binding.parentOrigins.length
+            ? binding.parentOrigins.join(' ')
+            : "'none'"),
+    'Preview HTTP framing matches the exact configured allowlist',
   );
   check(
     (await page.locator('header').count()) === 0,
@@ -240,7 +244,12 @@ try {
   );
   check(
     (await page
-      .getByText('This preview is not connected.', { exact: false })
+      .getByText(
+        binding.siteId && binding.parentOrigins.length
+          ? 'Waiting for an authorized PLM Studio connection.'
+          : 'This preview is not connected.',
+        { exact: false },
+      )
       .count()) === 1,
     'Honest unconnected state',
   );

@@ -17,7 +17,9 @@
     "validate:content": "node scripts/validate-content.mjs",
     "prebuild": "npm run validate:content",
     "prebuild:vercel": "npm run validate:content",
-    "content:import": "node scripts/import-content.mjs"
+    "content:import": "node scripts/import-content.mjs",
+    "test:bridge": "node --test tests/content-editor.test.mjs",
+    "test:bridge:browser": "node scripts/browser-editor-test.mjs"
   },
   "dependencies": {
     "react": "19.2.6",
