@@ -2,6 +2,8 @@
 
 ## Status and boundaries
 
+Configuration repair update: the owner has supplied the existing canonical Site UUID. See [Site binding review](site-binding-review.md) for the configuration-only feature branch, exact nonproduction parent, scoped framing and remaining hosted-registration gate. This supersedes the earlier unbound/default-deny setup state below; it does not claim a hosted handshake.
+
 Original adapter PR #5 is merged. This integration-review follow-up uses feature/plm-editor-integration-review from the latest verified origin/redesign-2026 baseline 4fc4a0b8af318bbfde5ed1b41076d7d229df60c9. Its PR targets redesign-2026 and must not merge automatically. The content extraction provenance remains 21cd8e8bc3dfebbfad2cbe38373a738b9cad4a55. See [integration review](integration-review.md) for the next real heading-edit check; the follow-up PR records its exact commit and deployment evidence. main and the live Wix implementation are separate; neither was changed. No production deployment, DNS/domain assignment, provider credentials, recipients, PLM migration or membership change is part of this work.
 
 Implemented a static content adapter, not an editor/dashboard. Public pages and the isolated editor surface share components/pages/* and the existing Starburst components/styles. ContentText and ContentImage bind explicit field IDs; the context defaults to checked-in approved values during SSR. The public site does not fetch drafts or require PLM account credentials. HTML and RSC carry data-content-revision; metadata comes from the same snapshot. Editor drafts exist only in the frame's memory.

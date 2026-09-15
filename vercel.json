@@ -69,7 +69,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "frame-ancestors 'none'"
+          "value": "frame-ancestors https://plm-website-git-fix-os-site-editor-entry-platinum-luxe-media.vercel.app"
         },
         {
           "key": "X-Robots-Tag",
@@ -255,7 +255,7 @@
         "Cache-Control": "private, no-store",
         "Vary": "RSC",
         "X-Robots-Tag": "noindex, nofollow",
-        "Content-Security-Policy": "frame-ancestors 'none'"
+        "Content-Security-Policy": "frame-ancestors https://plm-website-git-fix-os-site-editor-entry-platinum-luxe-media.vercel.app"
       }
     }
   ]
