@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "adapterReady": true,
+  "adapterType": "static-content-v1",
+  "contractVersion": "plm-content/1",
+  "manifestSource": "content/plm-manifest.json",
+  "previewOrigin": "https://project-starburst-git-feature-plm-ed-c1b66a-platinum-luxe-media.vercel.app",
+  "previewPath": "/plm-preview",
+  "repository": "SmokinJoeSJ/project-starburst",
+  "stagingBranch": "redesign-2026",
+  "contentPath": "content/plm-content.json",
+  "assetPath": "public/media/starburst",
+  "allowedPaths": ["content/plm-content.json", "public/media/starburst/*"],
+  "reviewPolicy": "plm-review-staging-pr",
+  "targetLabel": "Redesign"
+}

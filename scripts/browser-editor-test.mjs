@@ -44,6 +44,12 @@ const child = await createServer({
   publicDir: join(root, 'public'),
   resolve: {
     alias: [
+      // Keep both the early module-level mailbox and React props on the same
+      // isolated policy after the real repository is bound to a hosted Site.
+      {
+        find: '@/content/editor-binding.json',
+        replacement: join(root, 'tests/fixtures/editor/binding.json'),
+      },
       { find: '@', replacement: root },
       {
         find: 'next/link',

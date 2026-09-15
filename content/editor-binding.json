@@ -1,6 +1,8 @@
 {
-  "siteId": null,
-  "parentOrigins": [],
+  "siteId": "518918e1-9cca-4144-bd1a-ff190bd221f1",
+  "parentOrigins": [
+    "https://plm-website-git-fix-os-site-editor-entry-platinum-luxe-media.vercel.app"
+  ],
   "mediaOrigins": [],
   "mediaPathPrefixes": ["/storage/v1/object/sign/plm-files/"],
   "repository": "SmokinJoeSJ/project-starburst",
